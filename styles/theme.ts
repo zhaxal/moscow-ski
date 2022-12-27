@@ -9,8 +9,15 @@ declare module "@mui/material/styles" {
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
-    desc: React.CSSProperties;
-    heading: React.CSSProperties;
+    desc?: React.CSSProperties;
+    heading?: React.CSSProperties;
+  }
+}
+
+declare module '@mui/material/Typography' {
+  interface TypographyPropsVariantOverrides {
+    desc: true;
+    heading: true;
   }
 }
 
@@ -28,10 +35,10 @@ const theme = createTheme({
       fontFamily: "Gotham Pro Medium",
     },
     heading: {
-        fontFamily: "Mossport",
-        fontWeight: 400,
-        fontSize: "56px",
-        lineHeight: "56px"
+      fontFamily: "Mossport",
+      fontWeight: 400,
+      fontSize: "56px",
+      lineHeight: "56px"
     }
   },
   components: {

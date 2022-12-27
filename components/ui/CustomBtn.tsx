@@ -1,12 +1,13 @@
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { Stack } from "@mui/system";
-import React from "react";
+import { useState } from "react";
 
 interface Props {
   bg: string;
   text: string;
   height: string;
+  width?: string;
   lineHeight: string;
   fontSize: string;
   onClick?: () => void;
@@ -16,23 +17,30 @@ const CustomBtn = ({
   bg,
   text,
   height,
+  width,
   lineHeight,
   fontSize,
   onClick,
 }: Props) => {
+
+  const [isHover, setHover] = useState<boolean>(false);
+
   return (
     <Stack
       direction={"row"}
       sx={{
         background: bg,
         height: height,
-        width: 500,
+        width: width ? width : 500,
         alignItems: "center",
         justifyContent: "space-between",
         borderRadius: "3px",
         position: "relative",
+        cursor: "pointer"
       }}
       onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
     >
       <Typography
         sx={{
@@ -57,7 +65,7 @@ const CustomBtn = ({
       />
       <Box
         component={"img"}
-        src={"/images/desktop/components/btn-play.svg"}
+        src={isHover ? "/images/desktop/components/btn-play-active.svg" : "/images/desktop/components/btn-play.svg"}
         sx={{
           position: "absolute",
           right: 10,
