@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery, useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import { Stack } from "@mui/system";
 import { useState } from "react";
@@ -22,7 +22,6 @@ const CustomBtn = ({
   fontSize,
   onClick,
 }: Props) => {
-
   const [isHover, setHover] = useState<boolean>(false);
 
   return (
@@ -36,7 +35,7 @@ const CustomBtn = ({
         justifyContent: "space-between",
         borderRadius: "3px",
         position: "relative",
-        cursor: "pointer"
+        cursor: "pointer",
       }}
       onClick={onClick}
       onMouseEnter={() => setHover(true)}
@@ -65,7 +64,11 @@ const CustomBtn = ({
       />
       <Box
         component={"img"}
-        src={isHover ? "/images/desktop/components/btn-play-active.svg" : "/images/desktop/components/btn-play.svg"}
+        src={
+          isHover
+            ? "/images/desktop/components/btn-play-active.svg"
+            : "/images/desktop/components/btn-play.svg"
+        }
         sx={{
           position: "absolute",
           right: 10,

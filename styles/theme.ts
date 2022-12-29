@@ -5,19 +5,22 @@ declare module "@mui/material/styles" {
   interface TypographyVariants {
     desc: React.CSSProperties;
     heading: React.CSSProperties;
+    body: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
     desc?: React.CSSProperties;
     heading?: React.CSSProperties;
+    body?: React.CSSProperties;
   }
 }
 
-declare module '@mui/material/Typography' {
+declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     desc: true;
     heading: true;
+    body: true;
   }
 }
 
@@ -38,8 +41,14 @@ const theme = createTheme({
       fontFamily: "Mossport",
       fontWeight: 400,
       fontSize: "56px",
-      lineHeight: "56px"
-    }
+      lineHeight: "56px",
+    },
+    body: {
+      fontFamily: "Gotham Pro Regular",
+      fontSize: "20px",
+      lineHeight: "104.2%",
+      fontWeight: 400,
+    },
   },
   components: {
     MuiButton: {

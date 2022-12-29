@@ -1,12 +1,15 @@
-import { NextPage } from "next";
 import React from "react";
 import { Box, Container, Stack } from "@mui/system";
-import { Button, Typography } from "@mui/material";
-import CustomBtn from "../components/ui/CustomBtn";
+import { Typography } from "@mui/material";
+import Information from "../components/information-block";
+import Requirements from "../components/requirements-block";
+import Documents from "../components/documents-block";
+import ProgramMarathon from "../components/program-block-marathon";
+import { NextPage } from "next";
 
-const MarathonPage = () => {
+const MarathonPage: NextPage = () => {
   return (
-    <Box height="100%" sx={{ backgroundColor: "#E6342D" }}>
+    <Box height="100%" width={"100%"} sx={{ backgroundColor: "#E6342D" }}>
       <Container disableGutters maxWidth="xl">
         <Stack direction={"column"} pt={"125px"}>
           <Stack
@@ -26,7 +29,6 @@ const MarathonPage = () => {
                   src={"/images/desktop/logo/ski-logo.svg"}
                   sx={{
                     maxWidth: 243,
-                    height: 135,
                   }}
                   alt="skiLogo"
                 />
@@ -35,7 +37,6 @@ const MarathonPage = () => {
                   src={"/images/desktop/logo/mosssport-logo.svg"}
                   sx={{
                     maxWidth: 186,
-                    height: 55,
                   }}
                   alt="mossportLogo"
                 />
@@ -67,7 +68,6 @@ const MarathonPage = () => {
                       textOverflow: "ellipsis",
                       whiteSpace: "pre-line",
                       overflow: "hidden",
-                      height: "301px",
                     }}
                     color={"#870000"}
                     variant={"desc"}
@@ -93,7 +93,6 @@ const MarathonPage = () => {
               src={"/images/desktop/marathon-page/ski-man.svg"}
               sx={{
                 minWidth: 390,
-                height: 452,
               }}
               alt="marathonSkiMan"
             />
@@ -111,42 +110,68 @@ const MarathonPage = () => {
           />
 
           <Stack
-            direction={"row"}
-            spacing={"400px"}
+            direction={"column"}
             sx={{ px: "16px", mt: "80px" }}
+            spacing={10}
           >
-            <Stack direction={"column"} spacing={"48px"}>
-              <CustomBtn
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"ОБЩАЯ ИНФОРМАЦИЯ"}
-                height={"48px"}
-                lineHeight={"23px"}
-                fontSize={"24px"}
-              />
-              <CustomBtn
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"ТРЕБОВАНИЯ К УЧАСТНИКАМ"}
-                height={"48px"}
-                lineHeight={"15.31px"}
-                fontSize={"16px"}
-              />
-            </Stack>
-            <Stack direction={"column"} spacing={"48px"}>
-              <CustomBtn
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"ПРОГРАММА"}
-                height={"48px"}
-                lineHeight={"23px"}
-                fontSize={"24px"}
-              />
-              <CustomBtn
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"МЕСТО ПРОВЕДЕНИЯ"}
-                height={"48px"}
-                lineHeight={"23px"}
-                fontSize={"24px"}
-              />
-            </Stack>
+            <Information
+              text={`
+              Соревнования проводятся в соответствии с Единым 
+              календарным планом физкультурных, спортивных и 
+              массовых спортивно-зрелищных мероприятий города 
+              Москвы на 2023 год, утвержденным Департаментом 
+              спорта города Москвы (далее – Москомспорт), №66313, 
+              утвержденным Департаментом спорта города Москвы. 
+              Соревнования проводятся в целях:
+              - - популяризация здорового образа жизни;
+              - привлечение населения к регулярным занятиям лыжным спортом;
+              - создание условий для занятий лыжным спортом лиц с ограниченными возможностями;
+              - широкий обмен опытом между физкультурными, спортивными организациями, тренерами и спортсменами;
+              - сохранение спортивных традиций региона;
+              - укрепление дружественных международных спортивных связей.`}
+              bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+            />
+            <ProgramMarathon
+              bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+            />
+            <Requirements
+              text1={`Соревнования проводятся в соответствии с правилами 
+                      лыжных гонок. Стиль свободный.
+
+                      К участию в соревновании допускаются спортсмены-
+                      любители и спортсмены субъектов Российской Федерации, 
+                      спортсмены ближнего и дальнего зарубежья мужского и 
+                      женского пола возраста 17 лет и старше, имеющие 
+                      медицинский допуск к участию в соревнованиях. Возраст 
+                      участников определяется по дате рождения (полных лет) по 
+                      состоянию на день проведения соревнований.
+                      
+                      Участники, не прошедшие контрольные пункты по 
+                      дистанции, будут дисквалифицированы, их результат 
+                      аннулируется. Победители определяются по наименьшему 
+                      количеству времени, затраченному на прохождение 
+                      дистанции.
+                    `}
+              text2={`Всем участникам предоставляют на комиссию по допуску 
+                      следующие документы:
+              
+                      медицинский допуск, подтверждающий состояние 
+                      здоровья и возможность допуска к соревнованию, 
+                      согласно требованиям приказа Минздрава России от 23 
+                      октября 2020 г. № 1144н
+              
+                      паспорт или документ, подтверждающий личность 
+                      зарегистрированного участника
+              
+                      договор о страховании (оригинал) жизни и здоровья от 
+                      несчастных случаев
+                    `}
+              bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+            />
+            <Documents
+              bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+              text1={"ПОЛОЖЕНИЕ"}
+            />
           </Stack>
         </Stack>
       </Container>
