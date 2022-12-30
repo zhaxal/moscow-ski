@@ -1,4 +1,11 @@
-import { Box, Container, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
@@ -11,8 +18,11 @@ const Preview: NextPage = () => {
 
   return matches ? (
     <Box
-      height="100vh"
-      sx={{ background: "linear-gradient(90deg, #0082C2 50%, #E6342D 50%)" }}
+      height="100%"
+      sx={{
+        background: "linear-gradient(90deg, #0082C2 50%, #E6342D 50%)",
+        pb: "93px",
+      }}
     >
       <Container disableGutters maxWidth="xl" sx={{ position: "relative" }}>
         <Stack sx={{ justifyContent: "center", alignItems: "center" }}>
@@ -66,12 +76,21 @@ const Preview: NextPage = () => {
     </Box>
   ) : (
     <Box height={"100%"}>
-      <Stack sx={{ height: "45%", width: "100%", alignItems: "center", background: "#0082C2", pt: "64px" }} spacing={"77px"}>
+      <Stack
+        sx={{
+          height: "45%",
+          width: "100%",
+          alignItems: "center",
+          background: "#0082C2",
+          pt: "64px",
+        }}
+        spacing={"77px"}
+      >
         <Box
           component={"img"}
           src={"/images/mobile/main-page/blue-top.png"}
           sx={{
-            width: "100%"
+            width: "100%",
           }}
         />
         <CustomBtn
@@ -85,13 +104,23 @@ const Preview: NextPage = () => {
         />
       </Stack>
 
-      <Stack sx={{ width: "100%", height: "10%", background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)", py: "35px" }} direction={"row"} alignItems="center" justifyContent={"space-around"}>
+      <Stack
+        sx={{
+          width: "100%",
+          height: "10%",
+          background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)",
+          py: "35px",
+        }}
+        direction={"row"}
+        alignItems="center"
+        justifyContent={"space-around"}
+      >
         <Box
           component={"img"}
           src={"/images/mobile/icon/mossport.svg"}
           sx={{
             width: "40px",
-            height: "56px"
+            height: "56px",
           }}
         />
 
@@ -100,7 +129,7 @@ const Preview: NextPage = () => {
           src={"/images/mobile/icon/department.svg"}
           sx={{
             width: "45px",
-            height: "57px"
+            height: "57px",
           }}
         />
 
@@ -109,7 +138,7 @@ const Preview: NextPage = () => {
           src={"/images/mobile/icon/grom.svg"}
           sx={{
             width: "117px",
-            height: "59px"
+            height: "59px",
           }}
         />
 
@@ -118,7 +147,7 @@ const Preview: NextPage = () => {
           src={"/images/mobile/icon/mlogo.svg"}
           sx={{
             width: "72px",
-            height: "63px"
+            height: "63px",
           }}
         />
 
@@ -127,17 +156,26 @@ const Preview: NextPage = () => {
           src={"/images/mobile/icon/russialoppet.svg"}
           sx={{
             width: "90px",
-            height: "34px"
+            height: "34px",
           }}
         />
       </Stack>
 
-      <Stack sx={{ height: "45%", width: "100%", alignItems: "center", background: "#E6342D", pb: "64px" }} spacing={"77px"}>
+      <Stack
+        sx={{
+          height: "45%",
+          width: "100%",
+          alignItems: "center",
+          background: "#E6342D",
+          pb: "64px",
+        }}
+        spacing={"77px"}
+      >
         <Box
           component={"img"}
           src={"/images/mobile/main-page/red-bottom.png"}
           sx={{
-            width: "100%"
+            width: "100%",
           }}
         />
         <CustomBtn

@@ -17,13 +17,26 @@ const SkiPage: NextPage = () => {
   const router = useRouter();
 
   return (
-    <Box height="100%" sx={{ backgroundColor: "#0082C2" }}>
-      <Stack sx={{ px: matches ? "73px" : "50px", pt: "19px", mb: matches ? "45px" : "51px" }}>
+    <Box
+      height="100%"
+      sx={{
+        backgroundColor: "#0082C2",
+        overflowX: "hidden",
+        position: "relative",
+      }}
+    >
+      <Stack
+        sx={{
+          px: matches ? "73px" : "50px",
+          pt: "19px",
+          mb: matches ? "45px" : "51px",
+        }}
+      >
         <Box
           component={"img"}
           src={"/images/desktop/logo/arrow.svg"}
           sx={{ width: "36px", cursor: "pointer" }}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/preview")}
         />
       </Stack>
       <Container disableGutters maxWidth="xl">
@@ -68,7 +81,6 @@ const SkiPage: NextPage = () => {
                     minWidth: 1090,
                     height: 300,
                     pb: "50px",
-                    pos: "relative",
                   }}
                 >
                   <Stack
@@ -144,17 +156,17 @@ const SkiPage: NextPage = () => {
                 </Stack>
                 <Box
                   sx={{
-                    backgroundImage:
-                      "url(/images/mobile/ski-page/desc-bg.png)",
+                    backgroundImage: "url(/images/mobile/ski-page/desc-bg.png)",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     minWidth: "375px",
                     height: "506px",
+                    position: "relative",
                   }}
                 >
                   <Stack
                     sx={{
-                      pl: "80px",
+                      ml: "83px",
                       justifyContent: "center",
                       alignItems: "end",
                       height: "100%",
@@ -190,6 +202,20 @@ const SkiPage: NextPage = () => {
                   </Stack>
                 </Box>
               </Stack>
+              <Box
+                component={"img"}
+                src={"/images/desktop/ski-page/ski-man.svg"}
+                sx={{
+                  minWidth: 185,
+                  height: 214,
+                  position: "absolute",
+                  left: "-123px",
+                  top: "165px",
+                  mr: "10px",
+                  mt: "0px",
+                }}
+                alt="marathonSkiMan"
+              />
             </Stack>
           )}
 
@@ -216,13 +242,18 @@ const SkiPage: NextPage = () => {
               backgroundImage: "url(/images/desktop/ski-page/center.svg)",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
+              backgroundPosition: "right",
               minHeight: matches ? 480 : 255,
             }}
           />
 
           <Stack
             direction={"column"}
-            sx={{ px: "16px", mt: matches ? "80px" : "46px", mb: matches ? "114px" : "53px" }}
+            sx={{
+              px: "16px",
+              mt: matches ? "80px" : "46px",
+              mb: matches ? "114px" : "53px",
+            }}
             spacing={matches ? 10 : 2}
           >
             <Information
@@ -271,7 +302,10 @@ const SkiPage: NextPage = () => {
               text2={"Согласие на обработку персональных данных"}
               isMobile={matches}
             />
-            <Footer bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"} isMobile={matches} />
+            <Footer
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              isMobile={matches}
+            />
           </Stack>
         </Stack>
       </Container>

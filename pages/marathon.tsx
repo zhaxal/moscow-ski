@@ -11,28 +11,37 @@ import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
 
 const MarathonPage: NextPage = () => {
-
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
   const router = useRouter();
 
   return (
-    <Box height="100%" sx={{ backgroundColor: "#E6342D" }}>
-      <Stack sx={{ px: matches ? "73px" : "25px", pt: "19px", mb: matches ? "45px" : "51px" }}>
+    <Box
+      height="100%"
+      sx={{
+        backgroundColor: "#E6342D",
+        overflowX: "hidden",
+        position: "relative",
+      }}
+    >
+      <Stack
+        sx={{
+          px: matches ? "73px" : "25px",
+          pt: "19px",
+          mb: matches ? "45px" : "51px",
+        }}
+      >
         <Box
           component={"img"}
           src={"/images/desktop/logo/arrow.svg"}
           sx={{ width: "36px", cursor: "pointer" }}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/preview")}
         />
       </Stack>
       <Container disableGutters maxWidth="xl">
         <Stack direction={"column"}>
           {matches ? (
-            <Stack
-              direction={"row"}
-              alignItems={"flex-end"}
-            >
+            <Stack direction={"row"} alignItems={"flex-end"}>
               <Stack direction={"column"} spacing={"57px"}>
                 <Stack
                   direction={"row"}
@@ -67,7 +76,6 @@ const MarathonPage: NextPage = () => {
                     minWidth: 1090,
                     height: 300,
                     pb: "50px",
-                    pos: "relative",
                   }}
                 >
                   <Stack
@@ -103,65 +111,70 @@ const MarathonPage: NextPage = () => {
               <Box
                 component={"img"}
                 src={"/images/desktop/marathon-page/ski-man.svg"}
-
                 alt="marathonSkiMan"
               />
             </Stack>
           ) : (
-
-            <Stack direction={"column"} spacing={"57px"}>
-              <Stack
-                direction={"row-reverse"}
-                px={"58px"}
-                justifyContent={"space-between"}
-                alignItems={"center"}
-              >
-                <Box
-                  component={"img"}
-                  src={"/images/desktop/logo/ski-logo.svg"}
-                  sx={{
-                    maxWidth: 100,
-                  }}
-                  alt="skiLogo"
-                />
-                <Box
-                  component={"img"}
-                  src={"/images/desktop/logo/mosssport-logo.svg"}
-                  sx={{
-                    maxWidth: 186,
-                  }}
-                  alt="mossportLogo"
-                />
-              </Stack>
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url(/images/mobile/marathon-page/desc-bg.png)",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  minWidth: "375px",
-                  height: "506px",
-                }}
-              >
+            <Stack
+              direction={"row"}
+              alignItems={"flex-end"}
+              spacing={"-35px"}
+              sx={{ pb: "30px" }}
+            >
+              <Stack direction={"column"} spacing={"80px"}>
                 <Stack
+                  direction={"row"}
+                  px={"30px"}
+                  justifyContent={"space-between"}
+                  alignItems={"center"}
+                >
+                  <Box
+                    component={"img"}
+                    src={"/images/desktop/logo/ski-logo.svg"}
+                    sx={{
+                      maxWidth: 100,
+                    }}
+                    alt="skiLogo"
+                  />
+                  <Box
+                    component={"img"}
+                    src={"/images/desktop/logo/mosssport-logo.svg"}
+                    sx={{
+                      maxWidth: 186,
+                    }}
+                    alt="mossportLogo"
+                  />
+                </Stack>
+                <Box
                   sx={{
-                    pl: "31px",
-                    justifyContent: "center",
-                    alignItems: "start",
-                    height: "100%",
+                    backgroundImage:
+                      "url(/images/mobile/marathon-page/desc-bg.png)",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    maxWidth: "439px",
+                    height: "506px",
+                    position: "relative",
                   }}
                 >
-                  <Typography
+                  <Stack
                     sx={{
-                      textOverflow: "ellipsis",
-                      whiteSpace: "pre-line",
-                      overflow: "hidden",
-                      fontWeight: 400,
+                      ml: "31px",
+                      justifyContent: "center",
+                      alignItems: "start",
+                      height: "100%",
                     }}
-                    color={"#870000"}
-                    variant={"desc"}
                   >
-                    {`Новый марафон в серии 
+                    <Typography
+                      sx={{
+                        textOverflow: "ellipsis",
+                        whiteSpace: "pre-line",
+                        overflow: "hidden",
+                        fontWeight: 400,
+                      }}
+                      color={"#870000"}
+                      variant={"desc"}
+                    >
+                      {`Новый марафон в серии 
                       Russialoppet. Концепция и 
                       положение мероприятия 
                       находятся в разработке. 
@@ -177,9 +190,24 @@ const MarathonPage: NextPage = () => {
                       результат будет включен в 
                       рейтинг финишеров.
                     `}
-                  </Typography>
-                </Stack>
-              </Box>
+                    </Typography>
+                  </Stack>
+                </Box>
+              </Stack>
+              <Box
+                component={"img"}
+                src={"/images/desktop/marathon-page/ski-man.svg"}
+                sx={{
+                  minWidth: 185,
+                  height: 214,
+                  position: "absolute",
+                  left: "400px",
+                  top: "165px",
+                  mr: "10px",
+                  mt: "0px",
+                }}
+                alt="marathonSkiMan"
+              />
             </Stack>
           )}
 
@@ -208,13 +236,18 @@ const MarathonPage: NextPage = () => {
               backgroundImage: "url(/images/desktop/marathon-page/center.svg)",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
+              backgroundPosition: "right 35% bottom 45%;",
               minHeight: 500,
             }}
           />
 
           <Stack
             direction={"column"}
-            sx={{ px: "16px", mt: matches ? "80px" : "46px", mb: matches ? "114px" : "53px" }}
+            sx={{
+              px: "16px",
+              mt: matches ? "80px" : "46px",
+              mb: matches ? "114px" : "53px",
+            }}
             spacing={matches ? 10 : 2}
           >
             <Information
@@ -279,7 +312,10 @@ const MarathonPage: NextPage = () => {
               text2={"Согласие на обработку персональных данных"}
               isMobile={matches}
             />
-            <Footer bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"} isMobile={matches} />
+            <Footer
+              bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+              isMobile={matches}
+            />
           </Stack>
         </Stack>
       </Container>
