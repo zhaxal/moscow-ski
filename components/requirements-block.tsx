@@ -16,7 +16,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
     <Stack
       direction={"column"}
       sx={{ width: "100%" }}
-      spacing={matches ? 5 : 1}
+      spacing={matches ? 5 : 2}
     >
       <Header bg={bg} text={"ТРЕБОВАНИЯ К УЧАСТНИКАМ"} />
       <Box sx={{ width: "100%", px: "16px" }}>

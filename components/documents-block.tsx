@@ -5,14 +5,15 @@ interface Props {
   bg: string;
   text1: string;
   text2?: string;
+  isMobile: boolean;
 }
 
-const Documents = ({ bg, text1, text2 }: Props) => {
+const Documents = ({ bg, text1, text2, isMobile }: Props) => {
   return (
     <Stack direction={"column"} sx={{ width: "100%" }} spacing={5}>
       <Header bg={bg} text={"ДОКУМЕНТЫ"} />
       <Stack
-        sx={{ width: "100%", px: "16px" }}
+        sx={{ width: "100%", px: "16px", height: isMobile ? "253px" : "100%" }}
         direction={"column"}
         spacing={1}
       >

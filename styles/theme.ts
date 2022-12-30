@@ -6,6 +6,7 @@ declare module "@mui/material/styles" {
     desc: React.CSSProperties;
     heading: React.CSSProperties;
     body: React.CSSProperties;
+    footer: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -13,6 +14,7 @@ declare module "@mui/material/styles" {
     desc?: React.CSSProperties;
     heading?: React.CSSProperties;
     body?: React.CSSProperties;
+    footer?: React.CSSProperties;
   }
 }
 
@@ -21,6 +23,7 @@ declare module "@mui/material/Typography" {
     desc: true;
     heading: true;
     body: true;
+    footer: true;
   }
 }
 
@@ -49,6 +52,13 @@ const theme = createTheme({
       lineHeight: "104.2%",
       fontWeight: 400,
     },
+    footer: {
+      fontWeight: 400,
+      fontSize: "36px",
+      lineHeight: "34.45px",
+      fontFamily: "Gotham Pro Regular",
+      color: "white",
+    }
   },
   components: {
     MuiButton: {

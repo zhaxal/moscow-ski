@@ -8,13 +8,24 @@ import Documents from "../components/documents-block";
 import ProgramSki from "../components/program-block-ski";
 import { useTheme } from "@mui/material/styles";
 import CustomBtn from "../components/ui/CustomBtn";
+import { useRouter } from "next/router";
+import Footer from "../components/footer-block";
 
 const SkiPage: NextPage = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const router = useRouter();
 
   return (
     <Box height="100%" sx={{ backgroundColor: "#0082C2" }}>
+      <Stack sx={{ px: matches ? "73px" : "50px", pt: "19px", mb: matches ? "45px" : "51px" }}>
+        <Box
+          component={"img"}
+          src={"/images/desktop/logo/arrow.svg"}
+          sx={{ width: "36px", cursor: "pointer" }}
+          onClick={() => router.push("/")}
+        />
+      </Stack>
       <Container disableGutters maxWidth="xl">
         <Stack direction={"column"}>
           {matches ? (
@@ -134,16 +145,16 @@ const SkiPage: NextPage = () => {
                 <Box
                   sx={{
                     backgroundImage:
-                      "url(/images/desktop/ski-page/desc-bg-mobile.png)",
+                      "url(/images/mobile/ski-page/desc-bg.png)",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
-                    minWidth: "439px",
+                    minWidth: "375px",
                     height: "506px",
                   }}
                 >
                   <Stack
                     sx={{
-                      pl: "61px",
+                      pl: "80px",
                       justifyContent: "center",
                       alignItems: "end",
                       height: "100%",
@@ -211,7 +222,7 @@ const SkiPage: NextPage = () => {
 
           <Stack
             direction={"column"}
-            sx={{ px: "16px", mt: matches ? "80px" : "46px" }}
+            sx={{ px: "16px", mt: matches ? "80px" : "46px", mb: matches ? "114px" : "53px" }}
             spacing={matches ? 10 : 2}
           >
             <Information
@@ -229,6 +240,7 @@ const SkiPage: NextPage = () => {
                   Москвы;
                   - выявления сильнейших спортсменов.`}
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              isMobile={matches}
             />
             <ProgramSki
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
@@ -257,7 +269,9 @@ const SkiPage: NextPage = () => {
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
               text1={"ПОЛОЖЕНИЕ"}
               text2={"Согласие на обработку персональных данных"}
+              isMobile={matches}
             />
+            <Footer bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"} isMobile={matches} />
           </Stack>
         </Stack>
       </Container>
