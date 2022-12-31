@@ -15,8 +15,7 @@ const Preview: NextPage = () => {
   const route = useRouter();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
-  const logos = useMediaQuery('(min-width:410px)');
-
+  const logos = useMediaQuery("(min-width:410px)");
 
   return matches ? (
     <Box
@@ -131,7 +130,17 @@ const Preview: NextPage = () => {
       </Container>
     </Box>
   ) : (
-    <Box height={"100%"}>
+    <Box height={"100%"} position={"relative"}>
+      <Box
+        component={"img"}
+        src={"/images/mobile/icon/department.svg"}
+        sx={{
+          width: "53px",
+          position: "absolute",
+          mt: 1,
+          ml: 2,
+        }}
+      />
       <Stack
         sx={{
           height: "45%",
