@@ -14,7 +14,9 @@ import { NextPage } from "next";
 const Preview: NextPage = () => {
   const route = useRouter();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("lg"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const logos = useMediaQuery('(min-width:410px)');
+
 
   return matches ? (
     <Box
@@ -166,15 +168,14 @@ const Preview: NextPage = () => {
         }}
         direction={"row"}
         alignItems="center"
-        justifyContent={"space-around"}
-        spacing={"10px"}
+        justifyContent={"center"}
+        spacing={logos ? 1 : 0}
       >
         <Box
           component={"img"}
           src={"/images/mobile/icon/mossport-snow.svg"}
           sx={{
-            width: "97px",
-            height: "27px",
+            maxWidth: "97px",
           }}
         />
 
@@ -182,8 +183,7 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/department.svg"}
           sx={{
-            width: "39px",
-            height: "49px",
+            maxWidth: "39px",
           }}
         />
 
@@ -191,8 +191,7 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/grom.svg"}
           sx={{
-            width: "104px",
-            height: "52px",
+            maxWidth: "80px",
           }}
         />
 
@@ -200,8 +199,7 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/mlogo.svg"}
           sx={{
-            width: "65px",
-            height: "57px",
+            maxWidth: "76px",
           }}
         />
 
@@ -209,8 +207,7 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/russialoppet.svg"}
           sx={{
-            width: "86px",
-            height: "37px",
+            maxWidth: "87px",
           }}
         />
       </Stack>
