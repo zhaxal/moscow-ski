@@ -21,7 +21,6 @@ const MarathonPage: NextPage = () => {
       sx={{
         backgroundColor: "#E6342D",
         overflowX: "hidden",
-        position: "relative",
       }}
     >
       <Stack
@@ -75,16 +74,13 @@ const MarathonPage: NextPage = () => {
                     backgroundSize: "cover",
                     minWidth: 1090,
                     height: 300,
-                    pb: "50px",
                   }}
                 >
                   <Stack
                     sx={{
-                      pl: "30px",
                       alignItems: "center",
                       justifyContent: "center",
-                      minHeight: "100%",
-                      pt: "30px",
+                      height: "100%",
                     }}
                   >
                     <Typography
@@ -115,12 +111,7 @@ const MarathonPage: NextPage = () => {
               />
             </Stack>
           ) : (
-            <Stack
-              direction={"row"}
-              alignItems={"flex-end"}
-              spacing={"-35px"}
-              sx={{ pb: "30px" }}
-            >
+            <>
               <Stack direction={"column"} spacing={"80px"}>
                 <Stack
                   direction={"row"}
@@ -148,12 +139,13 @@ const MarathonPage: NextPage = () => {
                 <Box
                   sx={{
                     backgroundImage:
-                      "url(/images/mobile/marathon-page/desc-bg.png)",
+                      "url(/images/mobile/marathon-page/desc-bg.svg)",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
-                    maxWidth: "439px",
-                    height: "506px",
+                    width: "100%",
+                    height: "100%",
                     position: "relative",
+                    py: "40px",
                   }}
                 >
                   <Stack
@@ -170,6 +162,7 @@ const MarathonPage: NextPage = () => {
                         whiteSpace: "pre-line",
                         overflow: "hidden",
                         fontWeight: 400,
+                        fontSize: "20px",
                       }}
                       color={"#870000"}
                       variant={"desc"}
@@ -192,23 +185,21 @@ const MarathonPage: NextPage = () => {
                     `}
                     </Typography>
                   </Stack>
+                  <Box
+                    component={"img"}
+                    src={"/images/desktop/marathon-page/ski-man.svg"}
+                    sx={{
+                      minWidth: 185,
+                      height: 214,
+                      position: "absolute",
+                      right: "-130px",
+                      top: "-75px",
+                    }}
+                    alt="marathonSkiMan"
+                  />
                 </Box>
               </Stack>
-              <Box
-                component={"img"}
-                src={"/images/desktop/marathon-page/ski-man.svg"}
-                sx={{
-                  minWidth: 185,
-                  height: 214,
-                  position: "absolute",
-                  left: "400px",
-                  top: "165px",
-                  mr: "10px",
-                  mt: "0px",
-                }}
-                alt="marathonSkiMan"
-              />
-            </Stack>
+            </>
           )}
 
           {/* ------------------------------------- */}
@@ -228,6 +219,14 @@ const MarathonPage: NextPage = () => {
               width={matches ? "468px" : "320px"}
               lineHeight={"30px"}
               fontSize={matches ? "32px" : "24px"}
+              onClick={() => {
+                window
+                  .open(
+                    "https://russialoppet.ru/registration/mm2023/",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
             />
           </Stack>
 

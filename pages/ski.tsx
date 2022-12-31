@@ -22,7 +22,6 @@ const SkiPage: NextPage = () => {
       sx={{
         backgroundColor: "#0082C2",
         overflowX: "hidden",
-        position: "relative",
       }}
     >
       <Stack
@@ -124,13 +123,8 @@ const SkiPage: NextPage = () => {
               />
             </Stack>
           ) : (
-            <Stack
-              direction={"row-reverse"}
-              alignItems={"flex-end"}
-              spacing={"-35px"}
-              sx={{ pb: "30px" }}
-            >
-              <Stack direction={"column"} spacing={"57px"}>
+            <>
+              <Stack direction={"column"} spacing={"80px"}>
                 <Stack
                   direction={"row-reverse"}
                   px={"30px"}
@@ -159,9 +153,10 @@ const SkiPage: NextPage = () => {
                     backgroundImage: "url(/images/mobile/ski-page/desc-bg.png)",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
-                    minWidth: "375px",
-                    height: "506px",
+                    width: "100%",
+                    height: "100%",
                     position: "relative",
+                    py: "40px",
                   }}
                 >
                   <Stack
@@ -178,6 +173,7 @@ const SkiPage: NextPage = () => {
                         whiteSpace: "pre-line",
                         overflow: "hidden",
                         fontWeight: 400,
+                        fontSize: "20px",
                       }}
                       color={"#005A87"}
                       variant={"desc"}
@@ -200,23 +196,21 @@ const SkiPage: NextPage = () => {
                     `}
                     </Typography>
                   </Stack>
+                  <Box
+                    component={"img"}
+                    src={"/images/desktop/ski-page/ski-man.svg"}
+                    sx={{
+                      minWidth: 185,
+                      height: 214,
+                      position: "absolute",
+                      left: "-125px",
+                      top: "-75px",
+                    }}
+                    alt="marathonSkiMan"
+                  />
                 </Box>
               </Stack>
-              <Box
-                component={"img"}
-                src={"/images/desktop/ski-page/ski-man.svg"}
-                sx={{
-                  minWidth: 185,
-                  height: 214,
-                  position: "absolute",
-                  left: "-123px",
-                  top: "165px",
-                  mr: "10px",
-                  mt: "0px",
-                }}
-                alt="marathonSkiMan"
-              />
-            </Stack>
+            </>
           )}
 
           <Stack
@@ -234,6 +228,11 @@ const SkiPage: NextPage = () => {
               width={matches ? "468px" : "320px"}
               lineHeight={"30px"}
               fontSize={matches ? "32px" : "24px"}
+              onClick={() => {
+                window
+                  .open("https://reg.place/events/lyzhnya-moskvy", "_blank")
+                  ?.focus();
+              }}
             />
           </Stack>
 
