@@ -24,22 +24,77 @@ const Preview: NextPage = () => {
         pb: "93px",
       }}
     >
-      <Container disableGutters maxWidth="xl" sx={{ position: "relative" }}>
+      <Container disableGutters maxWidth="xl">
         <Stack
-          sx={{ width: "100%", justifyContent: "center", alignItems: "center" }}
+          sx={{
+            width: "100%",
+            pt: "42px",
+          }}
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          spacing={"16px"}
         >
           <Box
             component={"img"}
-            src={"/images/desktop/main-page/main-page.svg"}
+            src={"/images/mobile/icon/mossport-snow.svg"}
+            sx={{
+              width: "162px",
+              height: "45px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            src={"/images/mobile/icon/department.svg"}
+            sx={{
+              width: "66px",
+              height: "83px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            src={"/images/mobile/icon/grom.svg"}
+            sx={{
+              width: "173px",
+              height: "87px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            src={"/images/mobile/icon/mlogo.svg"}
+            sx={{
+              width: "108px",
+              height: "94px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            src={"/images/mobile/icon/russialoppet.svg"}
+            sx={{
+              width: "143px",
+              height: "62px",
+            }}
+          />
+        </Stack>
+        <Stack sx={{ width: "100%", justifyContent: "center" }}>
+          <Box
+            component={"img"}
+            src={"/images/desktop/main-page/main-page.png"}
+            sx={{
+              maxWidth: "100%",
+              mx: "auto",
+            }}
           />
         </Stack>
         <Stack
           direction={"row"}
           sx={{
             justifyContent: "space-around",
-            position: "absolute",
             width: "100%",
-            bottom: 0,
           }}
         >
           <Stack direction={"column"} spacing={"24px"} alignItems={"center"}>
@@ -106,20 +161,20 @@ const Preview: NextPage = () => {
       <Stack
         sx={{
           width: "100%",
-          height: "10%",
           background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)",
           py: "35px",
         }}
         direction={"row"}
         alignItems="center"
         justifyContent={"space-around"}
+        spacing={"10px"}
       >
         <Box
           component={"img"}
-          src={"/images/mobile/icon/mossport.svg"}
+          src={"/images/mobile/icon/mossport-snow.svg"}
           sx={{
-            width: "40px",
-            height: "56px",
+            width: "97px",
+            height: "27px",
           }}
         />
 
@@ -127,8 +182,8 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/department.svg"}
           sx={{
-            width: "45px",
-            height: "57px",
+            width: "39px",
+            height: "49px",
           }}
         />
 
@@ -136,8 +191,8 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/grom.svg"}
           sx={{
-            width: "117px",
-            height: "59px",
+            width: "104px",
+            height: "52px",
           }}
         />
 
@@ -145,8 +200,8 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/mlogo.svg"}
           sx={{
-            width: "72px",
-            height: "63px",
+            width: "65px",
+            height: "57px",
           }}
         />
 
@@ -154,8 +209,8 @@ const Preview: NextPage = () => {
           component={"img"}
           src={"/images/mobile/icon/russialoppet.svg"}
           sx={{
-            width: "90px",
-            height: "34px",
+            width: "86px",
+            height: "37px",
           }}
         />
       </Stack>
