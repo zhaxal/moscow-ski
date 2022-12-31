@@ -18,20 +18,19 @@ const Preview: NextPage = () => {
 
   return matches ? (
     <Box
-      height="100%"
+      minHeight="100vh"
       sx={{
         background: "linear-gradient(90deg, #0082C2 50%, #E6342D 50%)",
         pb: "93px",
       }}
     >
       <Container disableGutters maxWidth="xl" sx={{ position: "relative" }}>
-        <Stack sx={{ justifyContent: "center", alignItems: "center" }}>
+        <Stack
+          sx={{ width: "100%", justifyContent: "center", alignItems: "center" }}
+        >
           <Box
             component={"img"}
             src={"/images/desktop/main-page/main-page.svg"}
-            sx={{
-              width: "100%",
-            }}
           />
         </Stack>
         <Stack
