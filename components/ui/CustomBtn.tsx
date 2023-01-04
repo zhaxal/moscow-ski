@@ -76,6 +76,7 @@ const CustomBtn = ({
           maxWidth: 34,
           height: 34,
         }}
+        alt={"customBtn"}
       />
     </Stack>
   );
