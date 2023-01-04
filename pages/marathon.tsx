@@ -38,7 +38,15 @@ const MarathonPage: NextPage = () => {
             `,
         }}
       />
-      <noscript><div><img src="https://mc.yandex.ru/watch/91937297" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
+      <noscript>
+        <div>
+          <img
+            src="https://mc.yandex.ru/watch/91937297"
+            style={{ position: "absolute", left: "-9999px" }}
+            alt=""
+          />
+        </div>
+      </noscript>
 
       <Box
         height="100%"
@@ -106,6 +114,7 @@ const MarathonPage: NextPage = () => {
                         alignItems: "center",
                         justifyContent: "center",
                         height: "100%",
+                        px: "37px",
                       }}
                     >
                       <Typography
@@ -117,14 +126,11 @@ const MarathonPage: NextPage = () => {
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Новый марафон в серии Russialoppet. Концепция и положение мероприятия 
-                        находятся в разработке. Место проведения - Битцевский парк. 
-                        Организатор - Департамент спорта г. Москвы.
+                        {`Новый марафон в серии Russialoppet. 
+                          Москва, 36й км МКАД, зона отдыха “Альфа-Битца”     
 
-                        Московский марафон войдет в календари Суперкубка, Кубка Команд и 
-                        проект "Лаки Лузер", также будут результат будет включен в рейтинг 
-                        финишеров.
-                      `}
+                          Московский марафон войдет в календари Суперкубка, Кубка Команд и проект "Лаки Лузер", также будут результат будет включен в рейтинг финишеров.
+                        `}
                       </Typography>
                     </Stack>
                   </Box>
@@ -175,10 +181,10 @@ const MarathonPage: NextPage = () => {
                   >
                     <Stack
                       sx={{
-                        ml: "31px",
                         justifyContent: "center",
                         alignItems: "start",
                         height: "100%",
+                        width: "90%",
                       }}
                     >
                       <Typography
@@ -188,26 +194,16 @@ const MarathonPage: NextPage = () => {
                           overflow: "hidden",
                           fontWeight: 400,
                           fontSize: "20px",
+                          px: "20px"
                         }}
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Новый марафон в серии 
-                      Russialoppet. Концепция и 
-                      положение мероприятия 
-                      находятся в разработке. 
-                      Место проведения - 
-                      Битцевский парк. 
-                      Организатор - Департамент 
-                      спорта г. Москвы.
+                        {`Новый марафон в серии Russialoppet. 
+                          Москва, 36й км МКАД, зона отдыха “Альфа-Битца”     
 
-                      Московский марафон войдет 
-                      в календари Суперкубка,
-                      Кубка Команд и проект 
-                      "Лаки Лузер", также будут 
-                      результат будет включен в 
-                      рейтинг финишеров.
-                    `}
+                          Московский марафон войдет в календари Суперкубка, Кубка Команд и проект "Лаки Лузер", также будут результат будет включен в рейтинг финишеров.
+                      `}
                       </Typography>
                     </Stack>
                     <Box
@@ -257,7 +253,8 @@ const MarathonPage: NextPage = () => {
 
             <Box
               sx={{
-                backgroundImage: "url(/images/desktop/marathon-page/center.svg)",
+                backgroundImage:
+                  "url(/images/desktop/marathon-page/center.svg)",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "right 35% bottom 45%;",
