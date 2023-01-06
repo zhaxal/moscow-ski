@@ -13,7 +13,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
 
 
   return (
-    <Stack direction={"column"} sx={{ width: "100%" }} spacing={5}>
+    <Stack direction={"column"} sx={{ width: "100%" }} spacing={2}>
       <Header bg={bg} text={"ПРОГРАММА"} />
       <Stack sx={{ width: "100%", px: "16px" }} spacing={5}>
         <Stack direction={"column"} spacing={"4px"}>
@@ -152,7 +152,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
               >
                 Награждение – 50км Марафон Возрастные группы
               </Typography>

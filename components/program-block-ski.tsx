@@ -8,7 +8,7 @@ interface Props {
 
 const ProgramSki = ({ bg }: Props) => {
   return (
-    <Stack direction={"column"} sx={{ width: "100%" }} spacing={5}>
+    <Stack direction={"column"} sx={{ width: "100%" }} spacing={"20px"}>
       <Header
         bg={bg}
         text={"ПРОГРАММА"}

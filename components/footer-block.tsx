@@ -9,7 +9,7 @@ interface Props {
 
 const Footer = ({ isMobile, bg }: Props) => {
     return (
-        <Stack direction={"column"} sx={{ width: "100%" }} spacing={isMobile ? 5 : 2} >
+        <Stack direction={"column"} sx={{ width: "100%" }} spacing={isMobile ? "20px" : 2} >
             <Header
                 bg={bg}
                 text={"МЕСТО ПРОВЕДЕНИЯ"}

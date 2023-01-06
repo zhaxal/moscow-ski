@@ -139,17 +139,34 @@ export default function Home() {
         <meta name="yandex-verification" content="5257f1e845f3792f" />
       </Head>
       <Box height={"100%"} position={"relative"}>
-        <Box
-          component={"img"}
-          alt={"departmentIcon"}
-          src={"/images/mobile/icon/department.svg"}
-          sx={{
-            width: "53px",
-            position: "absolute",
-            mt: 1,
-            ml: 2,
-          }}
-        />
+        <Stack direction={"column"} sx={{
+          position: "absolute",
+          mt: 1,
+          ml: 2,
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+        spacing={"19px"}
+        >
+          <Box
+            component={"img"}
+            alt={"departmentIcon"}
+            src={"/images/mobile/icon/department.svg"}
+            sx={{
+              width: "53px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            alt={"gromIcon"}
+            src={"/images/mobile/icon/grom.svg"}
+            sx={{
+              maxWidth: "66px",
+            }}
+          />
+        </Stack>
+
         <Stack
           sx={{
             height: "45%",
@@ -158,7 +175,7 @@ export default function Home() {
             background: "#0082C2",
             pt: "64px",
           }}
-          spacing={"77px"}
+          spacing={"15px"}
         >
           <Box
             component={"img"}
@@ -208,14 +225,6 @@ export default function Home() {
             }}
           />
 
-          <Box
-            component={"img"}
-            alt={"gromIcon"}
-            src={"/images/mobile/icon/grom.svg"}
-            sx={{
-              maxWidth: "80px",
-            }}
-          />
 
           <Box
             component={"img"}

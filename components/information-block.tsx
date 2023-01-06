@@ -13,7 +13,7 @@ const Information = ({ text, bg, isMobile }: Props) => {
     <Stack
       direction={"column"}
       sx={{ width: "100%" }}
-      spacing={isMobile ? 5 : 2}
+      spacing={isMobile ? "20px" : 2}
     >
       <Header bg={bg} text={"ОБЩАЯ ИНФОРМАЦИЯ"} />
       <Box sx={{ width: "100%", px: "16px" }}>

@@ -10,7 +10,7 @@ interface Props {
 
 const Documents = ({ bg, text1, text2, isMobile }: Props) => {
   return (
-    <Stack direction={"column"} sx={{ width: "100%" }} spacing={5}>
+    <Stack direction={"column"} sx={{ width: "100%" }} spacing={"20px"}>
       <Header bg={bg} text={"ДОКУМЕНТЫ"} />
       <Stack
         sx={{ width: "100%", px: "16px", height: isMobile ? "253px" : "100%" }}
