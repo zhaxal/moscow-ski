@@ -96,9 +96,9 @@ const SkiPage: NextPage = () => {
                     />
                     <Box
                       component={"img"}
-                      src={"/images/desktop/logo/mosssport-logo.svg"}
+                      src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
-                        maxWidth: 186,
+                        width: 256,
                       }}
                       alt="mossportLogo"
                     />

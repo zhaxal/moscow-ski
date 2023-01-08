@@ -91,9 +91,9 @@ const MarathonPage: NextPage = () => {
                     />
                     <Box
                       component={"img"}
-                      src={"/images/desktop/logo/mosssport-logo.svg"}
+                      src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
-                        maxWidth: 186,
+                        width: 256,
                       }}
                       alt="mossportLogo"
                     />
@@ -111,10 +111,10 @@ const MarathonPage: NextPage = () => {
                   >
                     <Stack
                       sx={{
-                        alignItems: "center",
+                        alignItems: "flex-start",
                         justifyContent: "center",
                         height: "100%",
-                        px: "37px",
+                        px: "57px",
                       }}
                     >
                       <Typography
@@ -126,11 +126,7 @@ const MarathonPage: NextPage = () => {
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Новый марафон в серии Russialoppet. 
-                          Москва, 36й км МКАД, зона отдыха “Альфа-Битца”     
-
-                          Московский марафон войдет в календари Суперкубка, Кубка Команд и проект "Лаки Лузер", также будут результат будет включен в рейтинг финишеров.
-                        `}
+                        {`Первый московский лыжный марафон`}
                       </Typography>
                     </Stack>
                   </Box>
@@ -194,16 +190,12 @@ const MarathonPage: NextPage = () => {
                           overflow: "hidden",
                           fontWeight: 400,
                           fontSize: "20px",
-                          px: "20px"
+                          px: "20px",
                         }}
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Новый марафон в серии Russialoppet. 
-                          Москва, 36й км МКАД, зона отдыха “Альфа-Битца”     
-
-                          Московский марафон войдет в календари Суперкубка, Кубка Команд и проект "Лаки Лузер", также будут результат будет включен в рейтинг финишеров.
-                      `}
+                        {`Первый московский лыжный марафон`}
                       </Typography>
                     </Stack>
                     <Box
