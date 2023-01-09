@@ -264,7 +264,7 @@ const SkiPage: NextPage = () => {
                 fontSize={matches ? "32px" : "24px"}
                 onClick={() => {
                   window
-                    .open("https://reg.place/events/lyzhnya-moskvy", "_blank")
+                    .open("https://reg.place/events/lyzhnya-rossii-2023", "_blank")
                     ?.focus();
                 }}
               />

@@ -181,7 +181,7 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Окончание мероприятия, демонтаж оборудования
+              Окончание мероприятия
             </Typography>
           </Stack>
         </Stack>
