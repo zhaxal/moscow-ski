@@ -54,8 +54,8 @@ const theme = createTheme({
     },
     footer: {
       fontWeight: 400,
-      fontSize: "36px",
-      lineHeight: "34.45px",
+      fontSize: "20px",
+      lineHeight: "20px",
       fontFamily: "Gotham Pro Regular",
       color: "white",
     }

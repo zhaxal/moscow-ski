@@ -1,20 +1,18 @@
-import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Header from "./ui/Header";
 
 interface Props {
+  bg: string;
+  matches: boolean;
   text1: string;
   text2: string;
-  bg: string;
 }
 
-const Requirements = ({ text1, text2, bg }: Props) => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
-
+const Packets = ({ bg, matches, text1, text2 }: Props) => {
   return (
     <Stack direction={"column"} sx={{ width: "100%" }} spacing={2}>
-      <Header bg={bg} text={"ТРЕБОВАНИЯ К УЧАСТНИКАМ"} />
+      <Header bg={bg} text={"ПАКЕТ УЧАСТНИКА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack
           sx={{ width: "100%" }}
@@ -42,4 +40,4 @@ const Requirements = ({ text1, text2, bg }: Props) => {
   );
 };
 
-export default Requirements;
+export default Packets;

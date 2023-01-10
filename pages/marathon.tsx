@@ -10,6 +10,7 @@ import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
 import Script from "next/script";
+import Packets from "../components/packets-block";
 
 const MarathonPage: NextPage = () => {
   const theme = useTheme();
@@ -74,7 +75,7 @@ const MarathonPage: NextPage = () => {
           <Stack direction={"column"}>
             {matches ? (
               <Stack direction={"row"} alignItems={"flex-end"}>
-                <Stack direction={"column"} spacing={"57px"}>
+                <Stack direction={"column"}>
                   <Stack
                     direction={"row"}
                     px={"30px"}
@@ -97,6 +98,21 @@ const MarathonPage: NextPage = () => {
                       }}
                       alt="mossportLogo"
                     />
+                  </Stack>
+
+                  <Stack
+                    sx={{ my: "20px", width: "100%", alignItems: "center" }}
+                  >
+                    <Typography
+                      variant="heading"
+                      sx={{
+                        fontSize: "36px",
+                        lineHeight: "36px",
+                        color: "white",
+                      }}
+                    >
+                      12 ФЕВРАЛЯ 2023
+                    </Typography>
                   </Stack>
 
                   <Box
@@ -315,11 +331,21 @@ const MarathonPage: NextPage = () => {
                     `}
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
               />
+              <Packets
+                text1={`
+                  Время и место получения:
+                `}
+                text2={`    
+                  Состав пакета
+                `}
+                matches={matches}
+                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+              />
               <Documents
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
-                text2={"Согласие на обработку персональных данных"}
                 isMobile={matches}
+                height={"256px"}
               />
               <Footer
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}

@@ -9,10 +9,7 @@ interface Props {
 const ProgramSki = ({ bg }: Props) => {
   return (
     <Stack direction={"column"} sx={{ width: "100%" }} spacing={"20px"}>
-      <Header
-        bg={bg}
-        text={"ПРОГРАММА"}
-      />
+      <Header bg={bg} text={"ПРОГРАММА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack direction={"column"} spacing={"4px"}>
           <Stack direction={"row"} spacing={7}>
@@ -21,14 +18,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              10.00
+              08:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Начало регистрации участников
+              Начало дополнительной регистрации участников
             </Typography>
           </Stack>
 
@@ -38,7 +35,7 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              10.50
+              09:50
             </Typography>
             <Typography
               variant="body"
@@ -55,14 +52,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              11.00
+              10:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 1
+              Старт группы ПРО (Элита)
             </Typography>
           </Stack>
 
@@ -72,14 +69,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              11.20
+              10:20
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 2
+              Старт группы 18-29 лет
             </Typography>
           </Stack>
 
@@ -89,14 +86,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              11.40
+              11:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 3
+              Старт группы 30-39 лет
             </Typography>
           </Stack>
 
@@ -106,14 +103,15 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              12.00
+              11:15
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 4
+              {`Награждение победителей и призеров Категории ПРО 
+              (Элита)`}
             </Typography>
           </Stack>
 
@@ -123,14 +121,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              12.10
+              11:30
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 5
+              Старт группы 40-49 лет
             </Typography>
           </Stack>
 
@@ -140,14 +138,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              12.30
+              12:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Старт забега 6
+              Старт группы 50-59 лет
             </Typography>
           </Stack>
 
@@ -157,14 +155,14 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              13.30
+              12:30
             </Typography>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Подведение итогов, награждение
+              Старт группы 60-99 лет
             </Typography>
           </Stack>
 
@@ -174,7 +172,24 @@ const ProgramSki = ({ bg }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: "5%" }}
             >
-              14.00
+              13:00
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line" }}
+            >
+              Старт детского забега на 1 км
+            </Typography>
+          </Stack>
+
+          <Stack direction={"row"} spacing={7}>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line", width: "5%" }}
+            >
+              14:00
             </Typography>
             <Typography
               variant="body"
