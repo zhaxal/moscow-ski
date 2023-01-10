@@ -26,20 +26,29 @@ export default function Home() {
           <Stack
             sx={{
               width: "100%",
-              pt: "42px",
+              pt: "45px",
             }}
             direction={"row"}
             alignItems={"center"}
             justifyContent={"center"}
-            spacing={"16px"}
+            spacing={"9px"}
           >
+            <Box
+              component={"img"}
+              alt={"minsport"}
+              src={"/images/mobile/icon/minsport.svg"}
+              sx={{
+                width: "42px",
+                height: "60px",
+              }}
+            />
             <Box
               component={"img"}
               alt={"mossport-snow"}
               src={"/images/mobile/icon/mossport-snow.svg"}
               sx={{
-                width: "162px",
-                height: "45px",
+                width: "153.3px",
+                height: "42px",
               }}
             />
 
@@ -48,8 +57,18 @@ export default function Home() {
               src={"/images/mobile/icon/department.svg"}
               alt={"departmentIcon"}
               sx={{
-                width: "66px",
-                height: "83px",
+                width: "60px",
+                height: "75px",
+              }}
+            />
+
+            <Box
+              component={"img"}
+              src={"/images/mobile/icon/newski.svg"}
+              alt={"newski"}
+              sx={{
+                width: "110px",
+                height: "42px",
               }}
             />
 
@@ -58,8 +77,8 @@ export default function Home() {
               src={"/images/mobile/icon/grom.svg"}
               alt={"gromIcon"}
               sx={{
-                width: "173px",
-                height: "87px",
+                width: "120px",
+                height: "54px",
               }}
             />
 
@@ -68,8 +87,8 @@ export default function Home() {
               src={"/images/mobile/icon/mlogo.svg"}
               alt={"mLogo"}
               sx={{
-                width: "108px",
-                height: "94px",
+                width: "80px",
+                height: "60px",
               }}
             />
 
@@ -78,8 +97,8 @@ export default function Home() {
               src={"/images/mobile/icon/russialoppet.svg"}
               alt={"russiaLoppetIcon"}
               sx={{
-                width: "143px",
-                height: "62px",
+                width: "111px",
+                height: "48px",
               }}
             />
           </Stack>
@@ -139,21 +158,41 @@ export default function Home() {
         <meta name="yandex-verification" content="5257f1e845f3792f" />
       </Head>
       <Box height={"100%"} position={"relative"}>
-        <Stack direction={"column"} sx={{
-          position: "absolute",
-          mt: 1,
-          ml: 2,
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-        spacing={"19px"}
+        <Stack
+          direction={"column"}
+          sx={{
+            position: "absolute",
+            mt: 1,
+            ml: 2,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          spacing={"19px"}
         >
+          <Box
+            component={"img"}
+            alt={"minSportIcon"}
+            src={"/images/mobile/icon/minsport.svg"}
+            sx={{
+              width: "42px",
+            }}
+          />
+
           <Box
             component={"img"}
             alt={"departmentIcon"}
             src={"/images/mobile/icon/department.svg"}
             sx={{
-              width: "53px",
+              width: "48px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            alt={"newSkiIcon"}
+            src={"/images/mobile/icon/newski.svg"}
+            sx={{
+              width: "60px",
             }}
           />
 
@@ -162,7 +201,7 @@ export default function Home() {
             alt={"gromIcon"}
             src={"/images/mobile/icon/grom.svg"}
             sx={{
-              maxWidth: "66px",
+              maxWidth: "60px",
             }}
           />
         </Stack>
@@ -224,7 +263,6 @@ export default function Home() {
               maxWidth: "39px",
             }}
           />
-
 
           <Box
             component={"img"}
