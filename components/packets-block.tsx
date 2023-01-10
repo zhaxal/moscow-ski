@@ -41,7 +41,7 @@ const Packets = ({ bg, matches }: Props) => {
             >
               Состав пакета
             </Typography>
-            <Stack spacing={1}>
+            {/* <Stack spacing={1}>
               <Stack spacing={1} direction={"row"} px={1}>
                 <Typography variant="footer">•</Typography>
                 <Typography variant="footer" sx={{ textDecoration: "underline" }}>Стартовый номер с чипом хронометража и булавки.</Typography>
@@ -62,7 +62,7 @@ const Packets = ({ bg, matches }: Props) => {
                 <Typography variant="footer">•</Typography>
                 <Typography variant="footer" sx={{ textDecoration: "underline" }}>Медаль на финише.</Typography>
               </Stack>
-            </Stack>
+            </Stack> */}
           </Stack>
 
         </Stack>
