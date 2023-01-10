@@ -155,7 +155,7 @@ const MarathonPage: NextPage = () => {
               </Stack>
             ) : (
               <>
-                <Stack direction={"column"} spacing={"80px"}>
+                <Stack direction={"column"}>
                   <Stack
                     direction={"row"}
                     px={"30px"}
@@ -178,6 +178,20 @@ const MarathonPage: NextPage = () => {
                       }}
                       alt="mossportLogo"
                     />
+                  </Stack>
+                  <Stack
+                    sx={{ my: "20px", width: "100%", alignItems: "center" }}
+                  >
+                    <Typography
+                      variant="heading"
+                      sx={{
+                        fontSize: "36px",
+                        lineHeight: "36px",
+                        color: "white",
+                      }}
+                    >
+                      12 ФЕВРАЛЯ 2023
+                    </Typography>
                   </Stack>
                   <Box
                     sx={{
@@ -211,7 +225,15 @@ const MarathonPage: NextPage = () => {
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Первый московский лыжный марафон`}
+                        {`
+
+
+
+                        Первый московский лыжный марафон
+                                             
+                        
+                        
+                        `}
                       </Typography>
                     </Stack>
                     <Box
@@ -332,12 +354,6 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
               />
               <Packets
-                text1={`
-                  Время и место получения:
-                `}
-                text2={`    
-                  Состав пакета
-                `}
                 matches={matches}
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
               />

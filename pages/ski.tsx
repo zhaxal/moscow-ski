@@ -377,12 +377,6 @@ const SkiPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
               />
               <Packets
-                text1={`
-                  Время и место получения:
-                `}
-                text2={`    
-                  Состав пакета
-                `}
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
               />

@@ -58,27 +58,41 @@ const Footer = ({ isMobile, bg }: Props) => {
             {`Как добраться?`}
           </Typography>
 
-          <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
-            {`  На машине
-                По МКАД с запада на юг: после 
+          <Stack>
+            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+              На машине
+            </Typography>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+              {`По МКАД с запада на юг: после 
                 развязки на Ясенево по внешней 
                 стороне МКАД двигайтесь примерно 
                 1,5 км. После крытого пешеходного 
                 моста снижайте скорость и 
                 сворачивайте вниз на стоянку. 
                 Для навигатора набрать — «Альфа-
-                Битца».
-
-                Пешком
-                Ст.м. Ясенево, первый вагон из 
+                Битца».`}
+            </Typography>
+          </Stack>
+          <Stack>
+            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+              Пешком
+            </Typography>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+              {`Ст.м. Ясенево, первый вагон из 
                 центра, из стеклянных дверей 
                 налево, и сразу налево. Авт 202, 165 
                 до ост. Зона отдыха Битца (10 минут). 
-                Далее пешком 200 м до старта.
-
-                Координаты
-                Долгота, широта: 55.585360, 37.545857`}
-          </Typography>
+                Далее пешком 200 м до старта.`}
+            </Typography>
+          </Stack>
+          <Stack>
+            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+              Координаты
+            </Typography>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+              {`Долгота, широта: 55.585360, 37.545857`}
+            </Typography>
+          </Stack>
         </Stack>
       </Stack>
     </Stack>
