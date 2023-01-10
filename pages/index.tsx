@@ -27,6 +27,7 @@ export default function Home() {
             sx={{
               width: "100%",
               pt: "45px",
+              pl: "70px"
             }}
             direction={"row"}
             alignItems={"center"}
