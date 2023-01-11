@@ -25,7 +25,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 12:00 - 17:00
               </Typography>
@@ -41,7 +41,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 17:00 - 20:00
               </Typography>
@@ -65,7 +65,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 08:00 - 10:00
               </Typography>
@@ -81,7 +81,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 11:00
               </Typography>
@@ -97,7 +97,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 11:00
               </Typography>
@@ -113,7 +113,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 14:00
               </Typography>
@@ -129,7 +129,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 14:30
               </Typography>
@@ -145,7 +145,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
               >
                 15:30
               </Typography>

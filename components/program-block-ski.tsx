@@ -16,7 +16,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center" }}
             >
               08:00
             </Typography>
@@ -33,7 +33,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               09:50
             </Typography>
@@ -50,7 +50,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               10:00
             </Typography>
@@ -67,7 +67,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               10:20
             </Typography>
@@ -84,7 +84,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               11:00
             </Typography>
@@ -101,7 +101,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               11:15
             </Typography>
@@ -119,7 +119,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               11:30
             </Typography>
@@ -136,7 +136,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               12:00
             </Typography>
@@ -153,7 +153,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               12:30
             </Typography>
@@ -170,7 +170,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center" }}
             >
               13:00
             </Typography>
@@ -187,7 +187,7 @@ const ProgramSki = ({ bg }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: "5%" }}
+              sx={{ whiteSpace: "pre-line", width: "5%", textAlign: "center"  }}
             >
               14:00
             </Typography>
