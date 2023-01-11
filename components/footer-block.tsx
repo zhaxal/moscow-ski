@@ -38,7 +38,7 @@ const Footer = ({ isMobile, bg }: Props) => {
           sx={{
             width: isMobile ? "35%" : "100%",
             height: "100%",
-            py: "50px"
+            py: "50px",
           }}
           spacing={2}
           direction={"column"}
@@ -59,38 +59,67 @@ const Footer = ({ isMobile, bg }: Props) => {
           </Typography>
 
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
+            <Typography
+              variant="footer"
+              sx={{
+                textDecoration: "underline",
+                fontFamily: "Gotham Pro Light",
+              }}
+            >
               На машине
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
+            <Typography
+              variant="footer"
+              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
+            >
               {`По МКАД с запада на юг: после 
-                развязки на Ясенево по внешней 
-                стороне МКАД двигайтесь примерно 
-                1,5 км. После крытого пешеходного 
-                моста снижайте скорость и 
-                сворачивайте вниз на стоянку. 
-                Для навигатора набрать — «Альфа-
-                Битца».`}
+              развязки на Ясенево по внешней 
+              стороне МКАД двигайтесь примерно 
+              1,5 км. После крытого пешеходного 
+              моста снижайте скорость и 
+              сворачивайте вниз на стоянку. Для 
+              навигатора набрать — «Альфа
+              -Битца».`}
             </Typography>
           </Stack>
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
+            <Typography
+              variant="footer"
+              sx={{
+                textDecoration: "underline",
+                fontFamily: "Gotham Pro Light",
+              }}
+            >
               Пешком
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
+            <Typography
+              variant="footer"
+              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
+            >
               {`Ст.м. Ясенево, первый вагон из 
-                центра, из стеклянных дверей 
-                налево, и сразу налево. Авт 202, 165 
-                до ост. Зона отдыха Битца (10 минут). 
-                Далее пешком 200 м до старта.`}
+              центра, из стеклянных дверей 
+              налево, и сразу налево. Автобус 202, 
+              165 до ост. «Зона отдыха Битца» (10 
+              минут). Далее пешком 200 м до 
+              старта.`}
             </Typography>
           </Stack>
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
+            <Typography
+              variant="footer"
+              sx={{
+                textDecoration: "underline",
+                fontFamily: "Gotham Pro Light",
+              }}
+            >
               Координаты
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
-              {`Долгота, широта: 55.585360, 37.545857`}
+            <Typography
+              variant="footer"
+              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
+            >
+              {`Долгота,      широта: 
+              55.585360, 37.545857`}
             </Typography>
           </Stack>
         </Stack>
