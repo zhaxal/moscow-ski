@@ -17,14 +17,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               08:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Начало дополнительной регистрации участников
             </Typography>
@@ -34,14 +34,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               09:50
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Церемония открытия соревнований
             </Typography>
@@ -51,14 +51,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               10:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы ПРО (Элита)
             </Typography>
@@ -68,14 +68,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               10:20
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы 18-29 лет
             </Typography>
@@ -85,14 +85,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               11:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы 30-39 лет
             </Typography>
@@ -102,16 +102,16 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               11:15
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
-              {`Награждение победителей и призеров Категории ПРО 
+              {`Награждение победителей и призеров категории ПРО 
               (Элита)`}
             </Typography>
           </Stack>
@@ -120,14 +120,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               11:30
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line" , width: isMobile ?  "95%" : "80%"}}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы 40-49 лет
             </Typography>
@@ -137,14 +137,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               12:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы 50-59 лет
             </Typography>
@@ -154,14 +154,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               12:30
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт группы 60-99 лет
             </Typography>
@@ -171,14 +171,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               13:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Старт детского забега на 1 км
             </Typography>
@@ -188,14 +188,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "5%" : "20%", textAlign: "center" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               14:00
             </Typography>
             <Typography
               variant="body"
               color={"white"}
-              sx={{ whiteSpace: "pre-line", width: isMobile ?  "95%" : "80%" }}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
               Окончание мероприятия
             </Typography>

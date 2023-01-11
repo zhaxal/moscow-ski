@@ -20,9 +20,11 @@ const Information = ({ text, bg, isMobile }: Props) => {
         <Typography
           variant="body"
           color={"white"}
-          sx={{ whiteSpace: "pre-line" }}
+          sx={{ whiteSpace: "pre-line"}}
+          dangerouslySetInnerHTML={{
+            __html: text,
+          }}
         >
-          {text}
         </Typography>
       </Box>
     </Stack>

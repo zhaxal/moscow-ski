@@ -17,22 +17,30 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
       <Header bg={bg} text={"ПРОГРАММА"} />
       <Stack sx={{ width: "100%", px: "16px" }} spacing={5}>
         <Stack direction={"column"} spacing={"4px"}>
-          <Typography variant="body" color={"white"}>
-            11 февраля
-          </Typography>
+          <Stack direction={"row"} spacing={spacing}>
+            <Typography variant="body" color={"white"} sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}>
+              11 февраля
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+            >
+            </Typography>
+          </Stack>
           <Stack direction={"column"} spacing={"4px"}>
             <Stack direction={"row"} spacing={spacing}>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 12:00 - 17:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Просмотр лыжной трассы
               </Typography>
@@ -41,14 +49,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 17:00 - 20:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Регистрация участников
               </Typography>
@@ -57,22 +65,30 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
         </Stack>
 
         <Stack direction={"column"} spacing={"4px"}>
-          <Typography variant="body" color={"white"}>
-            12 февраля
-          </Typography>
+          <Stack direction={"row"} spacing={spacing}>
+            <Typography variant="body" color={"white"} sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}>
+              12 февраля
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+            >
+            </Typography>
+          </Stack>
           <Stack direction={"column"} spacing={"4px"}>
             <Stack direction={"row"} spacing={spacing}>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 08:00 - 10:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Регистрация участников
               </Typography>
@@ -81,14 +97,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 11:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Старт 25 км - Полумарафон
               </Typography>
@@ -97,14 +113,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 11:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Старт 50 км - Полумарафон
               </Typography>
@@ -113,14 +129,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 14:00
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Награждение – 25 км Полумарафон
               </Typography>
@@ -129,14 +145,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 14:30
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Награждение – 50 км Марафон
               </Typography>
@@ -145,14 +161,14 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center"  }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "10%" : "40%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 15:30
               </Typography>
               <Typography
                 variant="body"
                 color={"white"}
-                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%" }}
+                sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
                 Награждение – 50км Марафон Возрастные группы
               </Typography>

@@ -45,7 +45,7 @@ const Footer = ({ isMobile, bg }: Props) => {
         >
           <Typography
             variant="footer"
-            sx={{ whiteSpace: "pre-line", fontWeight: 700 }}
+            sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
           >
             {`Москва, ЮЗАО, 36й км МКАД, зона 
             отдыха «Альфа-Битца»`}
@@ -59,10 +59,10 @@ const Footer = ({ isMobile, bg }: Props) => {
           </Typography>
 
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
               На машине
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
               {`По МКАД с запада на юг: после 
                 развязки на Ясенево по внешней 
                 стороне МКАД двигайтесь примерно 
@@ -74,10 +74,10 @@ const Footer = ({ isMobile, bg }: Props) => {
             </Typography>
           </Stack>
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
               Пешком
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
               {`Ст.м. Ясенево, первый вагон из 
                 центра, из стеклянных дверей 
                 налево, и сразу налево. Авт 202, 165 
@@ -86,10 +86,10 @@ const Footer = ({ isMobile, bg }: Props) => {
             </Typography>
           </Stack>
           <Stack>
-            <Typography variant="footer" sx={{ textDecoration: "underline" }}>
+            <Typography variant="footer" sx={{ textDecoration: "underline", fontFamily: "Gotham Pro Light" }}>
               Координаты
             </Typography>
-            <Typography variant="footer" sx={{ whiteSpace: "pre-line" }}>
+            <Typography variant="footer" sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}>
               {`Долгота, широта: 55.585360, 37.545857`}
             </Typography>
           </Stack>

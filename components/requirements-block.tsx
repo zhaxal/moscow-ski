@@ -19,12 +19,12 @@ const Requirements = ({ text1, text2, bg }: Props) => {
         <Stack
           sx={{ width: "100%" }}
           direction={matches ? "row" : "column"}
-          justifyContent={"space-between"}
+          spacing={"18px"}
         >
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line" }}
+            sx={{ whiteSpace: "pre-line", width: matches ? "50%" : "100%" }}
           >
             {text1}
           </Typography>
@@ -32,9 +32,11 @@ const Requirements = ({ text1, text2, bg }: Props) => {
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line" }}
+            sx={{ whiteSpace: "pre-line", width: matches ? "50%" : "100%" }}
+            dangerouslySetInnerHTML={{
+              __html: text2,
+            }}
           >
-            {text2}
           </Typography>
         </Stack>
       </Box>
