@@ -122,7 +122,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
                 color={"white"}
                 sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
-                Старт 50 км - Полумарафон
+                Старт 50 км - Марафон
               </Typography>
             </Stack>
             <Stack direction={"row"} spacing={spacing}>
@@ -170,7 +170,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
                 color={"white"}
                 sx={{ whiteSpace: "pre-line", width: isMobile ? "90%" : "60%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
               >
-                Награждение – 50км Марафон Возрастные группы
+                Награждение – 50 км Марафон (возрастные группы)
               </Typography>
             </Stack>
           </Stack>
