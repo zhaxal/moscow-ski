@@ -13,7 +13,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
       <Header bg={bg} text={"ПРОГРАММА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack direction={"column"} spacing={"5px"}>
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -30,7 +30,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -47,7 +47,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -64,7 +64,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -81,7 +81,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -98,7 +98,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -116,7 +116,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -133,7 +133,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -150,7 +150,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -167,7 +167,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -184,7 +184,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : "5px"}>
+          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
