@@ -342,6 +342,7 @@ const SkiPage: NextPage = () => {
               />
               <ProgramSki
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                isMobile={matches}
               />
               <Requirements
                 text1={`
