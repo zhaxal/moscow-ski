@@ -369,11 +369,14 @@ const SkiPage: NextPage = () => {
               <Packets
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                isSki={true}
               />
               <Documents
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
                 text2={"Согласие на обработку персональных данных"}
+                file1={"Положение_Лыжня_России_2023.pdf"}
+                file2={"Согласие_на_обработку_персональных_данных.pdf"}
                 isMobile={matches}
                 height={"60px"}
               />

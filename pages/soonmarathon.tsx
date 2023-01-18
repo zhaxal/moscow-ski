@@ -1,18 +1,18 @@
-import React from "react";
-import { Box, Container, Stack } from "@mui/system";
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
-import Information from "../components/information-block";
-import Requirements from "../components/requirements-block";
-import Documents from "../components/documents-block";
-import ProgramMarathon from "../components/program-block-marathon";
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { NextPage } from "next";
-import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
-import Footer from "../components/footer-block";
 import Script from "next/script";
-import Packets from "../components/packets-block";
+import React from "react";
+import CustomBtn from "../components/ui/CustomBtn";
 
-const MarathonPage: NextPage = () => {
+const SoonMarathonPage: NextPage = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
   const router = useRouter();
@@ -72,7 +72,7 @@ const MarathonPage: NextPage = () => {
           />
         </Stack>
         <Container disableGutters maxWidth="xl">
-          <Stack direction={"column"}>
+          <Stack direction={"column"} sx={{ marginBottom: "140px" }}>
             {matches ? (
               <Stack direction={"row"} alignItems={"flex-end"}>
                 <Stack direction={"column"}>
@@ -117,9 +117,6 @@ const MarathonPage: NextPage = () => {
 
                   <Box
                     sx={{
-                      backgroundImage:
-                        "url(/images/desktop/marathon-page/marathon-desc.png)",
-                      backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       minWidth: 1090,
                       height: 300,
@@ -138,11 +135,14 @@ const MarathonPage: NextPage = () => {
                           textOverflow: "ellipsis",
                           whiteSpace: "pre-line",
                           overflow: "hidden",
+                          fontFamily: "Gotham Pro Regular",
+                          fontSize: "36px",
+                          fontWeight: 400,
+                          lineHeight: "34px",
                         }}
-                        color={"#870000"}
-                        variant={"desc"}
+                        color={"white"}
                       >
-                        {`Первый московский лыжный марафон`}
+                        {`Регистрация откроется чуть позже`}
                       </Typography>
                     </Stack>
                   </Box>
@@ -195,10 +195,6 @@ const MarathonPage: NextPage = () => {
                   </Stack>
                   <Box
                     sx={{
-                      backgroundImage:
-                        "url(/images/mobile/marathon-page/desc-bg.svg)",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
                       width: "100%",
                       height: "100%",
                       position: "relative",
@@ -220,19 +216,20 @@ const MarathonPage: NextPage = () => {
                           overflow: "hidden",
                           fontWeight: 400,
                           fontSize: "20px",
+                          fontFamily: "Gotham Pro Regular",
+                          lineHeight: "34px",
                           px: "20px",
                         }}
-                        color={"#870000"}
-                        variant={"desc"}
+                        color={"white"}
                       >
                         {`
 
 
 
-                        Первый московский лыжный марафон
+                        Регистрация откроется чуть позже
                                              
                         
-                        
+
                         `}
                       </Typography>
                     </Stack>
@@ -253,8 +250,6 @@ const MarathonPage: NextPage = () => {
               </>
             )}
 
-            {/* ------------------------------------- */}
-
             <Stack
               sx={{
                 width: "100%",
@@ -265,19 +260,13 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ"}
+                text={"НА ГЛАВНУЮ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
-                fontSize={matches ? "32px" : "24px"}
+                fontSize={matches ? "32px" : "20px"}
                 onClick={() => {
-                  // window
-                  //   .open(
-                  //     "https://russialoppet.ru/registration/mm2023/",
-                  //     "_blank"
-                  //   )
-                  //   ?.focus();
-                  router.push("/soonmarathon")
+                  router.push("/");
                 }}
               />
             </Stack>
@@ -292,96 +281,6 @@ const MarathonPage: NextPage = () => {
                 minHeight: 500,
               }}
             />
-
-            <Stack
-              direction={"column"}
-              sx={{
-                px: "16px",
-                mt: matches ? "80px" : "46px",
-                mb: matches ? "114px" : "53px",
-              }}
-              spacing={matches ? "20px" : 2}
-            >
-              <Information
-                text={`Московский лыжный марафон — это совершенно новый марафон в серии Russialoppet
-                Стань частью лыжного сообщества!
-                Такой гонки еще не было в Москве.
-                Ждем тебя 12 февраля 2023 года!
-                
-                Московский марафон войдет в календари Суперкубка, Кубка Команд и проект «Лаки Лузер»
-
-                Также твой результат будет включен в рейтинг финишеров.`}
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                isMobile={matches}
-              />
-              <ProgramMarathon
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                isMobile={matches}
-              />
-              <Requirements
-                text1={`Соревнования проводятся в соответствии с правилами лыжных гонок. Стиль свободный.
-                
-                К участию в соревновании допускаются лыжники-любители и спортсмены субъектов Российской Федерации, ближнего и дальнего зарубежья в возрасте от 17 лет и старше, имеющие медицинский допуск к участию в соревнованиях. Возраст участников определяется по дате рождения (полных лет) по состоянию на день проведения соревнований. Участники, не прошедшие контрольные пункты по дистанции, будут дисквалифицированы, их результат аннулируется.
-                
-                Победители определяются по наименьшему количеству времени, затраченному на прохождение дистанции.`}
-                text2={`Все участники предоставляют на комиссию по допуску 
-                        следующие документы:
-                      <ul>
-                        <li>медицинский допуск, подтверждающий состояние 
-                        здоровья и возможность допуска к соревнованию, 
-                        согласно требованиям приказа Минздрава России 
-                        от 23 октября 2020 г. № 1144н</li>
-                        <li>паспорт или документ, подтверждающий личность 
-                        зарегистрированного участника</li>
-                        <li>договор о страховании (оригинал) жизни и здоровья от 
-                        несчастных случаев</li>
-                      </ul>
-                    `}
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-              />
-              <Packets
-                matches={matches}
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                isSki={false}
-              />
-              <Documents
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text1={"ПОЛОЖЕНИЕ"}
-                file1={""}
-                isMobile={matches}
-                height={"116px"}
-              />
-              <Stack
-                sx={{
-                  width: "100%",
-                  alignItems: "center",
-                  py: matches ? "30px" : "30px",
-                }}
-              >
-                <CustomBtn
-                  bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ"}
-                  height={matches ? "60px" : "48px"}
-                  width={matches ? "468px" : "320px"}
-                  lineHeight={"30px"}
-                  fontSize={matches ? "32px" : "24px"}
-                  onClick={() => {
-                    // window
-                    //   .open(
-                    //     "https://russialoppet.ru/registration/mm2023/",
-                    //     "_blank"
-                    //   )
-                    //   ?.focus();
-
-                    router.push("/soonmarathon")
-                  }}
-                />
-              </Stack>
-              <Footer
-                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                isMobile={matches}
-              />
-            </Stack>
           </Stack>
         </Container>
       </Box>
@@ -389,4 +288,4 @@ const MarathonPage: NextPage = () => {
   );
 };
 
-export default MarathonPage;
+export default SoonMarathonPage;
