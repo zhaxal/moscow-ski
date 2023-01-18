@@ -157,7 +157,7 @@ const SoonMarathonPage: NextPage = () => {
               <>
                 <Stack direction={"column"}>
                   <Stack
-                    direction={"row"}
+                    direction={"row-reverse"}
                     px={"30px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
@@ -198,7 +198,7 @@ const SoonMarathonPage: NextPage = () => {
                       width: "100%",
                       height: "100%",
                       position: "relative",
-                      py: "70px",
+                      py: "30px",
                     }}
                   >
                     <Stack
@@ -215,7 +215,7 @@ const SoonMarathonPage: NextPage = () => {
                           whiteSpace: "pre-line",
                           overflow: "hidden",
                           fontWeight: 400,
-                          fontSize: "20px",
+                          fontSize: "36px",
                           fontFamily: "Gotham Pro Regular",
                           lineHeight: "34px",
                           px: "20px",

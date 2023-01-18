@@ -157,7 +157,7 @@ const MarathonPage: NextPage = () => {
               <>
                 <Stack direction={"column"}>
                   <Stack
-                    direction={"row"}
+                    direction={"row-reverse"}
                     px={"30px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
