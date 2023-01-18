@@ -71,7 +71,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: isMobile ? "5%" : "20%", textAlign: "center", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
-              10:20
+              10:30
             </Typography>
             <Typography
               variant="body"
