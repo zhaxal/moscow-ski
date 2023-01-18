@@ -14,11 +14,11 @@ const Packets = ({ bg, matches }: Props) => {
       <Header bg={bg} text={"ПАКЕТ УЧАСТНИКА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack
-          sx={{ width: "100%" }}
+          sx={{ width: "100%", marginBottom: "50px" }}
           direction={matches ? "row" : "column"}
           spacing={5}
         >
-          <Stack sx={{ width: matches ? "50%" : "100%" }}>
+          <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
             <Typography
               variant="body"
               color={"white"}
@@ -31,38 +31,48 @@ const Packets = ({ bg, matches }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
+              {`8 февраля: с 14.00 до 20.00 
+                9 февраля: с 10.00 до 20.00`}
             </Typography>
-          </Stack>
-          <Stack sx={{ width: matches ? "50%" : "100%" }}>
             <Typography
               variant="body"
               color={"white"}
               sx={{ whiteSpace: "pre-line" }}
             >
-              Состав пакета
+              ул. Лужники д.24
             </Typography>
-            {/* <Stack spacing={1}>
-              <Stack spacing={1} direction={"row"} px={1}>
-                <Typography variant="footer">•</Typography>
-                <Typography variant="footer" sx={{ textDecoration: "underline" }}>Стартовый номер с чипом хронометража и булавки.</Typography>
-              </Stack>
-              <Stack spacing={1} direction={"row"} px={1}>
-                <Typography variant="footer">•</Typography>
-                <Typography variant="footer" sx={{ textDecoration: "underline" }}>Браслет и наклейка для камеры хранения.</Typography>
-              </Stack>
-              <Stack spacing={1} direction={"row"} px={1}>
-                <Typography variant="footer">•</Typography>
-                <Typography variant="footer" sx={{ textDecoration: "underline" }}>Термонакидка на финише.</Typography>
-              </Stack>
-              <Stack spacing={1} direction={"row"} px={1}>
-                <Typography variant="footer">•</Typography>
-                <Typography variant="footer" sx={{ textDecoration: "underline" }}>Продуктовый пакет на финише.</Typography>
-              </Stack>
-              <Stack spacing={1} direction={"row"} px={1}>
-                <Typography variant="footer">•</Typography>
-                <Typography variant="footer" sx={{ textDecoration: "underline" }}>Медаль на финише.</Typography>
-              </Stack>
-            </Stack> */}
+          </Stack>
+          <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line" }}
+            >
+              Как добраться:
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line" }}
+            >
+              {`От станции метро «Спортивная» через Центральное КПП 
+                (Павильон «1Е»)`}
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line" }}
+            >
+              {`От станции МЦК «Лужники» через Центральное КПП 
+                (Павильон «1Е»)`}
+            </Typography>
+            <Typography
+              variant="body"
+              color={"white"}
+              sx={{ whiteSpace: "pre-line" }}
+            >
+              {`От станции «Воробьевы горы» через КПП2`}
+            </Typography>
           </Stack>
 
         </Stack>

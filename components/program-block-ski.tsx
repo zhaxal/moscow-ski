@@ -26,7 +26,8 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               color={"white"}
               sx={{ whiteSpace: "pre-line", width: isMobile ? "95%" : "80%", fontFamily: isMobile ? "Gotham Pro Regular" : "Gotham Pro Light" }}
             >
-              Начало дополнительной регистрации участников
+              {`Начало выдачи стартовых комплектов. (Дополнительная 
+                регистрация возможна при наличии свободных слотов)`}
             </Typography>
           </Stack>
 

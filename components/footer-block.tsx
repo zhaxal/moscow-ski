@@ -38,7 +38,6 @@ const Footer = ({ isMobile, bg }: Props) => {
           sx={{
             width: isMobile ? "35%" : "100%",
             height: "100%",
-            py: "50px",
           }}
           spacing={2}
           direction={"column"}
@@ -64,22 +63,21 @@ const Footer = ({ isMobile, bg }: Props) => {
               sx={{
                 textDecoration: "underline",
                 fontFamily: "Gotham Pro Light",
+                textDecorationThickness: "1px"
               }}
             >
               На машине
             </Typography>
             <Typography
               variant="footer"
-              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
+              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light", lineHeight: "21px" }}
             >
-              {`По МКАД с запада на юг: после 
-              развязки на Ясенево по внешней 
-              стороне МКАД двигайтесь примерно 
-              1,5 км. После крытого пешеходного 
-              моста снижайте скорость и 
-              сворачивайте вниз на стоянку. Для 
-              навигатора набрать — «Альфа
-              -Битца».`}
+              {`Адрес парковки:
+
+                проезд Карамзина, 17А
+                Координаты:
+                55.588664, 37.545536
+              `}
             </Typography>
           </Stack>
           <Stack>
@@ -88,20 +86,26 @@ const Footer = ({ isMobile, bg }: Props) => {
               sx={{
                 textDecoration: "underline",
                 fontFamily: "Gotham Pro Light",
+                textDecorationThickness: "1px"
               }}
             >
               Пешком
             </Typography>
             <Typography
               variant="footer"
-              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
+              sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light", lineHeight: "21px" }}
             >
-              {`Ст.м. Ясенево, первый вагон из 
-              центра, из стеклянных дверей 
-              налево, и сразу налево. Автобус 202, 
-              165 до ост. «Зона отдыха Битца» (10 
-              минут). Далее пешком 200 м до 
-              старта.`}
+              {`От ст.м. Ясенево, первый вагон из 
+              центра, выход номер 3, из 
+              стеклянных дверей налево, и сразу 
+              налево. Автобус 165 до ост. «Зона 
+              отдыха Битца» (10 минут). Далее 
+              пешком 200 м до старта.
+
+              От ст. м. Бульвар Дмитрия Донского 
+              выход N6, авт 967 до ост. «Зона 
+              отдыха Битца» (10 минут). Далее 
+              пешком 200 м до старта.`}
             </Typography>
           </Stack>
           <Stack>
@@ -110,6 +114,7 @@ const Footer = ({ isMobile, bg }: Props) => {
               sx={{
                 textDecoration: "underline",
                 fontFamily: "Gotham Pro Light",
+                textDecorationThickness: "1px"
               }}
             >
               Координаты
@@ -118,7 +123,7 @@ const Footer = ({ isMobile, bg }: Props) => {
               variant="footer"
               sx={{ whiteSpace: "pre-line", fontFamily: "Gotham Pro Light" }}
             >
-              {`Долгота,      широта: 
+              {`Долгота,        широта: 
               55.585360, 37.545857`}
             </Typography>
           </Stack>
