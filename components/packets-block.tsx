@@ -11,7 +11,7 @@ interface Props {
 
 const Packets = ({ bg, matches, isSki }: Props) => {
   return (
-    <Stack direction={"column"} sx={{ width: "100%" }} spacing={2}>
+    <Stack direction={"column"} sx={{ width: "100%", mb: matches ? 5 : 2  }} spacing={2}>
       <Header bg={bg} text={"ПАКЕТ УЧАСТНИКА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack

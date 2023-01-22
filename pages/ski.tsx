@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
 import Script from "next/script";
 import Packets from "../components/packets-block";
+import MapBlock from "../components/map-block";
 
 const SkiPage: NextPage = () => {
   const theme = useTheme();
@@ -324,7 +325,6 @@ const SkiPage: NextPage = () => {
                 mt: matches ? "80px" : "46px",
                 mb: matches ? "114px" : "53px",
               }}
-              spacing={matches ? 5 : 2}
             >
               <Information
                 text={`Лыжня России — главное лыжное событие страны!
@@ -370,6 +370,11 @@ const SkiPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
               />
               <Packets
+                matches={matches}
+                bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                isSki={true}
+              />
+              <MapBlock
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isSki={true}

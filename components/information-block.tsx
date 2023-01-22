@@ -12,7 +12,7 @@ const Information = ({ text, bg, isMobile }: Props) => {
   return (
     <Stack
       direction={"column"}
-      sx={{ width: "100%" }}
+      sx={{ width: "100%", mb: isMobile ? 5 : 2 }}
       spacing={isMobile ? "20px" : 2}
     >
       <Header bg={bg} text={"ОБЩАЯ ИНФОРМАЦИЯ"} />
@@ -20,12 +20,11 @@ const Information = ({ text, bg, isMobile }: Props) => {
         <Typography
           variant="body"
           color={"white"}
-          sx={{ whiteSpace: "pre-line"}}
+          sx={{ whiteSpace: "pre-line" }}
           dangerouslySetInnerHTML={{
             __html: text,
           }}
-        >
-        </Typography>
+        ></Typography>
       </Box>
     </Stack>
   );

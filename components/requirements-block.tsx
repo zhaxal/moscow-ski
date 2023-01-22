@@ -13,7 +13,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Stack direction={"column"} sx={{ width: "100%" }} spacing={2}>
+    <Stack direction={"column"} sx={{ width: "100%", mb: 3 }} spacing={2}>
       <Header bg={bg} text={"ТРЕБОВАНИЯ К УЧАСТНИКАМ"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack
@@ -36,8 +36,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
             dangerouslySetInnerHTML={{
               __html: text2,
             }}
-          >
-          </Typography>
+          ></Typography>
         </Stack>
       </Box>
     </Stack>

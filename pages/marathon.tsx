@@ -277,7 +277,7 @@ const MarathonPage: NextPage = () => {
                   //     "_blank"
                   //   )
                   //   ?.focus();
-                  router.push("/soonmarathon")
+                  router.push("/soonmarathon");
                 }}
               />
             </Stack>
@@ -373,7 +373,7 @@ const MarathonPage: NextPage = () => {
                     //   )
                     //   ?.focus();
 
-                    router.push("/soonmarathon")
+                    router.push("/soonmarathon");
                   }}
                 />
               </Stack>
