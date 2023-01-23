@@ -42,7 +42,7 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   color={"white"}
                   sx={{ whiteSpace: "pre-line" }}
                 >
-                  ул. Лужники д.24
+                  г. Москва, ул. Лужники, д. 24, Биатлонная трасса
                 </Typography>
               </Stack>
               <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
