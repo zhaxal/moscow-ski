@@ -11,7 +11,11 @@ interface Props {
 
 const Packets = ({ bg, matches, isSki }: Props) => {
   return (
-    <Stack direction={"column"} sx={{ width: "100%", mb: matches ? 5 : 2  }} spacing={2}>
+    <Stack
+      direction={"column"}
+      sx={{ width: "100%", mb: matches ? 5 : 2 }}
+      spacing={2}
+    >
       <Header bg={bg} text={"ПАКЕТ УЧАСТНИКА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack
@@ -79,28 +83,71 @@ const Packets = ({ bg, matches, isSki }: Props) => {
               </Stack>
             </>
           ) : (
-            <>
-              {" "}
-              <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
+            <Stack sx={{ width: "100%" }} spacing={3}>
+              <Typography
+                variant="body"
+                color={"white"}
+                sx={{
+                  whiteSpace: "pre-line",
+                  fontFamily: "Gotham Pro Regular",
+                  fontWeight: 700,
+                  textDecoration: "underline",
+                  textDecorationSkipInk: "none",
+                  textDecorationThickness: "1px",
+                }}
+              >
+                Время и место получения:
+              </Typography>
+              <Stack spacing={"5px"}>
                 <Typography
                   variant="body"
                   color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
+                  sx={{
+                    whiteSpace: "pre-line",
+                    fontWeight: 700,
+                    fontFamily: "Gotham Pro Regular",
+                  }}
                 >
-                  Время и место получения:
+                  9-10 февраля 2023, 10:00 – 20:00
                 </Typography>
-              </Stack>
-              <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
                 <Typography
                   variant="body"
                   color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
+                  sx={{
+                    whiteSpace: "pre-line",
+                    fontWeight: 400,
+                    fontFamily: "Gotham Pro Light",
+                  }}
                 >
-                  Как добраться:
+                  СК Лужники, Москва, ул. Лужники, 24, стр. 1
                 </Typography>
-                
               </Stack>
-            </>
+              <Stack spacing={"5px"}>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{
+                    whiteSpace: "pre-line",
+                    fontWeight: 700,
+                    fontFamily: "Gotham Pro Regular",
+                  }}
+                >
+                  11 февраля 2023, 16:00 – 20:00
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{
+                    whiteSpace: "pre-line",
+                    fontWeight: 400,
+                    fontFamily: "Gotham Pro Light",
+                  }}
+                >
+                  СК«Альфа Битца», Москва, ЮЗАО, 36й км МКАД, зона отдыха
+                  «Битца»
+                </Typography>
+              </Stack>
+            </Stack>
           )}
         </Stack>
       </Box>
