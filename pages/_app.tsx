@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:description" content="Московский спорт представляет большой лыжный праздник 11 и 12 февраля в Битце»" />
         <meta property="og:url" content="https://ski.moscow.sport/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/metaIcon.jpeg" />
+        <meta property="og:image" content="/images/metaIcon.jpg" />
 
         <title>Лыжня России 2023 и Московский лыжный марафон</title>
       </Head>
