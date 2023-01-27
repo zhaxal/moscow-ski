@@ -367,7 +367,7 @@ const MarathonPage: NextPage = () => {
                   onClick={() => {
                     window
                       .open(
-                        "https://russialoppet.ru/registration/mm2023/",
+                        "https://russialoppet.ru/registration/msm2023/",
                         "_blank"
                       )
                       ?.focus();
