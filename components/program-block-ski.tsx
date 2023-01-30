@@ -463,7 +463,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
           </Stack>
 
-          <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
+          {/* <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
               variant="body"
               color={"white"}
@@ -491,7 +491,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             >
               Награждение детского забега
             </Typography>
-          </Stack>
+          </Stack> */}
 
           <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
