@@ -19,7 +19,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
         <Stack
           sx={{ width: "100%" }}
           direction={matches ? "row" : "column"}
-          spacing={"18px"}
+          spacing={"50px"}
         >
           <Typography
             variant="body"

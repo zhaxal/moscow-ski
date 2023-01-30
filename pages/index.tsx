@@ -26,8 +26,8 @@ export default function Home() {
           <Stack
             sx={{
               width: "100%",
-              pt: "45px",
-              pl: "70px"
+              pt: "32px",
+              pr: "20px",
             }}
             direction={"row"}
             alignItems={"center"}
@@ -39,8 +39,7 @@ export default function Home() {
               alt={"minsport"}
               src={"/images/mobile/icon/minsport.svg"}
               sx={{
-                width: "42px",
-                height: "60px",
+                width: "42x",
               }}
             />
             <Box
@@ -48,8 +47,7 @@ export default function Home() {
               alt={"mossport-snow"}
               src={"/images/mobile/icon/mossport-snow.svg"}
               sx={{
-                width: "153.3px",
-                height: "42px",
+                width: "153px",
               }}
             />
 
@@ -59,7 +57,6 @@ export default function Home() {
               alt={"departmentIcon"}
               sx={{
                 width: "60px",
-                height: "75px",
               }}
             />
 
@@ -69,7 +66,6 @@ export default function Home() {
               alt={"newski"}
               sx={{
                 width: "110px",
-                height: "42px",
               }}
             />
 
@@ -78,8 +74,7 @@ export default function Home() {
               src={"/images/mobile/icon/grom.svg"}
               alt={"gromIcon"}
               sx={{
-                width: "120px",
-                height: "54px",
+                maxWidth: "110px",
               }}
             />
 
@@ -89,7 +84,6 @@ export default function Home() {
               alt={"mLogo"}
               sx={{
                 width: "80px",
-                height: "60px",
               }}
             />
 
@@ -99,7 +93,15 @@ export default function Home() {
               alt={"russiaLoppetIcon"}
               sx={{
                 width: "111px",
-                height: "48px",
+              }}
+            />
+
+            <Box
+              component={"img"}
+              alt={"matchIcon"}
+              src={"/images/mobile/icon/matchLogo.svg"}
+              sx={{
+                width: "110px",
               }}
             />
           </Stack>
@@ -243,16 +245,15 @@ export default function Home() {
             py: "35px",
           }}
           direction={"row"}
-          alignItems="center"
           justifyContent={"center"}
-          spacing={logos ? 1 : 0}
+          spacing={1}
         >
           <Box
             component={"img"}
             alt={"mossportSnow"}
             src={"/images/mobile/icon/mossport-snow.svg"}
             sx={{
-              maxWidth: "97px",
+              maxWidth: logos ? "97px" : "70px",
             }}
           />
 
@@ -261,7 +262,7 @@ export default function Home() {
             alt={"departmentIcon"}
             src={"/images/mobile/icon/department.svg"}
             sx={{
-              maxWidth: "39px",
+              maxWidth: logos ? "39px" : "37px",
             }}
           />
 
@@ -270,7 +271,7 @@ export default function Home() {
             alt={"mLogo"}
             src={"/images/mobile/icon/mlogo.svg"}
             sx={{
-              maxWidth: "76px",
+              maxWidth: logos ? "65px" : "55px",
             }}
           />
 
@@ -279,7 +280,16 @@ export default function Home() {
             alt={"russiaLoppetIcon"}
             src={"/images/mobile/icon/russialoppet.svg"}
             sx={{
-              maxWidth: "87px",
+              maxWidth: logos ? "86px" : "75px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            alt={"matchIcon"}
+            src={"/images/mobile/icon/matchLogo.svg"}
+            sx={{
+              maxWidth: logos ? "88px" : "78px",
             }}
           />
         </Stack>
