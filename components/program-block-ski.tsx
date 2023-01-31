@@ -386,7 +386,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                   : "Gotham Pro Light",
               }}
             >
-              13:00
+              13:30
             </Typography>
             <Typography
               variant="body"
