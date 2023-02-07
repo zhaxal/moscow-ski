@@ -48,6 +48,21 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                 >
                   г. Москва, ул. Лужники, д. 24, Биатлонная трасса
                 </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  {`11 февраля: с 8.00 до 9.50`}
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  Москва, ЮЗАО, 36й км МКАД, зона
+                  отдыха «Альфа-Битца»
+                </Typography>
               </Stack>
               <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
                 <Typography
