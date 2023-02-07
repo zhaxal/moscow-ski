@@ -53,7 +53,7 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   color={"white"}
                   sx={{ whiteSpace: "pre-line" }}
                 >
-                  {`11 февраля: с 8.00 до 9.50`}
+                  {`11 февраля: с 8.00`}
                 </Typography>
                 <Typography
                   variant="body"
