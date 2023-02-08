@@ -122,7 +122,8 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                     fontFamily: "Gotham Pro Regular",
                   }}
                 >
-                  08 февраля с 14:00 до 20:00, 09 февраля с 10:00 до 20:00
+                  {`08 февраля с 14:00 до 20:00
+                  09 февраля с 10:00 до 20:00`}
                 </Typography>
                 <Typography
                   variant="body"
