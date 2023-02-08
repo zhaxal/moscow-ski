@@ -48,7 +48,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
                     : "Gotham Pro Light",
                 }}
               >
-                07:00 - 10:30
+                08:00 - 10:30
               </Typography>
               <Typography
                 variant="body"
@@ -135,35 +135,6 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
                     : "Gotham Pro Light",
                 }}
               >
-                11:05
-              </Typography>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  width: isMobile ? "90%" : "60%",
-                  fontFamily: isMobile
-                    ? "Gotham Pro Regular"
-                    : "Gotham Pro Light",
-                }}
-              >
-                Полумарафон 34 км
-              </Typography>
-            </Stack>
-            <Stack direction={"row"} spacing={spacing}>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  width: isMobile ? "10%" : "40%",
-                  textAlign: "center",
-                  fontFamily: isMobile
-                    ? "Gotham Pro Regular"
-                    : "Gotham Pro Light",
-                }}
-              >
                 11:10
               </Typography>
               <Typography
@@ -177,7 +148,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
                     : "Gotham Pro Light",
                 }}
               >
-                Спутник 17 км
+                Старт Полумарафона 34 км  и Спутника 17 км
               </Typography>
             </Stack>
             <Stack direction={"row"} spacing={spacing}>
