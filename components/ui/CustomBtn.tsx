@@ -47,7 +47,6 @@ const CustomBtn = ({
           ml: "19px",
           fontFamily: "Gotham Pro Medium",
           fontWeight: 700,
-          lineHeight: lineHeight,
           fontSize: fontSize,
         }}
       >

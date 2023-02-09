@@ -269,7 +269,7 @@ const MarathonPage: NextPage = () => {
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
-                fontSize={matches ? "28px" : "20px"}
+                fontSize={matches ? "21px" : "14px"}
                 onClick={() => {
                   // window
                   //   .open(
@@ -361,7 +361,7 @@ const MarathonPage: NextPage = () => {
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
-                  fontSize={matches ? "28px" : "20px"}
+                  fontSize={matches ? "21px" : "14px"}
                   onClick={() => {
                     // window
                     //   .open(
