@@ -60,8 +60,7 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   color={"white"}
                   sx={{ whiteSpace: "pre-line" }}
                 >
-                  Москва, ЮЗАО, 36й км МКАД, зона
-                  отдыха «Альфа-Битца»
+                  Москва, ЮЗАО, 36й км МКАД, зона отдыха «Альфа-Битца»
                 </Typography>
               </Stack>
               <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
@@ -123,7 +122,8 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                     fontFamily: "Gotham Pro Regular",
                   }}
                 >
-                  9-10 февраля 2023, 10:00 – 20:00
+                  {`08 февраля с 14:00 до 20:00
+                  09 февраля с 10:00 до 20:00`}
                 </Typography>
                 <Typography
                   variant="body"
@@ -147,7 +147,7 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                     fontFamily: "Gotham Pro Regular",
                   }}
                 >
-                  11 февраля 2023, 16:00 – 20:00
+                  12 февраля с 08:00
                 </Typography>
                 <Typography
                   variant="body"
