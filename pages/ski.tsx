@@ -292,18 +292,18 @@ const SkiPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                text={"РЕГИСТРАЦИЯ"}
+                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
-                fontSize={matches ? "32px" : "24px"}
+                fontSize={matches ? "28px" : "20px"}
                 onClick={() => {
-                  window
-                    .open(
-                      "https://reg.place/events/lyzhnya-rossii-2023",
-                      "_blank"
-                    )
-                    ?.focus();
+                  // window
+                  //   .open(
+                  //     "https://reg.place/events/lyzhnya-rossii-2023",
+                  //     "_blank"
+                  //   )
+                  //   ?.focus();
                 }}
               />
             </Stack>
@@ -396,18 +396,18 @@ const SkiPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                  text={"РЕГИСТРАЦИЯ"}
+                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
-                  fontSize={matches ? "32px" : "24px"}
+                  fontSize={matches ? "28px" : "20px"}
                   onClick={() => {
-                    window
-                      .open(
-                        "https://reg.place/events/lyzhnya-rossii-2023",
-                        "_blank"
-                      )
-                      ?.focus();
+                    // window
+                    //   .open(
+                    //     "https://reg.place/events/lyzhnya-rossii-2023",
+                    //     "_blank"
+                    //   )
+                    //   ?.focus();
                   }}
                 />
               </Stack>

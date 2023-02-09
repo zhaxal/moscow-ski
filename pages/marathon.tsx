@@ -265,18 +265,18 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ"}
+                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
-                fontSize={matches ? "32px" : "24px"}
+                fontSize={matches ? "28px" : "20px"}
                 onClick={() => {
-                  window
-                    .open(
-                      "https://russialoppet.ru/registration/msm2023/",
-                      "_blank"
-                    )
-                    ?.focus();
+                  // window
+                  //   .open(
+                  //     "https://russialoppet.ru/registration/msm2023/",
+                  //     "_blank"
+                  //   )
+                  //   ?.focus();
                 }}
               />
             </Stack>
@@ -359,18 +359,18 @@ const MarathonPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ"}
+                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
-                  fontSize={matches ? "32px" : "24px"}
+                  fontSize={matches ? "28px" : "20px"}
                   onClick={() => {
-                    window
-                      .open(
-                        "https://russialoppet.ru/registration/msm2023/",
-                        "_blank"
-                      )
-                      ?.focus();
+                    // window
+                    //   .open(
+                    //     "https://russialoppet.ru/registration/msm2023/",
+                    //     "_blank"
+                    //   )
+                    //   ?.focus();
                   }}
                 />
               </Stack>
