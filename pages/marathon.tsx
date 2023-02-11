@@ -78,18 +78,10 @@ const MarathonPage: NextPage = () => {
                 <Stack direction={"column"}>
                   <Stack
                     direction={"row"}
-                    px={"30px"}
-                    justifyContent={"space-between"}
+                    px={"100px"}
                     alignItems={"center"}
+                    spacing={"58px"}
                   >
-                    <Box
-                      component={"img"}
-                      src={"/images/desktop/logo/ski-logo.svg"}
-                      sx={{
-                        maxWidth: 311,
-                      }}
-                      alt="skiLogo"
-                    />
                     <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
@@ -97,6 +89,28 @@ const MarathonPage: NextPage = () => {
                         width: 256,
                       }}
                       alt="mossportLogo"
+                    />
+                    <Box
+                      component={"img"}
+                      src={"/images/desktop/logo/ski-logo.svg"}
+                      sx={{
+                        maxWidth: 156,
+                      }}
+                      alt="skiLogo"
+                    />
+                    <Box
+                      component={"img"}
+                      src={"/images/desktop/logo/logo-si.svg"}
+                      sx={{
+                        maxWidth: 136,
+                        cursor: "pointer",
+                      }}
+                      alt="logo-si"
+                      onClick={() => {
+                        window
+                          .open("https://www.sport-images.ru/", "_blank")
+                          ?.focus();
+                      }}
                     />
                   </Stack>
 
@@ -157,11 +171,20 @@ const MarathonPage: NextPage = () => {
               <>
                 <Stack direction={"column"}>
                   <Stack
-                    direction={"row-reverse"}
-                    px={"30px"}
-                    justifyContent={"space-between"}
+                    direction={"row"}
                     alignItems={"center"}
+                    justifyContent={"space-around"}
+                    sx={{ mb: 5 }}
                   >
+                    <Box
+                      component={"img"}
+                      src={"/images/mobile/icon/mossport-snow.svg"}
+                      sx={{
+                        maxWidth: 155,
+                      }}
+                      alt="mossportLogo"
+                    />
+
                     <Box
                       component={"img"}
                       src={"/images/desktop/logo/ski-logo.svg"}
@@ -170,13 +193,20 @@ const MarathonPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
+
                     <Box
                       component={"img"}
-                      src={"/images/mobile/icon/mossport-snow.svg"}
+                      src={"/images/desktop/logo/logo-si.svg"}
                       sx={{
-                        maxWidth: 186,
+                        maxWidth: 88,
+                        cursor: "pointer",
                       }}
-                      alt="mossportLogo"
+                      alt="logo-si"
+                      onClick={() => {
+                        window
+                          .open("https://www.sport-images.ru/", "_blank")
+                          ?.focus();
+                      }}
                     />
                   </Stack>
                   <Stack
