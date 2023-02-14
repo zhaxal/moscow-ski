@@ -341,7 +341,7 @@ const MarathonPage: NextPage = () => {
 
                 Также твой результат будет включен в рейтинг финишеров.
                 
-                Друзья, Ваши фотографии с Первого Московского лыжного марафона готовы, и ждут Вас <a target="_blank" href="https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023">https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023/</a>
+                Друзья, Ваши фотографии с Первого Московского лыжного марафона готовы, и ждут Вас <a style="text-decoration: underline; text-decoration-thickness: 1px" target="_blank" href="https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023">https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023/</a>
 
                 Для Вас доступен удобный поиск по селфи, фамилии или стартовому номеру.`}
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
