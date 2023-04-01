@@ -13,22 +13,18 @@ const Requirements = ({ text1, text2, bg }: Props) => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Stack
-      direction={"column"}
-      sx={{ width: "100%" }}
-      spacing={matches ? 5 : 2}
-    >
+    <Stack direction={"column"} sx={{ width: "100%", mb: 3 }} spacing={2}>
       <Header bg={bg} text={"ТРЕБОВАНИЯ К УЧАСТНИКАМ"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         <Stack
           sx={{ width: "100%" }}
           direction={matches ? "row" : "column"}
-          spacing={"18px"}
+          spacing={"50px"}
         >
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line" }}
+            sx={{ whiteSpace: "pre-line", width: matches ? "50%" : "100%" }}
           >
             {text1}
           </Typography>
@@ -36,10 +32,11 @@ const Requirements = ({ text1, text2, bg }: Props) => {
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line" }}
-          >
-            {text2}
-          </Typography>
+            sx={{ whiteSpace: "pre-line", width: matches ? "50%" : "100%" }}
+            dangerouslySetInnerHTML={{
+              __html: text2,
+            }}
+          ></Typography>
         </Stack>
       </Box>
     </Stack>

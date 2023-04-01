@@ -45,9 +45,8 @@ const CustomBtn = ({
         sx={{
           color: "white",
           ml: "19px",
-          fontFamily: "Gotham Pro Regular",
+          fontFamily: "Gotham Pro Medium",
           fontWeight: 700,
-          lineHeight: lineHeight,
           fontSize: fontSize,
         }}
       >
@@ -76,6 +75,7 @@ const CustomBtn = ({
           maxWidth: 34,
           height: 34,
         }}
+        alt={"customBtn"}
       />
     </Stack>
   );
