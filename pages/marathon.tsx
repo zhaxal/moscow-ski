@@ -125,7 +125,7 @@ const MarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
 
@@ -220,7 +220,7 @@ const MarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
                   <Box
@@ -295,7 +295,7 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
@@ -335,7 +335,7 @@ const MarathonPage: NextPage = () => {
                 text={`Московский лыжный марафон — это совершенно новый марафон в серии Russialoppet
                 Стань частью лыжного сообщества!
                 Такой гонки еще не было в Москве.
-                Ждем тебя 12 февраля 2023 года!
+                Ждем тебя 11 февраля 2024 года!
                 
                 Московский марафон войдет в календари Суперкубка, Кубка Команд и проект «Лаки Лузер»
 
@@ -347,7 +347,7 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isMobile={matches}
               />
-              <ProgramMarathon
+              {/* <ProgramMarathon
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isMobile={matches}
               />
@@ -381,7 +381,7 @@ const MarathonPage: NextPage = () => {
                 file1={"Лыжный марафон_полож_к.pdf"}
                 isMobile={matches}
                 height={"116px"}
-              />
+              /> */}
               <Stack
                 sx={{
                   width: "100%",
@@ -391,7 +391,7 @@ const MarathonPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                  text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}

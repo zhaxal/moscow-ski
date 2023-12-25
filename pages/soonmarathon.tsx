@@ -111,7 +111,7 @@ const SoonMarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
 
@@ -190,7 +190,7 @@ const SoonMarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
                   <Box

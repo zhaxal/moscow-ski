@@ -10,14 +10,14 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <meta name="description" content="«Московский спорт представляет большой лыжный праздник 11 и 12 февраля в Битце»" />
-        <meta property="og:title" content="«Лыжня России 2023 и Московский лыжный марафон»" />
-        <meta property="og:description" content="Московский спорт представляет большой лыжный праздник 11 и 12 февраля в Битце»" />
+        <meta name="description" content="«Московский спорт представляет большой лыжный праздник 10 и 11 февраля в Битце»" />
+        <meta property="og:title" content="«Лыжня России 2024 и Московский лыжный марафон»" />
+        <meta property="og:description" content="Московский спорт представляет большой лыжный праздник 10 и 11 февраля в Битце»" />
         <meta property="og:url" content="https://ski.moscow.sport/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/metaIcon.jpg" />
 
-        <title>Лыжня России 2023 и Московский лыжный марафон</title>
+        <title>Лыжня России 2024 и Московский лыжный марафон</title>
       </Head>
       <Script
         id="id"
@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
         itemScope
         itemType="https://schema.org/Organization"
       >
-        <span itemProp="name">Лыжня России 2023</span>
+        <span itemProp="name">Лыжня России 2024</span>
         <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
           Адрес:
           <span itemProp="streetAddress">Москва, ЮЗАО, 36й км МКАД, зона отдыха “Альфа-Битца”</span>

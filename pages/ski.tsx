@@ -117,7 +117,7 @@ const SkiPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      11 ФЕВРАЛЯ 2023
+                      10 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
 
@@ -210,7 +210,7 @@ const SkiPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      11 ФЕВРАЛЯ 2023
+                      10 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
                   <Box
@@ -336,11 +336,11 @@ const SkiPage: NextPage = () => {
                 Уже более 40 лет Лыжня России объединяет всех 
                 любителей лыжных гонок!
 
-                До встречи на старте 11 февраля 2023 года!`}
+                До встречи на старте 10 февраля 2024 года!`}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
-              <ProgramSki
+              {/* <ProgramSki
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
@@ -370,22 +370,22 @@ const SkiPage: NextPage = () => {
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isSki={true}
-              />
+              />*/}
               <MapBlock
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isSki={true}
               />
               {/* (<a target="_blank" href="https://mosgorsport.ru/upload/docs/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%20%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B5%20%D0%BA%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%B8%D1%8E%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F%D1%85.pdf">ОБРАЗЕЦ</a>) */}
-              <Documents
+              {/* <Documents
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
                 text2={"Согласие на обработку персональных данных"}
-                file1={"Положение_Лыжня_России_2023.pdf"}
+                file1={"Положение_Лыжня_России_2024.pdf"}
                 file2={"Согласие_на_обработку_персональных_данных.pdf"}
                 isMobile={matches}
                 height={"60px"}
-              />
+              /> */}
               <Stack
                 sx={{
                   width: "100%",
