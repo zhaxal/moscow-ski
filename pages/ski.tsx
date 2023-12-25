@@ -292,7 +292,7 @@ const SkiPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
@@ -396,7 +396,7 @@ const SkiPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                  text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
