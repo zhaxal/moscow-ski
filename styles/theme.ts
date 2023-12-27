@@ -36,7 +36,6 @@ declare module "@mui/material/Button" {
 const theme = createTheme({
   typography: {
     desc: {
-      fontSize: "24px",
       lineHeight: "22.97px",
       fontFamily: "Gotham Pro Medium",
     },
@@ -58,7 +57,7 @@ const theme = createTheme({
       lineHeight: "20px",
       fontFamily: "Gotham Pro Regular",
       color: "white",
-    }
+    },
   },
   components: {
     MuiButton: {

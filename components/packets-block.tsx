@@ -26,10 +26,13 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   <Typography
                     variant="body"
                     color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    Время и место получения:
-                  </Typography>
+                    sx={{
+                      whiteSpace: "pre-line",
+                    }}
+                    dangerouslySetInnerHTML={{
+                      __html: `<strong>Время и место получения:</spring>`,
+                    }}
+                  />
                   <Typography
                     variant="body"
                     color={"white"}
@@ -50,10 +53,14 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   <Typography
                     variant="body"
                     color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    Как добраться:
-                  </Typography>
+                    sx={{
+                      whiteSpace: "pre-line",
+                    }}
+                    dangerouslySetInnerHTML={{
+                      __html: `<strong>Как добраться:</spring>`,
+                    }}
+                  />
+
                   <Typography
                     variant="body"
                     color={"white"}
@@ -84,9 +91,10 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   variant="body"
                   color={"white"}
                   sx={{ whiteSpace: "pre-line" }}
-                >
-                  {`10 февраля 2024 года (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`}
-                </Typography>
+                  dangerouslySetInnerHTML={{
+                    __html: `<strong>10 февраля 2024 года</strong> (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`,
+                  }}
+                ></Typography>
               </Stack>
             </Stack>
           </>
