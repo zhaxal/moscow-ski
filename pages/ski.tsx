@@ -292,18 +292,18 @@ const SkiPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
+                text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
                 fontSize={matches ? "21px" : "14px"}
                 onClick={() => {
-                  // window
-                  //   .open(
-                  //     "https://reg.place/events/lyzhnya-rossii-2023",
-                  //     "_blank"
-                  //   )
-                  //   ?.focus();
+                  window
+                    .open(
+                      "https://reg.place/events/lyzhnya-rossii-2024",
+                      "_blank"
+                    )
+                    ?.focus();
                 }}
               />
             </Stack>
@@ -340,11 +340,11 @@ const SkiPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
-              {/* <ProgramSki
+              <ProgramSki
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
-              <Requirements
+              {/*<Requirements
                 text1={`
                 Соревнования проводятся в соответствии с правилами лыжных гонок. Стиль свободный.
 
@@ -396,18 +396,18 @@ const SkiPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
+                  text={"РЕГИСТРАЦИЯ"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
                   fontSize={matches ? "21px" : "14px"}
                   onClick={() => {
-                    // window
-                    //   .open(
-                    //     "https://reg.place/events/lyzhnya-rossii-2023",
-                    //     "_blank"
-                    //   )
-                    //   ?.focus();
+                    window
+                      .open(
+                        "https://reg.place/events/lyzhnya-rossii-2024",
+                        "_blank"
+                      )
+                      ?.focus();
                   }}
                 />
               </Stack>
