@@ -146,6 +146,7 @@ const SkiPage: NextPage = () => {
                           textOverflow: "ellipsis",
                           whiteSpace: "pre-line",
                           overflow: "hidden",
+                          fontSize: "24px"
                         }}
                         color={"#005A87"}
                         variant={"desc"}
