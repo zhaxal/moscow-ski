@@ -8,7 +8,6 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -39,7 +38,6 @@ a {
   font-family: Gotham Pro Regular; /* Гарнитура шрифта */
   src: url(../public/fonts/GothaProReg.otf); /* Путь к файлу со шрифтом */
 }
-
 
 @font-face {
   font-family: Cover; /* Гарнитура шрифта */
