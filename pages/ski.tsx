@@ -96,14 +96,14 @@ const SkiPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         width: 256,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
 
                   <Stack
@@ -190,14 +190,14 @@ const SkiPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         maxWidth: 186,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
                   <Stack
                     sx={{ my: "20px", width: "100%", alignItems: "center" }}

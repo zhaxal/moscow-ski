@@ -82,14 +82,14 @@ const MarathonPage: NextPage = () => {
                     alignItems={"center"}
                     spacing={"58px"}
                   >
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         width: 256,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                     <Box
                       component={"img"}
                       src={"/images/desktop/logo/ski-logo.svg"}
@@ -176,14 +176,14 @@ const MarathonPage: NextPage = () => {
                     justifyContent={"space-around"}
                     sx={{ mb: 5 }}
                   >
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         maxWidth: 155,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
 
                     <Box
                       component={"img"}
