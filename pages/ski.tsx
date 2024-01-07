@@ -96,14 +96,14 @@ const SkiPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         width: 256,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
 
                   <Stack
@@ -153,7 +153,7 @@ const SkiPage: NextPage = () => {
                       >
                         {`«Лыжня России» — ежегодное спортивное мероприятие для любителей 
                         беговых лыж. Это самая крупная по числу участников лыжная гонка не 
-                        только в России, но и в Европе. Каждый год на старт выходит более 
+                        только в России. Каждый год на старт выходит более 
                         500 тысяч человек из более чем 70 субъектов страны.
 
                         «Лыжня России» проводится с 1982 года. К старту в гонке допускаются как 
@@ -190,14 +190,14 @@ const SkiPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         maxWidth: 186,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
                   <Stack
                     sx={{ my: "20px", width: "100%", alignItems: "center" }}

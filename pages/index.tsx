@@ -42,14 +42,14 @@ export default function Home() {
                 width: "42x",
               }}
             />
-            <Box
+            {/* <Box
               component={"img"}
               alt={"mossport-snow"}
               src={"/images/mobile/icon/mossport-snow.svg"}
               sx={{
                 width: "153px",
               }}
-            />
+            /> */}
 
             <Box
               component={"img"}
@@ -291,14 +291,14 @@ export default function Home() {
           justifyContent={"center"}
           spacing={1}
         >
-          <Box
+          {/* <Box
             component={"img"}
             alt={"mossportSnow"}
             src={"/images/mobile/icon/mossport-snow.svg"}
             sx={{
               maxWidth: logos ? "97px" : "70px",
             }}
-          />
+          /> */}
 
           <Box
             component={"img"}

@@ -38,15 +38,15 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                     color={"white"}
                     sx={{ whiteSpace: "pre-line" }}
                   >
-                    {`7 февраля: с 15.00 до 20.00
-                        8 февраля: с 10.00 до 20.00`}
+                    {`7 февраля: с 15:00 до 20:00
+                        8 февраля: с 10:00 до 20:00`}
                   </Typography>
                   <Typography
                     variant="body"
                     color={"white"}
                     sx={{ whiteSpace: "pre-line" }}
                   >
-                    г. Москва, ул. Лужники д. 24, Биатлонная трасса
+                    г. Москва, ул. Лужники, д. 24, Биатлонная трасса
                   </Typography>
                 </Stack>
                 <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
