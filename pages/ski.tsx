@@ -13,6 +13,7 @@ import Footer from "../components/footer-block";
 import Script from "next/script";
 import Packets from "../components/packets-block";
 import MapBlock from "../components/map-block";
+import SkiPageFooter from "../components/ski-page-footer";
 
 const SkiPage: NextPage = () => {
   const theme = useTheme();
@@ -87,6 +88,7 @@ const SkiPage: NextPage = () => {
                     px={"30px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
+                    mb={"20px"}
                   >
                     <Box
                       component={"img"}
@@ -106,7 +108,7 @@ const SkiPage: NextPage = () => {
                     /> */}
                   </Stack>
 
-                  <Stack
+                  {/* <Stack
                     sx={{ mb: "20px", width: "100%", alignItems: "center" }}
                   >
                     <Typography
@@ -119,7 +121,7 @@ const SkiPage: NextPage = () => {
                     >
                       10 ФЕВРАЛЯ 2024
                     </Typography>
-                  </Stack>
+                  </Stack> */}
 
                   <Box
                     sx={{
@@ -153,8 +155,8 @@ const SkiPage: NextPage = () => {
                       >
                         {`«Лыжня России» — ежегодное спортивное мероприятие для любителей 
                         беговых лыж. Это самая крупная по числу участников лыжная гонка не 
-                        только в России. Каждый год на старт выходит более 
-                        500 тысяч человек из более чем 70 субъектов страны.
+                        только в России. Каждый год на старт выходит более 500 
+                        тысяч человек из более чем 70 субъектов страны.
 
                         «Лыжня России» проводится с 1982 года. К старту в гонке допускаются как 
                         любители, так и профессиональные спортсмены. Участие в мероприятии 
@@ -179,6 +181,7 @@ const SkiPage: NextPage = () => {
                   <Stack
                     direction={"row-reverse"}
                     px={"30px"}
+                    mb={"20px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
                   >
@@ -199,7 +202,7 @@ const SkiPage: NextPage = () => {
                       alt="mossportLogo"
                     /> */}
                   </Stack>
-                  <Stack
+                  {/* <Stack
                     sx={{ my: "20px", width: "100%", alignItems: "center" }}
                   >
                     <Typography
@@ -212,7 +215,7 @@ const SkiPage: NextPage = () => {
                     >
                       10 ФЕВРАЛЯ 2024
                     </Typography>
-                  </Stack>
+                  </Stack> */}
                   <Box
                     sx={{
                       backgroundImage:
@@ -311,21 +314,26 @@ const SkiPage: NextPage = () => {
               }}
             >
               <Information
-                text={`Лыжня России — главное лыжное событие страны!
+                text={`«Лыжня России» — главное лыжное событие страны!
 
-                Хотите встретить на старте олимпийских чемпионов, 
-                членов сборной команды России по лыжным гонкам и 
+                Хотите встретить на старте олимпийских чемпионов,
+                членов сборной команды России по лыжным гонкам и
                 биатлону? Тогда Вы на правильном пути!
 
-                Уже более 40 лет Лыжня России объединяет всех 
+                Уже более 40 лет Лыжня России объединяет всех
                 любителей лыжных гонок!
 
-                <strong>ШКОЛЬНЫЙ ДЕНЬ
-                Детские соревнования пройдут 9 февраля 2024 г. 
-                на лыжно-биатлонной трассе ОК «Лужники». 
-                В программе дистанции на 1 км, 3 км, 5 км.</strong>
+                <strong>В 2024 году «Лыжня России» пройдет в два дня.</strong>
 
-                До встречи на старте!`}
+                <strong>9 ФЕВРАЛЯ 2024 г.
+                ШКОЛЬНЫЙ ДЕНЬ
+                Детские соревнования пройдут на лыжно-биатлонной трассе ОК «Лужники».
+                В программе дистанции на 1 км, 3 км, 5 км.</strong>
+                
+                <strong>10 ФЕВРАЛЯ 2024 г.
+                ОСНОВНОЙ СТАРТ
+                Соревнования для категории 18+ пройдут на территории зоны отдыха «Альфа-Битца»
+                В программе дистанция на 10 км.</strong>`}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
@@ -401,7 +409,7 @@ const SkiPage: NextPage = () => {
                   }}
                 />
               </Stack>
-              <Footer
+              <SkiPageFooter
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />

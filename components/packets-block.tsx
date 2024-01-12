@@ -92,7 +92,17 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   color={"white"}
                   sx={{ whiteSpace: "pre-line" }}
                   dangerouslySetInnerHTML={{
-                    __html: `<strong>10 февраля 2024 года</strong> (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`,
+                    __html: `<strong>9 февраля 2024 года</strong> (в день старта) с 9:00 до 13:15 выдача стартовых комплектов будет проводиться по адресу: ул. Лужники, д. 24, Биатлонная трасса в шатре «Регистрация»`,
+                  }}
+                ></Typography>
+              </Stack>
+              <Stack sx={{ width: "100%" }} direction={"row"}>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                  dangerouslySetInnerHTML={{
+                    __html: `<strong>10 февраля 2024 года</strong> (в день старта) с 8:00 до 12:30 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`,
                   }}
                 ></Typography>
               </Stack>

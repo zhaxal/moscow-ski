@@ -124,7 +124,7 @@ export default function Home() {
                 lineHeight: "36px",
                 left: "2%",
               }}>
-              10 ФЕВРАЛЯ 2024
+              9 - 10 ФЕВРАЛЯ 2024
             </Typography>
             <Typography
               variant="heading" color={"white"}
@@ -260,7 +260,7 @@ export default function Home() {
             fontSize: "36px",
             textAlign: "center",
           }}>
-            {`10 ФЕВРАЛЯ 2024`}
+            {`9 - 10 ФЕВРАЛЯ 2024`}
           </Typography>
           <Box
             component={"img"}

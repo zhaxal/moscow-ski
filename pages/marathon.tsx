@@ -295,7 +295,7 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
+                text={"РЕГИСТРАЦИЯ СКОРО ОТКРОЕТСЯ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
@@ -391,7 +391,7 @@ const MarathonPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАКРЫТА"}
+                  text={"РЕГИСТРАЦИЯ СКОРО ОТКРОЕТСЯ"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
