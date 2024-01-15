@@ -104,6 +104,15 @@ export default function Home() {
                 width: "110px",
               }}
             />
+
+            <Box
+              component={"img"}
+              alt={"ozonIcon"}
+              src={"/images/mobile/icon/ozon-logo.svg"}
+              sx={{
+                width: "110px",
+              }}
+            />
           </Stack>
           <Stack sx={{ width: "100%", justifyContent: "center", position: "relative" }}>
             <Box
@@ -286,6 +295,7 @@ export default function Home() {
             width: "100%",
             background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)",
             py: "35px",
+            alignItems: "center",
           }}
           direction={"row"}
           justifyContent={"center"}
@@ -333,6 +343,16 @@ export default function Home() {
             src={"/images/mobile/icon/matchLogo.svg"}
             sx={{
               maxWidth: logos ? "88px" : "78px",
+            }}
+          />
+
+          <Box
+            component={"img"}
+            alt={"ozonIcon"}
+            src={"/images/mobile/icon/ozon-logo.svg"}
+            sx={{
+              maxWidth: logos ? "88px" : "78px",
+              height: "20%",
             }}
           />
         </Stack>
