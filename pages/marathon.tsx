@@ -303,7 +303,7 @@ const MarathonPage: NextPage = () => {
                 onClick={() => {
                   window
                     .open(
-                      "https://russialoppet.ru/registration/msm2024/",
+                      "https://russialoppet.ru/events/moscow-2024.html",
                       "_blank"
                     )
                     ?.focus();
@@ -399,7 +399,7 @@ const MarathonPage: NextPage = () => {
                   onClick={() => {
                     window
                       .open(
-                        "https://russialoppet.ru/registration/msm2024/",
+                        "https://russialoppet.ru/events/moscow-2024.html",
                         "_blank"
                       )
                       ?.focus();
