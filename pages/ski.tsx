@@ -277,7 +277,7 @@ const SkiPage: NextPage = () => {
                 mb: matches ? "112px" : "46px",
               }}
             >
-              <CustomBtn
+              {/* <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
@@ -292,7 +292,7 @@ const SkiPage: NextPage = () => {
                     )
                     ?.focus();
                 }}
-              />
+              /> */}
             </Stack>
 
             <Box
@@ -384,7 +384,7 @@ const SkiPage: NextPage = () => {
                 isMobile={matches}
                 height={"60px"}
               /> */}
-              <Stack
+              {/* <Stack
                 sx={{
                   width: "100%",
                   alignItems: "center",
@@ -407,8 +407,8 @@ const SkiPage: NextPage = () => {
                       )
                       ?.focus();
                   }}
-                />
-              </Stack>
+                /> 
+              </Stack> */}
               <SkiPageFooter
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
