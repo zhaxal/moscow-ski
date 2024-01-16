@@ -39,7 +39,8 @@ export default function Home() {
               alt={"minsport"}
               src={"/images/mobile/icon/minsport.svg"}
               sx={{
-                width: "42x",
+                width: "52x",
+                height: "76px"
               }}
             />
             {/* <Box
