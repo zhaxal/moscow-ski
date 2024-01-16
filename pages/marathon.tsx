@@ -295,18 +295,18 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ СКОРО ОТКРОЕТСЯ"}
+                text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
                 fontSize={matches ? "21px" : "14px"}
                 onClick={() => {
-                  // window
-                  //   .open(
-                  //     "https://russialoppet.ru/registration/msm2023/",
-                  //     "_blank"
-                  //   )
-                  //   ?.focus();
+                  window
+                    .open(
+                      "https://russialoppet.ru/registration/msm2024/",
+                      "_blank"
+                    )
+                    ?.focus();
                 }}
               />
             </Stack>
@@ -391,18 +391,18 @@ const MarathonPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ СКОРО ОТКРОЕТСЯ"}
+                  text={"РЕГИСТРАЦИЯ"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
                   fontSize={matches ? "21px" : "14px"}
                   onClick={() => {
-                    // window
-                    //   .open(
-                    //     "https://russialoppet.ru/registration/msm2023/",
-                    //     "_blank"
-                    //   )
-                    //   ?.focus();
+                    window
+                      .open(
+                        "https://russialoppet.ru/registration/msm2024/",
+                        "_blank"
+                      )
+                      ?.focus();
                   }}
                 />
               </Stack>
