@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Header from "./ui/Header";
+import CustomBtn from "./ui/CustomBtn";
 
 interface Props {
   bg: string;
@@ -72,7 +73,8 @@ const events9 = [
 
 const events10 = [
   {
-    time: "08:00", text: `Начало выдачи стартовых пакетов на территории СК «Альфа- Битца» в помещении \"Регистрация\". Дополнительная регистрация возможна только при наличии свободных номеров.` },
+    time: "08:00", text: `Начало выдачи стартовых пакетов на территории СК «Альфа- Битца» в помещении \"Регистрация\". Дополнительная регистрация возможна только при наличии свободных номеров.`
+  },
   { time: "09:50", text: "Церемония открытия соревнований" },
   { time: "10:00", text: "Старт группы ПРО (Элита)" },
   { time: "10:30", text: "Старт группы 18-29 лет" },
@@ -146,6 +148,22 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             >
               {"9 ФЕВРАЛЯ"}
             </Typography>
+            <CustomBtn
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              text={"РЕГИСТРАЦИЯ"}
+              height={isMobile ? "60px" : "48px"}
+              width={isMobile ? "468px" : "320px"}
+              lineHeight={"30px"}
+              fontSize={isMobile ? "21px" : "14px"}
+              onClick={() => {
+                window
+                  .open(
+                    "https://reg.place/events/lyzhnya-rossii-2024-deti",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
+            />
             {events9.map((event, index) => (
               <Stack key={index} direction={"column"} spacing={"7px"}>
                 <Typography
@@ -175,6 +193,22 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             >
               {"10 ФЕВРАЛЯ"}
             </Typography>
+            <CustomBtn
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              text={"РЕГИСТРАЦИЯ"}
+              height={isMobile ? "60px" : "48px"}
+              width={isMobile ? "468px" : "320px"}
+              lineHeight={"30px"}
+              fontSize={isMobile ? "21px" : "14px"}
+              onClick={() => {
+                window
+                  .open(
+                    "https://reg.place/events/lyzhnya-rossii-2024",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
+            />
             <Stack direction={"column"} spacing={"7px"}>
               {events10.map((event, index) => (
                 <ProgramBlock key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
