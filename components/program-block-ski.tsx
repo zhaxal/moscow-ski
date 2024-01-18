@@ -11,6 +11,7 @@ interface Props {
 interface ProgramBlockProps extends Props {
   text: string;
   time: string;
+  width: string;
 }
 
 const events9 = [
@@ -93,7 +94,7 @@ const events10 = [
 
 
 
-const ProgramBlock = ({ text, time, isMobile }: ProgramBlockProps) => {
+const ProgramBlock = ({ text, time, width, isMobile }: ProgramBlockProps) => {
   return (
     <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
       <Typography
@@ -101,8 +102,8 @@ const ProgramBlock = ({ text, time, isMobile }: ProgramBlockProps) => {
         color={"white"}
         sx={{
           whiteSpace: "pre-line",
-          width: isMobile ? "25%" : "50%",
-          textAlign: "center",
+          width: isMobile ? width : "50%",
+          textAlign: "left",
           fontFamily: isMobile
             ? "Gotham Pro Regular"
             : "Gotham Pro Light",
@@ -178,7 +179,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                   {event.name}
                 </Typography>
                 {event.events.map((event, index) => (
-                  <ProgramBlock key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
+                  <ProgramBlock width="23%" key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
                 ))}
               </Stack>
             ))}
@@ -211,7 +212,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             />
             <Stack direction={"column"} spacing={"7px"}>
               {events10.map((event, index) => (
-                <ProgramBlock key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
+                <ProgramBlock width="10%" key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
               ))}
             </Stack>
           </Stack>
