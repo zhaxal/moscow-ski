@@ -12,9 +12,6 @@ export default function Home() {
 
   return matches ? (
     <>
-      <Head>
-        <meta name="yandex-verification" content="5257f1e845f3792f" />
-      </Head>
       <Box
         minHeight="100vh"
         sx={{
