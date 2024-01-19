@@ -9,7 +9,6 @@ import { NextPage } from "next";
 import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
-import Script from "next/script";
 import Packets from "../components/packets-block";
 
 const MarathonPage: NextPage = () => {
@@ -273,7 +272,7 @@ const MarathonPage: NextPage = () => {
                 onClick={() => {
                   window
                     .open(
-                      "https://russialoppet.ru/registration/msm2024/",
+                      "https://russialoppet.ru/events/moscow-2024.html",
                       "_blank"
                     )
                     ?.focus();
@@ -369,7 +368,7 @@ const MarathonPage: NextPage = () => {
                   onClick={() => {
                     window
                       .open(
-                        "https://russialoppet.ru/registration/msm2024/",
+                        "https://russialoppet.ru/events/moscow-2024.html",
                         "_blank"
                       )
                       ?.focus();
