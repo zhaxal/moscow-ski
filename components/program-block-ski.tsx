@@ -184,15 +184,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               </Stack>
             ))}
 
-            {isMobile &&
-              <Typography variant="body"
-                color={"white"}
-                sx={{
-                  fontFamily: "Gotham Pro Bold",
-                }}>
-                *Расписание забегов может меняться.
-              </Typography>
-            }
+            <Typography variant="body"
+              color={"white"}
+              sx={{
+                fontFamily: "Gotham Pro Bold",
+              }}>
+              *Расписание забегов может меняться.
+            </Typography>
+
           </Stack>
           <Stack direction={"column"} width={isMobile ? "50%" : "100%"} spacing={"30px"}>
             <Typography
@@ -226,15 +225,6 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               ))}
             </Stack>
           </Stack>
-          {!isMobile &&
-            <Typography variant="body"
-              color={"white"}
-              sx={{
-                fontFamily: "Gotham Pro Bold",
-              }}>
-              *Расписание забегов может меняться.
-            </Typography>
-          }
         </Stack>
       </Box>
     </Stack>
