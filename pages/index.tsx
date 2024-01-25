@@ -96,14 +96,14 @@ export default function Home() {
               }}
             />
 
-            <Box
+            {/* <Box
               component={"img"}
               alt={"matchIcon"}
               src={"/images/mobile/icon/matchLogo.svg"}
               sx={{
                 width: "110px",
               }}
-            />
+            /> */}
 
             <Box
               component={"img"}
@@ -337,14 +337,14 @@ export default function Home() {
             }}
           />
 
-          <Box
+          {/* <Box
             component={"img"}
             alt={"matchIcon"}
             src={"/images/mobile/icon/matchLogo.svg"}
             sx={{
               maxWidth: logos ? "88px" : "78px",
             }}
-          />
+          /> */}
 
           <Box
             component={"img"}
