@@ -22,36 +22,6 @@ const SkiPage: NextPage = () => {
 
   return (
     <>
-      <Script
-        id="id"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-       
-          ym(91937297, "init", {
-               clickmap:true,
-               trackLinks:true,
-               accurateTrackBounce:true,
-               webvisor:true
-          });
-            `,
-        }}
-      />
-      <noscript>
-        <div>
-          <img
-            src="https://mc.yandex.ru/watch/91937297"
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-          />
-        </div>
-      </noscript>
-
       <Box
         height="100%"
         sx={{
@@ -277,7 +247,7 @@ const SkiPage: NextPage = () => {
                 mb: matches ? "112px" : "46px",
               }}
             >
-              <CustomBtn
+              {/* <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
@@ -292,7 +262,7 @@ const SkiPage: NextPage = () => {
                     )
                     ?.focus();
                 }}
-              />
+              /> */}
             </Stack>
 
             <Box
@@ -384,7 +354,7 @@ const SkiPage: NextPage = () => {
                 isMobile={matches}
                 height={"60px"}
               /> */}
-              <Stack
+              {/* <Stack
                 sx={{
                   width: "100%",
                   alignItems: "center",
@@ -407,8 +377,8 @@ const SkiPage: NextPage = () => {
                       )
                       ?.focus();
                   }}
-                />
-              </Stack>
+                /> 
+              </Stack> */}
               <SkiPageFooter
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}

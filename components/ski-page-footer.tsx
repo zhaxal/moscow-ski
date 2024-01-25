@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Header from "./ui/Header";
+import CustomBtn from "./ui/CustomBtn";
 
 interface Props {
     isMobile: boolean;
@@ -98,6 +99,22 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                   55.715865, 37.560853`}
                             </Typography>
                         </Stack>
+                        <CustomBtn
+                            bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                            text={"РЕГИСТРАЦИЯ"}
+                            height={isMobile ? "60px" : "48px"}
+                            width={isMobile ? "468px" : "100%"}
+                            lineHeight={"30px"}
+                            fontSize={isMobile ? "21px" : "14px"}
+                            onClick={() => {
+                                window
+                                    .open(
+                                        "https://reg.place/events/lyzhnya-rossii-2024-deti",
+                                        "_blank"
+                                    )
+                                    ?.focus();
+                            }}
+                        />
                     </Stack>
                 </Stack>
             </Stack>
@@ -121,7 +138,7 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                 >
                     <Box
                         sx={{
-                            height: "592px",
+                            height: "633px",
                             width: isMobile ? "65%" : "100%",
                         }}
                     >
@@ -226,6 +243,22 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                   55.585360, 37.545857`}
                             </Typography>
                         </Stack>
+                        <CustomBtn
+                            bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                            text={"РЕГИСТРАЦИЯ"}
+                            height={isMobile ? "60px" : "48px"}
+                            width={isMobile ? "468px" : "100%"}
+                            lineHeight={"30px"}
+                            fontSize={isMobile ? "21px" : "14px"}
+                            onClick={() => {
+                                window
+                                    .open(
+                                        "https://reg.place/events/lyzhnya-rossii-2024",
+                                        "_blank"
+                                    )
+                                    ?.focus();
+                            }}
+                        />
                     </Stack>
                 </Stack>
             </Stack>

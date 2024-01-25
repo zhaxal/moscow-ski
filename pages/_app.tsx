@@ -16,6 +16,15 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://ski.moscow.sport/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/metaIcon.jpg" />
+        <meta name="yandex-verification" content="5257f1e845f3792f" />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="android-chrome" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="android-chrome" sizes="512x512" href="/android-chrome-512x512.png" />
 
         <title>Лыжня России 2024 и Московский лыжный марафон</title>
       </Head>

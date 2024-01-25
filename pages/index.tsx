@@ -12,9 +12,6 @@ export default function Home() {
 
   return matches ? (
     <>
-      <Head>
-        <meta name="yandex-verification" content="5257f1e845f3792f" />
-      </Head>
       <Box
         minHeight="100vh"
         sx={{
@@ -39,7 +36,8 @@ export default function Home() {
               alt={"minsport"}
               src={"/images/mobile/icon/minsport.svg"}
               sx={{
-                width: "42x",
+                width: "52x",
+                height: "76px"
               }}
             />
             {/* <Box

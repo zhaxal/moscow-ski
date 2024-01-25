@@ -11,6 +11,7 @@ interface Props {
 interface ProgramBlockProps extends Props {
   text: string;
   time: string;
+  width: string;
 }
 
 const events9 = [
@@ -18,7 +19,7 @@ const events9 = [
     "name": "Дистанция 1 км.",
     "events": [
       {
-        "time": "10:30 – 10:45",
+        "time": "10:00 – 10:45",
         "text": "​Девочки (2014-2015 г.р.)"
       },
       {
@@ -31,23 +32,23 @@ const events9 = [
     "name": "Дистанция 3 км.",
     "events": [
       {
-        "time": "11:15 – 11:30",
+        "time": "11:15 – 12:00",
         "text": "Девушки среднего возраста (2008- 2009 г.р.)"
       },
       {
-        "time": "11:30 – 11:45",
+        "time": "12:00 – 12:45",
         "text": "Юноши младшего возраста (2010 - 2011 г.р.)"
       },
       {
-        "time": "11:45 – 12:00",
+        "time": "12:45 – 13:30",
         "text": "​Девушки младшего возраста (2010 - 2011 г.р.)"
       },
       {
-        "time": "12:00 – 12:15",
+        "time": "13:45 – 14:45",
         "text": "Юноши младшего возраста (2012 - 2013 г.р.)"
       },
       {
-        "time": "12:15 – 12:30",
+        "time": "15:00 – 16:00",
         "text": "Девушки младшего возраста (2012 - 2013 г.р.)"
       }
     ]
@@ -56,15 +57,15 @@ const events9 = [
     "name": "Дистанция 5 км.",
     "events": [
       {
-        "time": "12:45 – 13:00",
+        "time": "12:45 – 13:30",
         "text": "Девушки старшего возраста (2006-2007 г.р.)"
       },
       {
-        "time": "13:00 – 13:15",
+        "time": "13:45 – 14:45",
         "text": "Юноши среднего возраста (2008-2009 г.р.)"
       },
       {
-        "time": "13:30 – 13:45",
+        "time": "15:00 – 16:00",
         "text": "Юноши старшего возраста (2006-2007 г.р.)"
       }
     ]
@@ -93,7 +94,7 @@ const events10 = [
 
 
 
-const ProgramBlock = ({ text, time, isMobile }: ProgramBlockProps) => {
+const ProgramBlock = ({ text, time, width, isMobile }: ProgramBlockProps) => {
   return (
     <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
       <Typography
@@ -101,8 +102,8 @@ const ProgramBlock = ({ text, time, isMobile }: ProgramBlockProps) => {
         color={"white"}
         sx={{
           whiteSpace: "pre-line",
-          width: isMobile ? "25%" : "50%",
-          textAlign: "center",
+          width: isMobile ? width : "50%",
+          textAlign: "left",
           fontFamily: isMobile
             ? "Gotham Pro Regular"
             : "Gotham Pro Light",
@@ -178,10 +179,19 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                   {event.name}
                 </Typography>
                 {event.events.map((event, index) => (
-                  <ProgramBlock key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
+                  <ProgramBlock width="23%" key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
                 ))}
               </Stack>
             ))}
+
+            <Typography variant="body"
+              color={"white"}
+              sx={{
+                fontFamily: "Gotham Pro Bold",
+              }}>
+              *Расписание забегов может меняться.
+            </Typography>
+
           </Stack>
           <Stack direction={"column"} width={isMobile ? "50%" : "100%"} spacing={"30px"}>
             <Typography
@@ -211,7 +221,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             />
             <Stack direction={"column"} spacing={"7px"}>
               {events10.map((event, index) => (
-                <ProgramBlock key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
+                <ProgramBlock width="10%" key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
               ))}
             </Stack>
           </Stack>
