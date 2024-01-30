@@ -342,13 +342,13 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isSki={false}
               />
-              <Documents
+              {/* <Documents
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
                 file1={"Лыжный марафон_полож_к.pdf"}
                 isMobile={matches}
                 height={"116px"}
-              />
+              /> */}
               <Stack
                 sx={{
                   width: "100%",
