@@ -2,16 +2,11 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Header from "./ui/Header";
 import CustomBtn from "./ui/CustomBtn";
+import ProgramBlock from "./ui/ProgramBlock";
 
 interface Props {
   bg: string;
   isMobile: boolean;
-}
-
-interface ProgramBlockProps extends Props {
-  text: string;
-  time: string;
-  width: string;
 }
 
 const events9 = [
@@ -92,42 +87,6 @@ const events10 = [
   { time: "14:30", text: "Окончание мероприятия" },
 ];
 
-
-
-const ProgramBlock = ({ text, time, width, isMobile }: ProgramBlockProps) => {
-  return (
-    <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
-      <Typography
-        variant="body"
-        color={"white"}
-        sx={{
-          whiteSpace: "pre-line",
-          width: isMobile ? width : "50%",
-          textAlign: "left",
-          fontFamily: isMobile
-            ? "Gotham Pro Regular"
-            : "Gotham Pro Light",
-        }}
-      >
-        {time}
-      </Typography>
-      <Typography
-        variant="body"
-        color={"white"}
-        sx={{
-          whiteSpace: "pre-line",
-          width: isMobile ? "95%" : "80%",
-          maxWidth: isMobile ? "650px" : "80%",
-          fontFamily: isMobile
-            ? "Gotham Pro Regular"
-            : "Gotham Pro Light",
-        }}
-      >
-        {text}
-      </Typography>
-    </Stack>
-  );
-}
 
 const ProgramSki = ({ bg, isMobile }: Props) => {
   return (

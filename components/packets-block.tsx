@@ -109,75 +109,48 @@ const Packets = ({ bg, matches, isSki }: Props) => {
             </Stack>
           </>
         ) : (
-          <Stack sx={{ width: "100%" }} spacing={3}>
-            <Typography
-              variant="body"
-              color={"white"}
-              sx={{
-                whiteSpace: "pre-line",
-                fontFamily: "Gotham Pro Regular",
-                fontWeight: 700,
-                textDecoration: "underline",
-                textDecorationSkipInk: "none",
-                textDecorationThickness: "1px",
-              }}
-            >
-              Время и место получения:
-            </Typography>
-            <Stack spacing={"5px"}>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  fontWeight: 700,
-                  fontFamily: "Gotham Pro Regular",
-                }}
-              >
-                {`08 февраля с 14:00 до 20:00
-                  09 февраля с 10:00 до 20:00`}
-              </Typography>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  fontWeight: 400,
-                  fontFamily: "Gotham Pro Light",
-                }}
-              >
-                СК Лужники, Москва, ул. Лужники, 24, стр. 1
-              </Typography>
-            </Stack>
-            <Stack spacing={"5px"}>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  fontWeight: 700,
-                  fontFamily: "Gotham Pro Regular",
-                }}
-              >
-                12 февраля с 08:00
-              </Typography>
-              <Typography
-                variant="body"
-                color={"white"}
-                sx={{
-                  whiteSpace: "pre-line",
-                  fontWeight: 400,
-                  fontFamily: "Gotham Pro Light",
-                }}
-              >
-                СК«Альфа Битца», Москва, ЮЗАО, 36й км МКАД, зона отдыха
-                «Битца»
-              </Typography>
+          <Stack sx={{ width: "100%" }} direction={"column"} spacing={5}>
+            <Stack sx={{ width: "100%" }} direction={matches ? "row" : "column"} spacing={6}>
+              <Stack sx={{ width: matches ? "50%" : "100%", mb: "90px" }} spacing={3}>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{
+                    whiteSpace: "pre-line",
+                  }}
+                >
+                  Время и место получения:
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  {`7 февраля: с 15:00 до 20:00
+                    8 февраля: с 10:00 до 20:00`}
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  СК Лужники, Москва, ул.Лужники, 24, стр. 1
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  {`11 февраля 2024 года (в день старта) с 8:00 до 10:30 
+                  выдача стартовых комплектов будет проводиться на 
+                  территории зоны отдыха «Альфа-Битца»`}
+                </Typography>
+              </Stack>
             </Stack>
           </Stack>
         )}
       </Box>
-    </Stack>
+    </Stack >
   );
 };
 
