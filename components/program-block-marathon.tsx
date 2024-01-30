@@ -68,18 +68,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
           {programs.map((program, index) => {
             return (
               <Stack key={index} direction={"column"} spacing={"7px"}>
-                {/* <Typography
-                  variant="body"
-                  color={"white"}
-                  sx={{
-                    fontFamily: isMobile
-                      ? "Gotham Pro Regular"
-                      : "Gotham Pro Light",
-                  }}
-                >
-                  {program.time}
-                </Typography> */}
-                <ProgramBlock width="30%" key={index} bg={bg} isBold={program.isBold} isMobile={isMobile} time={program.time} text={program.text} />
+                <ProgramBlock textAlign="center" timeWidth="60%" width="40%" key={index} bg={bg} isBold={program.isBold} isMobile={isMobile} time={program.time} text={program.text} />
               </Stack>
             );
           })}

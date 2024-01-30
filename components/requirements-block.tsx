@@ -24,7 +24,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line", textAlign: matches ? "justify" : "left", width: matches ? "50%" : "100%" }}
+            sx={{ whiteSpace: "pre-line", fontFamily: matches ? "Gotham Pro Regular" : "Gotham Pro Light" , textAlign: matches ? "justify" : "left", width: matches ? "50%" : "100%" }}
           >
             {text1}
           </Typography>
@@ -32,7 +32,7 @@ const Requirements = ({ text1, text2, bg }: Props) => {
           <Typography
             variant="body"
             color={"white"}
-            sx={{ whiteSpace: "pre-line", textAlign: matches ? "justify" : "left", width: matches ? "50%" : "100%" }}
+            sx={{ whiteSpace: "pre-line", fontFamily: matches ? "Gotham Pro Regular" : "Gotham Pro Light" , textAlign: matches ? "justify" : "left", width: matches ? "50%" : "100%" }}
             dangerouslySetInnerHTML={{
               __html: text2,
             }}

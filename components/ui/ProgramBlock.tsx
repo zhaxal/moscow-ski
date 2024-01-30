@@ -7,10 +7,12 @@ interface ProgramBlockProps {
     text: string;
     time: string;
     width: string;
-    isBold?: boolean;    
+    isBold?: boolean;
+    timeWidth?: string;
+    textAlign?: string;
 }
 
-const ProgramBlock = ({ text, time, width, isMobile, isBold }: ProgramBlockProps) => {
+const ProgramBlock = ({ text, time, width, isMobile, isBold, timeWidth = "50%", textAlign = "left" }: ProgramBlockProps) => {
     return (
         <Stack direction={"row"} spacing={isMobile ? 7 : 1}>
             <Typography
@@ -18,11 +20,11 @@ const ProgramBlock = ({ text, time, width, isMobile, isBold }: ProgramBlockProps
                 color={"white"}
                 sx={{
                     whiteSpace: "pre-line",
-                    width: isMobile ? width : "50%",
-                    textAlign: "left",
+                    width: isMobile ? width : timeWidth,
+                    textAlign: textAlign,
                     fontFamily: isMobile
                         ? isBold ? "Gotham Pro Bold" : "Gotham Pro Light"
-                        : "Gotham Pro Light",
+                        : isBold ? "Gotham Pro Bold" : "Gotham Pro Light",
                 }}
             >
                 {time}
@@ -36,7 +38,7 @@ const ProgramBlock = ({ text, time, width, isMobile, isBold }: ProgramBlockProps
                     maxWidth: isMobile ? "650px" : "80%",
                     fontFamily: isMobile
                         ? isBold ? "Gotham Pro Bold" : "Gotham Pro Light"
-                        : "Gotham Pro Light",
+                        : isBold ? "Gotham Pro Bold" : "Gotham Pro Light",
                 }}
             >
                 {text}
