@@ -110,19 +110,19 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
             <CustomBtn
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-              text={"РЕГИСТРАЦИЯ"}
+              text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
               height={isMobile ? "60px" : "48px"}
               width={isMobile ? "468px" : "320px"}
               lineHeight={"30px"}
               fontSize={isMobile ? "21px" : "14px"}
-              onClick={() => {
-                window
-                  .open(
-                    "https://reg.place/events/lyzhnya-rossii-2024-deti",
-                    "_blank"
-                  )
-                  ?.focus();
-              }}
+              // onClick={() => {
+              //   window
+              //     .open(
+              //       "https://reg.place/events/lyzhnya-rossii-2024-deti",
+              //       "_blank"
+              //     )
+              //     ?.focus();
+              // }}
             />
             {events9.map((event, index) => (
               <Stack key={index} direction={"column"} spacing={"7px"}>
@@ -164,19 +164,19 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             </Typography>
             <CustomBtn
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-              text={"РЕГИСТРАЦИЯ"}
+              text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
               height={isMobile ? "60px" : "48px"}
               width={isMobile ? "468px" : "320px"}
               lineHeight={"30px"}
               fontSize={isMobile ? "21px" : "14px"}
-              onClick={() => {
-                window
-                  .open(
-                    "https://reg.place/events/lyzhnya-rossii-2024",
-                    "_blank"
-                  )
-                  ?.focus();
-              }}
+              // onClick={() => {
+              //   window
+              //     .open(
+              //       "https://reg.place/events/lyzhnya-rossii-2024",
+              //       "_blank"
+              //     )
+              //     ?.focus();
+              // }}
             />
             <Stack direction={"column"} spacing={"7px"}>
               {events10.map((event, index) => (

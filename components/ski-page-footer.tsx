@@ -101,19 +101,19 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                         </Stack>
                         <CustomBtn
                             bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                            text={"РЕГИСТРАЦИЯ"}
+                            text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                             height={isMobile ? "60px" : "48px"}
                             width={isMobile ? "468px" : "100%"}
                             lineHeight={"30px"}
                             fontSize={isMobile ? "21px" : "14px"}
-                            onClick={() => {
-                                window
-                                    .open(
-                                        "https://reg.place/events/lyzhnya-rossii-2024-deti",
-                                        "_blank"
-                                    )
-                                    ?.focus();
-                            }}
+                            // onClick={() => {
+                            //     window
+                            //         .open(
+                            //             "https://reg.place/events/lyzhnya-rossii-2024-deti",
+                            //             "_blank"
+                            //         )
+                            //         ?.focus();
+                            // }}
                         />
                     </Stack>
                 </Stack>
@@ -245,19 +245,19 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                         </Stack>
                         <CustomBtn
                             bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                            text={"РЕГИСТРАЦИЯ"}
+                            text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                             height={isMobile ? "60px" : "48px"}
                             width={isMobile ? "468px" : "100%"}
                             lineHeight={"30px"}
                             fontSize={isMobile ? "21px" : "14px"}
-                            onClick={() => {
-                                window
-                                    .open(
-                                        "https://reg.place/events/lyzhnya-rossii-2024",
-                                        "_blank"
-                                    )
-                                    ?.focus();
-                            }}
+                            // onClick={() => {
+                            //     window
+                            //         .open(
+                            //             "https://reg.place/events/lyzhnya-rossii-2024",
+                            //             "_blank"
+                            //         )
+                            //         ?.focus();
+                            // }}
                         />
                     </Stack>
                 </Stack>
