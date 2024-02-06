@@ -338,7 +338,7 @@ const SkiPage: NextPage = () => {
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isSki={true}
-              />*
+              />
               <MapBlock
                 matches={matches}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}

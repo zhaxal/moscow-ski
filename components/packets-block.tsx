@@ -19,95 +19,94 @@ const Packets = ({ bg, matches, isSki }: Props) => {
       <Header bg={bg} text={"ПАКЕТ УЧАСТНИКА"} />
       <Box sx={{ width: "100%", px: "16px" }}>
         {isSki ? (
-          <>
-            <Stack sx={{ width: "100%" }} direction={"column"} spacing={5}>
-              <Stack sx={{ width: "100%" }} direction={matches ? "row" : "column"} spacing={6}>
-                <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{
-                      whiteSpace: "pre-line",
-                    }}
-                    dangerouslySetInnerHTML={{
-                      __html: `<strong>Время и место получения:</spring>`,
-                    }}
-                  />
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    {`7 февраля: с 15:00 до 20:00
+          <Stack sx={{ width: "100%" }} direction={"column"} spacing={5}>
+            <Typography variant="body"
+              color={"white"}
+              sx={{
+                fontSize: "20px",
+                fontFamily: "Gotham Pro Bold",
+                textTransform: "uppercase"
+              }}>
+              регистрация участников на месте не производится
+            </Typography>
+            <Stack sx={{ width: "100%" }} direction={matches ? "row" : "column"} spacing={6}>
+              <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{
+                    whiteSpace: "pre-line",
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: `Время и место получения:
+                    <strong>(Для бегущих в Альфа-Битце и Лужниках):</strong>`,
+                  }}
+                />
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  {`7 февраля: с 15:00 до 20:00
                         8 февраля: с 10:00 до 20:00`}
-                  </Typography>
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    г. Москва, ул. Лужники, д. 24, Биатлонная трасса
-                  </Typography>
-                </Stack>
-                <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={1}>
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{
-                      whiteSpace: "pre-line",
-                    }}
-                    dangerouslySetInnerHTML={{
-                      __html: `<strong>Как добраться:</spring>`,
-                    }}
-                  />
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  ул. Лужники д. 24
+                </Typography>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  10 февраля 2024 года (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении «Регистрация»
+                </Typography>
+              </Stack>
+              <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
+                <Typography
+                  variant="body"
+                  color={"white"}
+                  sx={{
+                    whiteSpace: "pre-line",
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: `Время и место получения:
+                    <strong>(Для бегущих в Вороново):</strong>`,
+                  }}
+                />
 
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    {`От станции метро «Спортивная» через Центральное КПП 
-                (Павильон «1Е»)`}
-                  </Typography>
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    {`От станции МЦК «Лужники» через Центральное КПП 
-                (Павильон «1Е»)`}
-                  </Typography>
-                  <Typography
-                    variant="body"
-                    color={"white"}
-                    sx={{ whiteSpace: "pre-line" }}
-                  >
-                    {`От станции «Воробьевы горы» через КПП2`}
-                  </Typography>
-                </Stack>
-              </Stack>
-              <Stack sx={{ width: "100%" }} direction={"row"}>
                 <Typography
                   variant="body"
                   color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
-                  dangerouslySetInnerHTML={{
-                    __html: `<strong>9 февраля 2024 года</strong> (в день старта) с 9:00 до 13:15 выдача стартовых комплектов будет проводиться по адресу: ул. Лужники, д. 24, Биатлонная трасса в шатре «Регистрация»`,
-                  }}
-                ></Typography>
-              </Stack>
-              <Stack sx={{ width: "100%" }} direction={"row"}>
-                <Typography
-                  variant="body"
-                  color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
-                  dangerouslySetInnerHTML={{
-                    __html: `<strong>10 февраля 2024 года</strong> (в день старта) с 8:00 до 12:30 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`,
-                  }}
-                ></Typography>
+                  sx={{ whiteSpace: "pre-line" }}>
+                  10 февраля 2024 года (в день старта) с 09:30 до 10:45  выдача стартовых комплектов будет проводиться по адресу: г. Москва, п. Вороновское, пос. ЛМС, лыжная трасса
+                </Typography>
               </Stack>
             </Stack>
-          </>
+            {/* <Stack sx={{ width: "100%" }} direction={"row"}>
+              <Typography
+                variant="body"
+                color={"white"}
+                sx={{ whiteSpace: "pre-line" }}
+                dangerouslySetInnerHTML={{
+                  __html: `<strong>9 февраля 2024 года</strong> (в день старта) с 9:00 до 13:15 выдача стартовых комплектов будет проводиться по адресу: ул. Лужники, д. 24, Биатлонная трасса в шатре «Регистрация»`,
+                }}
+              ></Typography>
+            </Stack>
+            <Stack sx={{ width: "100%" }} direction={"row"}>
+              <Typography
+                variant="body"
+                color={"white"}
+                sx={{ whiteSpace: "pre-line" }}
+                dangerouslySetInnerHTML={{
+                  __html: `<strong>10 февраля 2024 года</strong> (в день старта) с 8:00 до 12:30 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении  «Регистрация»`,
+                }}
+              ></Typography>
+            </Stack> */}
+          </Stack>
         ) : (
           <Stack sx={{ width: "100%" }} direction={"column"} spacing={5}>
             <Stack sx={{ width: "100%" }} direction={matches ? "row" : "column"} spacing={6}>
