@@ -349,7 +349,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             >
               {"10 ФЕВРАЛЯ ВОРОНОВСКОЕ"}
             </Typography>
-            <Typography variant="body"
+            {/* <Typography variant="body"
               color={"white"}
               sx={{
                 fontSize: "20px",
@@ -357,7 +357,23 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                 textTransform: "uppercase"
               }}>
               регистрация участников на месте не производится
-            </Typography>
+            </Typography> */}
+            <CustomBtn
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              text={"РЕГИСТРАЦИЯ"}
+              height={isMobile ? "60px" : "48px"}
+              width={isMobile ? "468px" : "100%"}
+              lineHeight={"30px"}
+              fontSize={isMobile ? "21px" : "14px"}
+            onClick={() => {
+                window
+                    .open(
+                        "https://reg.place/events/tinao-lyzhnya-rossii-2024",
+                        "_blank"
+                    )
+                    ?.focus();
+            }}
+            />
             {events10_2.map((event, index) => (
               <Stack key={index} direction={"column"} spacing={"7px"}>
                 <Typography
