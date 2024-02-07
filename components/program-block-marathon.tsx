@@ -38,7 +38,7 @@ const programs = [
     "isBold": false
   },
   {
-    "time": "15:30",
+    "time": "14:30",
     "text": "Закрытие выхода на 3 круг для дистанции 51км",
     "isBold": false
   },
