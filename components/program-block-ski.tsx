@@ -365,14 +365,14 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               width={isMobile ? "468px" : "100%"}
               lineHeight={"30px"}
               fontSize={isMobile ? "21px" : "14px"}
-            onClick={() => {
+              onClick={() => {
                 window
-                    .open(
-                        "https://reg.place/events/tinao-lyzhnya-rossii-2024",
-                        "_blank"
-                    )
-                    ?.focus();
-            }}
+                  .open(
+                    "https://reg.place/events/tinao-lyzhnya-rossii-2024",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
             />
             {events10_2.map((event, index) => (
               <Stack key={index} direction={"column"} spacing={"7px"}>

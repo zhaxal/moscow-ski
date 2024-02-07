@@ -48,22 +48,32 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   sx={{ whiteSpace: "pre-line" }}
                 >
                   {`7 февраля: с 15:00 до 20:00
-                        8 февраля: с 10:00 до 20:00`}
+                        8 февраля: с 10:00 до 20:00
+                        ул. Лужники д. 24`}
                 </Typography>
                 <Typography
                   variant="body"
                   color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
-                >
-                  ул. Лужники д. 24
-                </Typography>
+                  sx={{
+                    whiteSpace: "pre-line",
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: `<strong>(Для бегущих в Лужниках):</strong>
+                    9 февраля 2024 г. (в день старта) с 9:00 до 13:15 выдача стартовых комплектов будет проводиться по адресу: 
+                    <div style="margin-top:5px">ул. Лужники, д. 24, лыжно-биатлонная трасса в шатре «Регистрация»</div>`
+                  }}
+                />
                 <Typography
                   variant="body"
                   color={"white"}
-                  sx={{ whiteSpace: "pre-line" }}
-                >
-                  10 февраля 2024 года (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении «Регистрация»
-                </Typography>
+                  sx={{
+                    whiteSpace: "pre-line",
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: `<strong>(Для бегущих в Альфа-Битце):</strong>
+                    10 февраля 2024 года (в день старта) с 8:00 до 13:15 выдача стартовых комплектов будет проводиться на территории зоны отдыха «Альфа-Битца» в помещении «Регистрация»`
+                  }}
+                />
               </Stack>
               <Stack sx={{ width: matches ? "50%" : "100%" }} spacing={3}>
                 <Typography
