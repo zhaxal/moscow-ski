@@ -154,6 +154,27 @@ const Packets = ({ bg, matches, isSki }: Props) => {
                   выдача стартовых комплектов будет проводиться на 
                   территории зоны отдыха «Альфа-Битца»`}
                 </Typography>
+                <Typography variant="body"
+                  color={"white"}
+                  sx={{
+                    fontFamily: "Gotham Pro Bold",
+                  }}>
+                  Почта для связи с организатором:
+                </Typography>
+                <Typography
+                  variant="body"
+                  component={"a"}
+                  color={"white"}
+                  href={"mailto:pershutkinae@gmail.com"}
+                  sx={{
+                    fontFamily: "Gotham Pro Bold",
+                    textDecoration: "underline",
+                    textDecorationThickness: "1px",
+                    textUnderlineOffset: "3px",
+                    cursor: "pointer",
+                  }}>
+                  pershutkinae@gmail.com
+                </Typography>
               </Stack>
             </Stack>
           </Stack>
