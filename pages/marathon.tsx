@@ -10,6 +10,7 @@ import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
 import Packets from "../components/packets-block";
+import PlayerBlock from "../components/player-block";
 
 const MarathonPage: NextPage = () => {
   const theme = useTheme();
@@ -300,6 +301,10 @@ const MarathonPage: NextPage = () => {
               }}
               spacing={matches ? "20px" : 2}
             >
+              <PlayerBlock
+                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+                isMobile={matches}
+              />
               <Information
                 text={`«Московский Лыжный марафон» — это новое любительское соревнование в городском спортивном календаре. 
 
@@ -313,7 +318,7 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isMobile={matches}
               />
-              
+
               <Requirements
                 text1={`Соревнования проводятся в соответствии с правилами лыжных гонок. Стиль свободный.
 
