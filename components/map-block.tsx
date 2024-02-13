@@ -32,7 +32,7 @@ const MapBlock = ({ bg, matches, isSki }: Props) => {
           spacing={"18px"}
           justifyContent={"space-around"}
         >
-          <Box
+          {/* <Box
             component={"img"}
             src={
               matches
@@ -44,7 +44,7 @@ const MapBlock = ({ bg, matches, isSki }: Props) => {
             onClick={() =>
               handleOpen("/images/desktop/ski-page/fMapPreview.jpg")
             }
-          />
+          /> */}
           <Box
             component={"img"}
             src={
@@ -55,7 +55,7 @@ const MapBlock = ({ bg, matches, isSki }: Props) => {
             maxWidth={matches ? "640px" : "100%"}
             maxHeight={matches ? "700px" : "462px"}
             onClick={() =>
-              handleOpen("/images/desktop/ski-page/sMapPreview.jpg")
+              handleOpen("/images/desktop/ski-page/sMap.jpg")
             }
           />
         </Stack>

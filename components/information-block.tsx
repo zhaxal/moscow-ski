@@ -16,7 +16,7 @@ const Information = ({ text, bg, isMobile }: Props) => {
       spacing={isMobile ? "20px" : 2}
     >
       <Header bg={bg} text={"ОБЩАЯ ИНФОРМАЦИЯ"} />
-      <Box sx={{ width: "100%", px: "16px" }}>
+      <Box sx={{ width: isMobile ? "50%" : "100%", px: "16px" }}>
         <Typography
           variant="body"
           color={"white"}

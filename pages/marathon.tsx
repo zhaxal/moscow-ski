@@ -9,8 +9,8 @@ import { NextPage } from "next";
 import CustomBtn from "../components/ui/CustomBtn";
 import { useRouter } from "next/router";
 import Footer from "../components/footer-block";
-import Script from "next/script";
 import Packets from "../components/packets-block";
+import PlayerBlock from "../components/player-block";
 
 const MarathonPage: NextPage = () => {
   const theme = useTheme();
@@ -19,36 +19,6 @@ const MarathonPage: NextPage = () => {
 
   return (
     <>
-      <Script
-        id="id"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-       
-          ym(91937297, "init", {
-               clickmap:true,
-               trackLinks:true,
-               accurateTrackBounce:true,
-               webvisor:true
-          });
-            `,
-        }}
-      />
-      <noscript>
-        <div>
-          <img
-            src="https://mc.yandex.ru/watch/91937297"
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-          />
-        </div>
-      </noscript>
-
       <Box
         height="100%"
         sx={{
@@ -82,14 +52,14 @@ const MarathonPage: NextPage = () => {
                     alignItems={"center"}
                     spacing={"58px"}
                   >
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         width: 256,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                     <Box
                       component={"img"}
                       src={"/images/desktop/logo/ski-logo.svg"}
@@ -125,7 +95,7 @@ const MarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
 
@@ -156,7 +126,7 @@ const MarathonPage: NextPage = () => {
                         color={"#870000"}
                         variant={"desc"}
                       >
-                        {`Первый московский лыжный марафон`}
+                        {`Второй московский лыжный марафон`}
                       </Typography>
                     </Stack>
                   </Box>
@@ -176,14 +146,14 @@ const MarathonPage: NextPage = () => {
                     justifyContent={"space-around"}
                     sx={{ mb: 5 }}
                   >
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         maxWidth: 155,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
 
                     <Box
                       component={"img"}
@@ -220,7 +190,7 @@ const MarathonPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      12 ФЕВРАЛЯ 2023
+                      11 ФЕВРАЛЯ 2024
                     </Typography>
                   </Stack>
                   <Box
@@ -259,7 +229,7 @@ const MarathonPage: NextPage = () => {
 
 
 
-                        Первый московский лыжный марафон
+                        Второй московский лыжный марафон
                                              
                         
                         
@@ -295,18 +265,18 @@ const MarathonPage: NextPage = () => {
             >
               <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
                 fontSize={matches ? "21px" : "14px"}
                 onClick={() => {
-                  // window
-                  //   .open(
-                  //     "https://russialoppet.ru/registration/msm2023/",
-                  //     "_blank"
-                  //   )
-                  //   ?.focus();
+                  window
+                    .open(
+                      "https://russialoppet.ru/events/moscow-2024.html",
+                      "_blank"
+                    )
+                    ?.focus();
                 }}
               />
             </Stack>
@@ -331,19 +301,16 @@ const MarathonPage: NextPage = () => {
               }}
               spacing={matches ? "20px" : 2}
             >
+              <PlayerBlock
+                bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+                isMobile={matches}
+              />
               <Information
-                text={`Московский лыжный марафон — это совершенно новый марафон в серии Russialoppet
-                Стань частью лыжного сообщества!
-                Такой гонки еще не было в Москве.
-                Ждем тебя 12 февраля 2023 года!
-                
-                Московский марафон войдет в календари Суперкубка, Кубка Команд и проект «Лаки Лузер»
+                text={`«Московский Лыжный марафон» — это новое любительское соревнование в городском спортивном календаре. 
 
-                Также твой результат будет включен в рейтинг финишеров.
+                11 февраля 2024 года гонка примет большое количество фанатов лыжного спорта России и станет ярким событием Московского региона.
                 
-                Друзья, Ваши фотографии с Первого Московского лыжного марафона готовы, и ждут Вас <a style="text-decoration: underline; text-decoration-thickness: 1px" target="_blank" href="https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023">https://www.sport-images.ru/events/moskovskiy-lijniy-marafon-2023/</a>
-
-                Для Вас доступен удобный поиск по селфи, фамилии или стартовому номеру.`}
+                Московский лыжный марафон входит в кубоковые зачеты Russialoppet: Суперкубок лыжных марафонов, Большой и Малый Кубок Команд и лотерею «Лаки Лузер», также результат будет учтен в рейтинге финишёров, паспорте и мастере марафонов русской серии длинных гонок.`}
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isMobile={matches}
               />
@@ -351,23 +318,21 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isMobile={matches}
               />
+
               <Requirements
                 text1={`Соревнования проводятся в соответствии с правилами лыжных гонок. Стиль свободный.
 
-                К участию в соревновании допускаются лыжники-любители и спортсмены субъектов Российской Федерации, ближнего и дальнего зарубежья в возрасте от 17 и старше на дистанцию 17 км и 19 лет и старше на дистанции 34 и 51 км, имеющие медицинский допуск к участию в соревнованиях. Возраст участников определяется по дате рождения (полных лет) по состоянию на день проведения соревнований. Участники, не прошедшие контрольные пункты по дистанции, будут дисквалифицированы, их результат аннулируется. 
+                К участию в соревновании допускаются лыжники-любители и спортсмены субъектов Российской Федерации, ближнего и дальнего зарубежья в возрасте от 17 лет и старше, имеющие медицинский допуск к участию в соревнованиях. Возраст участников определяется по дате рождения (полных лет) по состоянию на день проведения соревнований. Участники, не прошедшие контрольные пункты по дистанции, будут дисквалифицированы, их результат аннулируется.                
                 
                 Победители определяются по наименьшему количеству времени, затраченному на прохождение дистанции.`}
-                text2={`Все участники предоставляют на комиссию по допуску 
-                        следующие документы:
-                      <ul>
-                        <li>медицинский допуск, подтверждающий состояние 
-                        здоровья и возможность допуска к соревнованию, 
-                        согласно требованиям приказа Минздрава России 
-                        от 23 октября 2020 г. № 1144н</li>
-                        <li>паспорт или документ, подтверждающий личность 
-                        зарегистрированного участника</li>
-                      </ul>
-                    `}
+                text2={`
+                Все участники предоставляют на комиссию по допуску следующие документы: 
+
+                &mdash;&nbsp;медицинский допуск, подтверждающий состояние здоровья и возможность допуска к соревнованию,согласно требованиям приказа Минздрава России от 23 октября 2020 г. № 1144н
+                
+                &mdash;&nbsp;паспорт или документ, подтверждающий личность зарегистрированного участника
+                
+                &mdash;&nbsp;договор о страховании (оригинал) жизни и здоровья от несчастных случаев`}
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
               />
               <Packets
@@ -375,13 +340,13 @@ const MarathonPage: NextPage = () => {
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 isSki={false}
               />
-              <Documents
+              {/* <Documents
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
                 file1={"Лыжный марафон_полож_к.pdf"}
                 isMobile={matches}
                 height={"116px"}
-              />
+              /> */}
               <Stack
                 sx={{
                   width: "100%",
@@ -391,18 +356,18 @@ const MarathonPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                  text={"РЕГИСТРАЦИЯ"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
                   fontSize={matches ? "21px" : "14px"}
                   onClick={() => {
-                    // window
-                    //   .open(
-                    //     "https://russialoppet.ru/registration/msm2023/",
-                    //     "_blank"
-                    //   )
-                    //   ?.focus();
+                    window
+                      .open(
+                        "https://russialoppet.ru/events/moscow-2024.html",
+                        "_blank"
+                      )
+                      ?.focus();
                   }}
                 />
               </Stack>

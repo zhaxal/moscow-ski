@@ -12,9 +12,6 @@ export default function Home() {
 
   return matches ? (
     <>
-      <Head>
-        <meta name="yandex-verification" content="5257f1e845f3792f" />
-      </Head>
       <Box
         minHeight="100vh"
         sx={{
@@ -39,17 +36,18 @@ export default function Home() {
               alt={"minsport"}
               src={"/images/mobile/icon/minsport.svg"}
               sx={{
-                width: "42x",
+                width: "52x",
+                height: "76px"
               }}
             />
-            <Box
+            {/* <Box
               component={"img"}
               alt={"mossport-snow"}
               src={"/images/mobile/icon/mossport-snow.svg"}
               sx={{
                 width: "153px",
               }}
-            />
+            /> */}
 
             <Box
               component={"img"}
@@ -96,16 +94,25 @@ export default function Home() {
               }}
             />
 
-            <Box
+            {/* <Box
               component={"img"}
               alt={"matchIcon"}
               src={"/images/mobile/icon/matchLogo.svg"}
               sx={{
                 width: "110px",
               }}
+            /> */}
+
+            <Box
+              component={"img"}
+              alt={"ozonIcon"}
+              src={"/images/mobile/icon/ozon-logo.svg"}
+              sx={{
+                width: "110px",
+              }}
             />
           </Stack>
-          <Stack sx={{ width: "100%", justifyContent: "center" }}>
+          <Stack sx={{ width: "100%", justifyContent: "center", position: "relative" }}>
             <Box
               component={"img"}
               alt={"mainPageImg"}
@@ -115,6 +122,28 @@ export default function Home() {
                 mx: "auto",
               }}
             />
+            <Typography
+              variant="heading" color={"white"}
+              sx={{
+                position: "absolute",
+                bottom: "8%",
+                fontSize: "36px",
+                lineHeight: "36px",
+                left: "2%",
+              }}>
+              9 - 10 ФЕВРАЛЯ 2024
+            </Typography>
+            <Typography
+              variant="heading" color={"white"}
+              sx={{
+                position: "absolute",
+                bottom: "8%",
+                fontSize: "36px",
+                lineHeight: "36px",
+                right: "2%",
+              }}>
+              11 ФЕВРАЛЯ 2024
+            </Typography>
           </Stack>
           <Stack
             direction={"row"}
@@ -125,7 +154,7 @@ export default function Home() {
           >
             <Stack direction={"column"} spacing={"24px"} alignItems={"center"}>
               <Typography variant="heading" color={"white"}>
-                ЛЫЖНЯ РОССИИ 2023
+                ЛЫЖНЯ РОССИИ 2024
               </Typography>
               <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
@@ -153,7 +182,7 @@ export default function Home() {
             </Stack>
           </Stack>
         </Container>
-      </Box>
+      </Box >
     </>
   ) : (
     <>
@@ -166,7 +195,7 @@ export default function Home() {
           sx={{
             position: "absolute",
             mt: 1,
-            ml: 2,
+            ml: 1,
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -219,10 +248,31 @@ export default function Home() {
           }}
           spacing={"15px"}
         >
+          <Typography variant="heading" color={"white"} sx={{
+            textOverflow: "ellipsis",
+            whiteSpace: "pre-line",
+            overflow: "hidden",
+            fontWeight: 400,
+            fontSize: "46px",
+            textAlign: "center",
+          }}>
+            {`ЛЫЖНЯ РОССИИ 
+            2024`}
+          </Typography>
+          <Typography variant="heading" color={"white"} sx={{
+            textOverflow: "ellipsis",
+            whiteSpace: "pre-line",
+            overflow: "hidden",
+            fontWeight: 400,
+            fontSize: "36px",
+            textAlign: "center",
+          }}>
+            {`9 - 10 ФЕВРАЛЯ 2024`}
+          </Typography>
           <Box
             component={"img"}
             alt={"blueTop"}
-            src={"/images/mobile/main-page/blue-top.png"}
+            src={"/images/mobile/main-page/blue-top-1.png"}
             sx={{
               width: "100%",
             }}
@@ -243,19 +293,20 @@ export default function Home() {
             width: "100%",
             background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)",
             py: "35px",
+            alignItems: "center",
           }}
           direction={"row"}
           justifyContent={"center"}
           spacing={1}
         >
-          <Box
+          {/* <Box
             component={"img"}
             alt={"mossportSnow"}
             src={"/images/mobile/icon/mossport-snow.svg"}
             sx={{
               maxWidth: logos ? "97px" : "70px",
             }}
-          />
+          /> */}
 
           <Box
             component={"img"}
@@ -284,12 +335,22 @@ export default function Home() {
             }}
           />
 
-          <Box
+          {/* <Box
             component={"img"}
             alt={"matchIcon"}
             src={"/images/mobile/icon/matchLogo.svg"}
             sx={{
               maxWidth: logos ? "88px" : "78px",
+            }}
+          /> */}
+
+          <Box
+            component={"img"}
+            alt={"ozonIcon"}
+            src={"/images/mobile/icon/ozon-logo.svg"}
+            sx={{
+              maxWidth: logos ? "88px" : "78px",
+              height: "20%",
             }}
           />
         </Stack>
@@ -302,14 +363,37 @@ export default function Home() {
             background: "#E6342D",
             pb: "64px",
           }}
-          spacing={"77px"}
         >
+          <Stack>
+            <Typography variant="heading" color={"white"} sx={{
+              textOverflow: "ellipsis",
+              whiteSpace: "pre-line",
+              overflow: "hidden",
+              fontWeight: 400,
+              fontSize: "46px",
+              textAlign: "center",
+            }}>
+              {`МОСКОВСКИЙ ЛЫЖНЫЙ МАРАФОН`}
+            </Typography>
+            <Typography variant="heading" color={"white"} sx={{
+              textOverflow: "ellipsis",
+              whiteSpace: "pre-line",
+              overflow: "hidden",
+              fontWeight: 400,
+              fontSize: "36px",
+              textAlign: "center",
+            }}>
+              {`11 ФЕВРАЛЯ 2024`}
+            </Typography>
+          </Stack>
+
           <Box
             component={"img"}
-            src={"/images/mobile/main-page/red-bottom.png"}
+            src={"/images/mobile/main-page/red-bottom-1.png"}
             alt={"redBottom"}
             sx={{
               width: "100%",
+              mb: "77px"
             }}
           />
           <CustomBtn

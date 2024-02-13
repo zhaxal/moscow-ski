@@ -13,6 +13,7 @@ import Footer from "../components/footer-block";
 import Script from "next/script";
 import Packets from "../components/packets-block";
 import MapBlock from "../components/map-block";
+import SkiPageFooter from "../components/ski-page-footer";
 
 const SkiPage: NextPage = () => {
   const theme = useTheme();
@@ -21,36 +22,6 @@ const SkiPage: NextPage = () => {
 
   return (
     <>
-      <Script
-        id="id"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-       
-          ym(91937297, "init", {
-               clickmap:true,
-               trackLinks:true,
-               accurateTrackBounce:true,
-               webvisor:true
-          });
-            `,
-        }}
-      />
-      <noscript>
-        <div>
-          <img
-            src="https://mc.yandex.ru/watch/91937297"
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-          />
-        </div>
-      </noscript>
-
       <Box
         height="100%"
         sx={{
@@ -87,6 +58,7 @@ const SkiPage: NextPage = () => {
                     px={"30px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
+                    mb={"20px"}
                   >
                     <Box
                       component={"img"}
@@ -96,17 +68,17 @@ const SkiPage: NextPage = () => {
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         width: 256,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
 
-                  <Stack
+                  {/* <Stack
                     sx={{ mb: "20px", width: "100%", alignItems: "center" }}
                   >
                     <Typography
@@ -117,9 +89,9 @@ const SkiPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      11 ФЕВРАЛЯ 2023
+                      10 ФЕВРАЛЯ 2024
                     </Typography>
-                  </Stack>
+                  </Stack> */}
 
                   <Box
                     sx={{
@@ -143,23 +115,22 @@ const SkiPage: NextPage = () => {
                     >
                       <Typography
                         sx={{
-                          textOverflow: "ellipsis",
                           whiteSpace: "pre-line",
-                          overflow: "hidden",
+                          fontSize: "24px"
                         }}
                         color={"#005A87"}
                         variant={"desc"}
-                      >
-                        {`«Лыжня России» — ежегодное спортивное мероприятие для любителей 
-                          беговых лыж. Это самая крупная по числу участников лыжная гонка не 
-                          только в России, но и в Европе. Каждый год на старт выходит более 
-                          500 тысяч человек из более чем 70 субъектов страны.
-
+                        dangerouslySetInnerHTML={{
+                          __html: `«Лыжня России» — ежегодное спортивное мероприятие для любителей 
+                          беговых лыж. Это самая крупная по числу участников лыжная гонка не 
+                          только в России. Каждый год на старт выходит более 500&nbsp;тысяч 
+                          человек из более чем 70 субъектов страны.
+  
                           «Лыжня России» проводится с 1982 года. К старту в гонке допускаются как 
                           любители, так и профессиональные спортсмены. Участие в мероприятии 
-                          бесплатное.
-                        `}
-                      </Typography>
+                          бесплатное.`,
+                        }}
+                      />
                     </Stack>
                   </Box>
                 </Stack>
@@ -179,6 +150,7 @@ const SkiPage: NextPage = () => {
                   <Stack
                     direction={"row-reverse"}
                     px={"30px"}
+                    mb={"20px"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
                   >
@@ -186,20 +158,20 @@ const SkiPage: NextPage = () => {
                       component={"img"}
                       src={"/images/desktop/logo/lyzhnya-logo.svg"}
                       sx={{
-                        maxWidth: 156,
+                        maxWidth: 150,
                       }}
                       alt="skiLogo"
                     />
-                    <Box
+                    {/* <Box
                       component={"img"}
                       src={"/images/mobile/icon/mossport-snow.svg"}
                       sx={{
                         maxWidth: 186,
                       }}
                       alt="mossportLogo"
-                    />
+                    /> */}
                   </Stack>
-                  <Stack
+                  {/* <Stack
                     sx={{ my: "20px", width: "100%", alignItems: "center" }}
                   >
                     <Typography
@@ -210,9 +182,9 @@ const SkiPage: NextPage = () => {
                         color: "white",
                       }}
                     >
-                      11 ФЕВРАЛЯ 2023
+                      10 ФЕВРАЛЯ 2024
                     </Typography>
-                  </Stack>
+                  </Stack> */}
                   <Box
                     sx={{
                       backgroundImage:
@@ -227,7 +199,7 @@ const SkiPage: NextPage = () => {
                   >
                     <Stack
                       sx={{
-                        ml: "83px",
+                        ml: "73px",
                         justifyContent: "center",
                         alignItems: "end",
                         height: "100%",
@@ -239,31 +211,16 @@ const SkiPage: NextPage = () => {
                           whiteSpace: "pre-line",
                           overflow: "hidden",
                           fontWeight: 400,
-                          fontSize: "24px",
+                          fontSize: "20px",
                         }}
                         color={"#005A87"}
                         variant={"desc"}
-                      >
-                        {`«Лыжня России» — 
-                          ежегодное спортивное 
-                          мероприятие для любителей 
-                          беговых лыж. Это самая 
-                          крупная по числу участников 
-                          лыжная гонка не только в 
-                          России, но и в Европе. 
-                          Каждый год на старт 
-                          выходит более 500 тысяч 
-                          человек из более чем 70 
-                          субъектов страны.
+                        dangerouslySetInnerHTML={{
+                          __html: `«Лыжня России» — ежегодное спортивное мероприятие для любителей беговых лыж. Это самая крупная по числу участников гонка в России. Каждый год на старт выходит более 500&nbsp;тысяч человек из более чем 70 субъектов страны.
 
-                          «Лыжня России» проводится 
-                          с 1982 года. К старту в гонке 
-                          допускаются как любители, 
-                          так и профессиональные 
-                          спортсмены. Участие в 
-                          мероприятии бесплатное.
-                        `}
-                      </Typography>
+                          «Лыжня России» проводится с 1982 года. К старту в гонке допускаются как любители, так и профессиональные спортсмены. Участие в мероприятии бесплатное`,
+                        }}
+                      />
                     </Stack>
                     <Box
                       component={"img"}
@@ -290,22 +247,22 @@ const SkiPage: NextPage = () => {
                 mb: matches ? "112px" : "46px",
               }}
             >
-              <CustomBtn
+              {/* <CustomBtn
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
                 width={matches ? "468px" : "320px"}
                 lineHeight={"30px"}
                 fontSize={matches ? "21px" : "14px"}
                 onClick={() => {
-                  // window
-                  //   .open(
-                  //     "https://reg.place/events/lyzhnya-rossii-2023",
-                  //     "_blank"
-                  //   )
-                  //   ?.focus();
+                  window
+                    .open(
+                      "https://reg.place/events/lyzhnya-rossii-2024",
+                      "_blank"
+                    )
+                    ?.focus();
                 }}
-              />
+              /> */}
             </Stack>
 
             <Box
@@ -327,16 +284,26 @@ const SkiPage: NextPage = () => {
               }}
             >
               <Information
-                text={`Лыжня России — главное лыжное событие страны!
+                text={`«Лыжня России» — главное лыжное событие страны!
 
-                Хотите встретить на старте олимпийских чемпионов, 
-                членов сборной команды России по лыжным гонкам и 
+                Хотите встретить на старте олимпийских чемпионов,
+                членов сборной команды России по лыжным гонкам и
                 биатлону? Тогда Вы на правильном пути!
 
-                Уже более 40 лет Лыжня России объединяет всех 
+                Уже более 40 лет Лыжня России объединяет всех
                 любителей лыжных гонок!
 
-                До встречи на старте 11 февраля 2023 года!`}
+                <strong>В 2024 году «Лыжня России» пройдет в два дня.</strong>
+
+                <strong>9 ФЕВРАЛЯ 2024 г.
+                ШКОЛЬНЫЙ ДЕНЬ
+                Детские соревнования пройдут на лыжно-биатлонной трассе ОК «Лужники».
+                В программе дистанции на 1 км, 3 км, 5 км.</strong>
+                
+                <strong>10 ФЕВРАЛЯ 2024 г.
+                ОСНОВНОЙ СТАРТ
+                Соревнования для категории 18+ пройдут на лыжной трассе зоны отдыха «Альфа-Битца»
+                В программе дистанция на 10 км.</strong>`}
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
@@ -348,19 +315,20 @@ const SkiPage: NextPage = () => {
                 text1={`
                 Соревнования проводятся в соответствии с правилами лыжных гонок. Стиль свободный.
 
-                К соревнованиям допускаются все желающие от 9 лет, имеющие медицинский допуск к участию в соревнованиях. Возраст участников определяется по дате рождения (полных лет) по состоянию на день проведения соревнований.
+                К соревнованиям допускаются все желающие от 9 лет, имеющие медицинский допуск к участию в соревнованиях. Возраст участников определяется по состоянию на конец предыдущего года (31.12.2023)
                 
                 Участники, не прошедшие контрольные пункты по дистанции, будут дисквалифицированы, их результаты аннулируются. Победители определяются по наименьшему количеству времени, затраченному на прохождение дистанции.
                 `}
                 text2={`
-                  Всем участникам необходимо при себе иметь:
+                  Каждому участнику необходимо иметь при себе:
 
-                  &mdash;&nbsp;индивидуальный (или коллективный) медицинский допуск, подтверждающий состояние здоровья и&nbsp;возможность допуска к&nbsp;соревнованию, согласно требованиям приказа Минздрава России от&nbsp;23&nbsp;октября 2020&nbsp;г. &#8470;&nbsp;1144н
+                  &mdash;&nbsp;паспорт или документ, удостоверяющий личность. Для несовершеннолетних детей - свидетельство о рождении.
+
+                  &mdash;&nbsp;индивидуальный (или коллективный) медицинский допуск, подтверждающий состояние здоровья и возможность допуска к соревнованию, согласно требованиям приказа Минздрава России от 23 октября 2020 г.  № 1144н (<a href='/docs/Медицинское заключение о допуске к участию мероприятиях.pdf' download='Медицинское заключение о допуске к участию мероприятиях.pdf' >ОБРАЗЕЦ</a>)
                   
-                  &mdash;&nbsp;согласие на&nbsp;обработку персональных данных спортсмена
-                  в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27&nbsp;июля 2006&nbsp;г. &#8470; 152-ФЗ
+                  &mdash;&nbsp;согласие на обработку персональных данных спортсмена в соответствии с Федеральным законом от 27 июля 2006 г. № 152-ФЗ (<a href='/docs/Согласие_на_обработку_персональных_данных.pdf' download='Согласие_на_обработку_персональных_данных.pdf'>ОБРАЗЕЦ</a>)
                   
-                  &mdash;&nbsp;паспорт или документ, удостоверяющий личность. Для несовершеннолетних детей&nbsp;&mdash; свидетельство о&nbsp;рождении.  
+                  &mdash;&nbsp;оригинал полиса обязательного медицинского страхования&nbsp;(ОМС) или полиса добровольного медицинского страхования&nbsp;(ДМС). 
                   
                   Иные документы не&nbsp;установленной формы к&nbsp;рассмотрению не&nbsp;принимаются.                             
                 `}
@@ -377,16 +345,16 @@ const SkiPage: NextPage = () => {
                 isSki={true}
               />
               {/* (<a target="_blank" href="https://mosgorsport.ru/upload/docs/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%20%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B5%20%D0%BA%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%B8%D1%8E%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F%D1%85.pdf">ОБРАЗЕЦ</a>) */}
-              <Documents
+              {/* <Documents
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 text1={"ПОЛОЖЕНИЕ"}
                 text2={"Согласие на обработку персональных данных"}
-                file1={"Положение_Лыжня_России_2023.pdf"}
+                file1={"Положение_Лыжня_России_2024.pdf"}
                 file2={"Согласие_на_обработку_персональных_данных.pdf"}
                 isMobile={matches}
                 height={"60px"}
-              />
-              <Stack
+              /> */}
+              {/* <Stack
                 sx={{
                   width: "100%",
                   alignItems: "center",
@@ -396,29 +364,29 @@ const SkiPage: NextPage = () => {
               >
                 <CustomBtn
                   bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-                  text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
+                  text={"РЕГИСТРАЦИЯ"}
                   height={matches ? "60px" : "48px"}
                   width={matches ? "468px" : "320px"}
                   lineHeight={"30px"}
                   fontSize={matches ? "21px" : "14px"}
                   onClick={() => {
-                    // window
-                    //   .open(
-                    //     "https://reg.place/events/lyzhnya-rossii-2023",
-                    //     "_blank"
-                    //   )
-                    //   ?.focus();
+                    window
+                      .open(
+                        "https://reg.place/events/lyzhnya-rossii-2024",
+                        "_blank"
+                      )
+                      ?.focus();
                   }}
-                />
-              </Stack>
-              <Footer
+                /> 
+              </Stack> */}
+              <SkiPageFooter
                 bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                 isMobile={matches}
               />
             </Stack>
           </Stack>
-        </Container>
-      </Box>
+        </Container >
+      </Box >
     </>
   );
 };
