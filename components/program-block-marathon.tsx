@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Header from "./ui/Header";
 import ProgramBlock from "./ui/ProgramBlock";
+import CustomBtn from "./ui/CustomBtn";
 
 interface Props {
   bg: string;
@@ -74,6 +75,38 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
           })}
         </Stack>
       </Box>
+      <CustomBtn
+        bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+        text={"РЕЗУЛЬТАТЫ"}
+        height={isMobile ? "60px" : "48px"}
+        width={isMobile ? "468px" : "320px"}
+        lineHeight={"30px"}
+        fontSize={isMobile ? "21px" : "14px"}
+        onClick={() => {
+          window
+            .open(
+              "https://results.zone/lyzhnya-rossii-2024",
+              "_blank"
+            )
+            ?.focus();
+        }}
+      />
+      <CustomBtn
+        bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+        text={"ФОТО"}
+        height={isMobile ? "60px" : "48px"}
+        width={isMobile ? "468px" : "320px"}
+        lineHeight={"30px"}
+        fontSize={isMobile ? "21px" : "14px"}
+        onClick={() => {
+          window
+            .open(
+              // "https://disk.yandex.ru/d/1yoiCGORL_U0Tg",
+              "_blank"
+            )
+            ?.focus();
+        }}
+      />
     </Stack>
   );
 };

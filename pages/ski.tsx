@@ -14,6 +14,7 @@ import Script from "next/script";
 import Packets from "../components/packets-block";
 import MapBlock from "../components/map-block";
 import SkiPageFooter from "../components/ski-page-footer";
+import PlayerBlock from "../components/player-block";
 
 const SkiPage: NextPage = () => {
   const theme = useTheme();
@@ -283,6 +284,12 @@ const SkiPage: NextPage = () => {
                 mb: matches ? "114px" : "53px",
               }}
             >
+              <PlayerBlock
+                bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                src1={"https://www.youtube.com/embed/uMEi2Jp6Bfg"}
+                src2={"https://www.youtube.com/embed/SSk609kgd-c"}
+                isMobile={matches}
+              />
               <Information
                 text={`«Лыжня России» — главное лыжное событие страны!
 

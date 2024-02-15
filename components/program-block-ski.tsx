@@ -331,6 +331,22 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                     ?.focus();
                 }}
               />
+              <CustomBtn
+                bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                text={"ФОТО"}
+                height={isMobile ? "60px" : "48px"}
+                width={isMobile ? "468px" : "320px"}
+                lineHeight={"30px"}
+                fontSize={isMobile ? "21px" : "14px"}
+                onClick={() => {
+                  window
+                    .open(
+                      "https://disk.yandex.ru/d/L3hpN5Gd4kFtCA",
+                      "_blank"
+                    )
+                    ?.focus();
+                }}
+              />
               <Typography variant="body"
                 color={"white"}
                 sx={{
@@ -449,6 +465,39 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                 ))}
               </Stack>
             ))}
+
+            <CustomBtn
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              text={"РЕЗУЛЬТАТЫ"}
+              height={isMobile ? "60px" : "48px"}
+              width={isMobile ? "468px" : "320px"}
+              lineHeight={"30px"}
+              fontSize={isMobile ? "21px" : "14px"}
+              onClick={() => {
+                window
+                  .open(
+                    "https://results.zone/lyzhnya-rossii-2024",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
+            />
+            <CustomBtn
+              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+              text={"ФОТО"}
+              height={isMobile ? "60px" : "48px"}
+              width={isMobile ? "468px" : "320px"}
+              lineHeight={"30px"}
+              fontSize={isMobile ? "21px" : "14px"}
+              onClick={() => {
+                window
+                  .open(
+                    "https://disk.yandex.ru/d/1yoiCGORL_U0Tg",
+                    "_blank"
+                  )
+                  ?.focus();
+              }}
+            />
           </Stack>
         </Stack>
       </Box>

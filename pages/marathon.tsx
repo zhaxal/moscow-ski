@@ -303,6 +303,8 @@ const MarathonPage: NextPage = () => {
             >
               <PlayerBlock
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
+                src1={"https://vk.com/video_ext.php?oid=-66385073&id=456239548"}
+                src2={"https://www.youtube.com/embed/2mAl25PvpVE"}
                 isMobile={matches}
               />
               <Information

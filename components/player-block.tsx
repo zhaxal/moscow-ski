@@ -4,10 +4,12 @@ import Header from "./ui/Header";
 
 interface Props {
     bg: string;
+    src1: string;
+    src2: string;
     isMobile: boolean;
 }
 
-const PlayerBlock = ({ bg, isMobile }: Props) => {
+const PlayerBlock = ({ bg, src1, src2, isMobile }: Props) => {
     return (
         <Stack
             direction={"column"}
@@ -17,7 +19,16 @@ const PlayerBlock = ({ bg, isMobile }: Props) => {
             <Header bg={bg} text={"ПРЯМАЯ ТРАНСЛЯЦИЯ"} />
             <Box sx={{ width: "100%", px: "16px" }}>
                 <iframe
-                    src="https://vk.com/video_ext.php?oid=-66385073&id=456239548"
+                    src={src1}
+                    width="100%"
+                    height={isMobile ? "720" : "400"}
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    allowFullScreen>
+                </iframe>
+            </Box>
+            <Box sx={{ width: "100%", px: "16px" }}>
+                <iframe
+                    src={src2}
                     width="100%"
                     height={isMobile ? "720" : "400"}
                     allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
