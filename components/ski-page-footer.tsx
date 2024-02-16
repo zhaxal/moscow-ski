@@ -99,7 +99,7 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                   55.715865, 37.560853`}
                             </Typography>
                         </Stack>
-                        <CustomBtn
+                        {/* <CustomBtn
                             bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                             text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                             height={isMobile ? "60px" : "48px"}
@@ -114,7 +114,7 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                             //         )
                             //         ?.focus();
                             // }}
-                        />
+                        /> */}
                     </Stack>
                 </Stack>
             </Stack>
@@ -243,7 +243,7 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                   55.585360, 37.545857`}
                             </Typography>
                         </Stack>
-                        <CustomBtn
+                        {/* <CustomBtn
                             bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
                             text={"РЕГИСТРАЦИЯ ЗАВЕРШЕНА"}
                             height={isMobile ? "60px" : "48px"}
@@ -258,7 +258,7 @@ const SkiPageFooter = ({ isMobile, bg }: Props) => {
                             //         )
                             //         ?.focus();
                             // }}
-                        />
+                        /> */}
                     </Stack>
                 </Stack>
             </Stack>

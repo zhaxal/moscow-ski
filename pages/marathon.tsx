@@ -263,7 +263,7 @@ const MarathonPage: NextPage = () => {
                 mb: matches ? "112px" : "46px",
               }}
             >
-              <CustomBtn
+              {/* <CustomBtn
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                 text={"РЕГИСТРАЦИЯ"}
                 height={matches ? "60px" : "48px"}
@@ -278,7 +278,7 @@ const MarathonPage: NextPage = () => {
                     )
                     ?.focus();
                 }}
-              />
+              /> */}
             </Stack>
 
             <Box
@@ -356,7 +356,7 @@ const MarathonPage: NextPage = () => {
                   py: matches ? "30px" : "30px",
                 }}
               >
-                <CustomBtn
+                {/* <CustomBtn
                   bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}
                   text={"РЕГИСТРАЦИЯ"}
                   height={matches ? "60px" : "48px"}
@@ -371,7 +371,7 @@ const MarathonPage: NextPage = () => {
                       )
                       ?.focus();
                   }}
-                />
+                /> */}
               </Stack>
               <Footer
                 bg={"linear-gradient(90deg, #880101 0%, #EC0000 100%)"}

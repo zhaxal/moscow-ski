@@ -16,7 +16,7 @@ const PlayerBlock = ({ bg, src1, src2, isMobile }: Props) => {
             sx={{ width: "100%", mb: isMobile ? 5 : 2 }}
             spacing={isMobile ? "20px" : 2}
         >
-            <Header bg={bg} text={"ПРЯМАЯ ТРАНСЛЯЦИЯ"} />
+            <Header bg={bg} text={"ВИДЕО 2024"} />
             <Box sx={{ width: "100%", px: "16px" }}>
                 <iframe
                     src={src1}

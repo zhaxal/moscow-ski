@@ -405,11 +405,43 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
             //     ?.focus();
             // }}
             /> */}
-              <Stack direction={"column"} spacing={"7px"}>
+              <Stack direction={"column"} spacing={"10.3px"}>
                 {events10.map((event, index) => (
                   <ProgramBlock width="10%" key={index} bg={bg} isMobile={isMobile} time={event.time} text={event.text} />
                 ))}
               </Stack>
+              <CustomBtn
+                bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                text={"РЕЗУЛЬТАТЫ"}
+                height={isMobile ? "60px" : "48px"}
+                width={isMobile ? "468px" : "320px"}
+                lineHeight={"30px"}
+                fontSize={isMobile ? "21px" : "14px"}
+                onClick={() => {
+                  window
+                    .open(
+                      "https://results.zone/lyzhnya-rossii-2024",
+                      "_blank"
+                    )
+                    ?.focus();
+                }}
+              />
+              <CustomBtn
+                bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
+                text={"ФОТО"}
+                height={isMobile ? "60px" : "48px"}
+                width={isMobile ? "468px" : "320px"}
+                lineHeight={"30px"}
+                fontSize={isMobile ? "21px" : "14px"}
+                onClick={() => {
+                  window
+                    .open(
+                      "https://disk.yandex.ru/d/1yoiCGORL_U0Tg",
+                      "_blank"
+                    )
+                    ?.focus();
+                }}
+              />
             </Stack>
           </Stack>
           <Stack direction={"column"} width={isMobile ? "50%" : "100%"} spacing={"30px"}>
@@ -431,7 +463,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
               }}>
               регистрация участников на месте не производится
             </Typography> */}
-            <CustomBtn
+            {/* <CustomBtn
               bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
               text={"РЕГИСТРАЦИЯ"}
               height={isMobile ? "60px" : "48px"}
@@ -446,7 +478,7 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                   )
                   ?.focus();
               }}
-            />
+            /> */}
             {events10_2.map((event, index) => (
               <Stack key={index} direction={"column"} spacing={"7px"}>
                 <Typography
@@ -465,39 +497,6 @@ const ProgramSki = ({ bg, isMobile }: Props) => {
                 ))}
               </Stack>
             ))}
-
-            <CustomBtn
-              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-              text={"РЕЗУЛЬТАТЫ"}
-              height={isMobile ? "60px" : "48px"}
-              width={isMobile ? "468px" : "320px"}
-              lineHeight={"30px"}
-              fontSize={isMobile ? "21px" : "14px"}
-              onClick={() => {
-                window
-                  .open(
-                    "https://results.zone/lyzhnya-rossii-2024",
-                    "_blank"
-                  )
-                  ?.focus();
-              }}
-            />
-            <CustomBtn
-              bg={"linear-gradient(90deg, #015B88 0%, #009DEC 100%)"}
-              text={"ФОТО"}
-              height={isMobile ? "60px" : "48px"}
-              width={isMobile ? "468px" : "320px"}
-              lineHeight={"30px"}
-              fontSize={isMobile ? "21px" : "14px"}
-              onClick={() => {
-                window
-                  .open(
-                    "https://disk.yandex.ru/d/1yoiCGORL_U0Tg",
-                    "_blank"
-                  )
-                  ?.focus();
-              }}
-            />
           </Stack>
         </Stack>
       </Box>
