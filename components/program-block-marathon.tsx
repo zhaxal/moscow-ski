@@ -85,7 +85,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
         onClick={() => {
           window
             .open(
-              "https://results.zone/lyzhnya-rossii-2024",
+              "https://results.zone/moscow-ski-2024/",
               "_blank"
             )
             ?.focus();
