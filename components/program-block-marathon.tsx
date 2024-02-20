@@ -101,7 +101,7 @@ const ProgramMarathon = ({ bg, isMobile }: Props) => {
         onClick={() => {
           window
             .open(
-              // "https://disk.yandex.ru/d/1yoiCGORL_U0Tg",
+              "https://disk.yandex.ru/d/af8xfOn0Hx0rYw",
               "_blank"
             )
             ?.focus();
