@@ -9,22 +9,20 @@ interface Props {
 }
 
 const Information = ({ text, bg, isMobile }: Props) => {
+  const stackSpacing = isMobile ? "20px" : 2;
+  const boxWidth = isMobile ? "50%" : "100%";
+  const marginBottom = isMobile ? 5 : 2;
+
   return (
-    <Stack
-      direction={"column"}
-      sx={{ width: "100%", mb: isMobile ? 5 : 2 }}
-      spacing={isMobile ? "20px" : 2}
-    >
-      <Header bg={bg} text={"ОБЩАЯ ИНФОРМАЦИЯ"} />
-      <Box sx={{ width: isMobile ? "50%" : "100%", px: "16px" }}>
+    <Stack direction="column" sx={{ width: "100%", mb: marginBottom }} spacing={stackSpacing}>
+      <Header bg={bg} text="ОБЩАЯ ИНФОРМАЦИЯ" />
+      <Box sx={{ width: boxWidth, px: "16px" }}>
         <Typography
           variant="body"
-          color={"white"}
+          color="white"
           sx={{ whiteSpace: "pre-line" }}
-          dangerouslySetInnerHTML={{
-            __html: text,
-          }}
-        ></Typography>
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
       </Box>
     </Stack>
   );

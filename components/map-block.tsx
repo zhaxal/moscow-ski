@@ -1,5 +1,4 @@
-import { Box, Modal, Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Stack } from "@mui/material";
 import React, { useState } from "react";
 import Header from "./ui/Header";
 
@@ -18,66 +17,43 @@ const MapBlock = ({ bg, matches, isSki }: Props) => {
     setIsOpen(true);
   };
 
+  const stackSpacing = 2;
+  const marginBottom = matches ? 5 : 2;
+  const imageSrc = matches
+    ? "/images/desktop/ski-page/sMap.jpg"
+    : "/images/mobile/ski-page/sMap.jpg";
+  const previewUrl = "/images/desktop/ski-page/sMap.jpg";
+  const boxStyles = {
+    backgroundImage: `url(${url})`,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    position: "fixed",
+    right: 0,
+    top: 0,
+    textAlign: "center",
+    zIndex: 9999,
+    width: "100vw",
+    height: "100vh",
+    display: isOpen ? "block" : "none",
+  };
+
   return (
     <>
-      <Stack
-        direction={"column"}
-        sx={{ width: "100%", mb: matches ? 5 : 2 }}
-        spacing={2}
-      >
-        <Header bg={bg} text={"СХЕМЫ ТРАСС"} />
-        <Stack
-          sx={{ width: "100%" }}
-          direction={matches ? "row" : "column"}
-          spacing={"18px"}
-          justifyContent={"space-around"}
-        >
-          {/* <Box
-            component={"img"}
-            src={
-              matches
-                ? "/images/desktop/ski-page/fMap.jpg"
-                : "/images/mobile/ski-page/fMap.jpg"
-            }
-            maxWidth={matches ? "640px" : "100%"}
-            maxHeight={matches ? "700px" : "462px"}
-            onClick={() =>
-              handleOpen("/images/desktop/ski-page/fMapPreview.jpg")
-            }
-          /> */}
+      <Stack direction="column" sx={{ width: "100%", mb: marginBottom }} spacing={stackSpacing}>
+        <Header bg={bg} text="СХЕМЫ ТРАСС" />
+        <Stack sx={{ width: "100%" }} direction={matches ? "row" : "column"} spacing="18px" justifyContent="space-around">
           <Box
-            component={"img"}
-            src={
-              matches
-                ? "/images/desktop/ski-page/sMap.jpg"
-                : "/images/mobile/ski-page/sMap.jpg"
-            }
+            component="img"
+            src={imageSrc}
             maxWidth={matches ? "640px" : "100%"}
             maxHeight={matches ? "700px" : "462px"}
-            onClick={() =>
-              handleOpen("/images/desktop/ski-page/sMap.jpg")
-            }
+            onClick={() => handleOpen(previewUrl)}
           />
         </Stack>
       </Stack>
-      <Box
-        sx={{
-          backgroundImage: `url(${url})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat no-repeat",
-          backgroundPosition: "center center",
-          backgroundColor: " rgba(0, 0, 0, 0.5)",
-          position: "fixed",
-          right: 0,
-          top: 0,
-          textAlign: "center",
-          zIndex: 9999,
-        }}
-        width={"100vw"}
-        display={isOpen ? "block" : "none"}
-        onClick={() => setIsOpen(false)}
-        height={"100vh"}
-      />
+      <Box sx={boxStyles} onClick={() => setIsOpen(false)} />
     </>
   );
 };
