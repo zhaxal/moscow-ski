@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Moscow Ski
+
+Welcome to the Moscow Ski project! This repository contains the source code for the Moscow Ski Marathon website.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Docker](#docker)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+The Moscow Ski Marathon is a new amateur competition in the city sports calendar. The event will take place on February 11, 2024, and will attract a large number of ski sports fans from Russia. The marathon is part of the Russialoppet cup standings.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ensure you have the following installed:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Node.js
+- npm or yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository:
+  ```sh
+  git clone https://github.com/your-username/moscow-ski.git
+  ```
+2. Navigate to the project directory:
+  ```sh
+  cd moscow-ski
+  ```
+3. Install dependencies:
+  ```sh
+  npm install
+  ```
+  or
+  ```sh
+  yarn install
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Scripts
 
-## Learn More
+In the project directory, you can run:
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` or `yarn dev`: Runs the app in development mode.
+- `npm run build` or `yarn build`: Builds the app for production.
+- `npm start` or `yarn start`: Runs the built app in production mode.
+- `npm run lint` or `yarn lint`: Lints the codebase.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project uses the following main dependencies:
 
-## Deploy on Vercel
+- `@emotion/react`
+- `@emotion/styled`
+- `@mui/material`
+- `next`
+- `react`
+- `react-dom`
+- `typescript`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For the full list of dependencies, refer to the `package.json` file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Docker
+
+The project includes a Dockerfile for containerization. To build and run the Docker container:
+
+1. Build the Docker image:
+  ```sh
+  docker build -t moscow-ski .
+  ```
+2. Run the Docker container:
+  ```sh
+  docker run -p 3000:3000 moscow-ski
+  ```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+Distributed under the MIT License. See the `LICENSE` file in the root of the project for more information.
