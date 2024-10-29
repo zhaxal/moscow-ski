@@ -1,6 +1,4 @@
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
-import { Box, Stack } from "@mui/system";
-import React from "react";
+import { Typography, Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 
 interface Props {
   bg: string;
@@ -10,9 +8,10 @@ interface Props {
 const Header = ({ bg, text }: Props) => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Stack
-      direction={"row"}
+      direction="row"
       sx={{
         width: "100%",
         background: bg,
@@ -23,9 +22,8 @@ const Header = ({ bg, text }: Props) => {
     >
       <Typography
         variant="desc"
-        color={"white"}
-        sx={{ px: matches ? "58px" : "17px" }}
-        fontSize={matches ? "24px" : "16px"}
+        color="white"
+        sx={{ px: matches ? "58px" : "17px", fontSize: matches ? "24px" : "16px" }}
       >
         {text}
       </Typography>
@@ -35,7 +33,7 @@ const Header = ({ bg, text }: Props) => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           height: "100%",
-          width: 144,
+          width: "144px",
         }}
       />
     </Stack>
