@@ -7,8 +7,8 @@ import { Box } from '@mui/material';
 import Script from 'next/script';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const metaDescription = "Московский спорт представляет большой лыжный праздник 10 и 11 февраля в Битце";
-  const metaTitle = "Лыжня России 2024 и Московский лыжный марафон";
+  const metaDescription = "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 февраля 2025 г.";
+  const metaTitle = "Неделя Лыжни России в Москве";
   const metaUrl = "https://ski.moscow.sport/";
   const metaImage = "/images/metaIcon.jpg";
   const yandexVerification = "5257f1e845f3792f";
@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={metaImage} />
         <meta name="yandex-verification" content={yandexVerification} />
-
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -61,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </noscript>
 
       <Box sx={{ display: "none" }} itemScope itemType="https://schema.org/Organization">
-        <span itemProp="name">Лыжня России 2024</span>
+        <span itemProp="name">Неделя Лыжни России</span>
         <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
           Адрес:
           <span itemProp="streetAddress">Москва, ЮЗАО, 36й км МКАД, зона отдыха “Альфа-Битца”</span>
