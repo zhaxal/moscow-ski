@@ -1,371 +1,90 @@
-import { Alert, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { Box, Container, Stack } from "@mui/system";
-import Head from "next/head";
-import { useRouter } from "next/router";
-import CustomBtn from "../components/ui/CustomBtn";
-
 export default function Home() {
-  const route = useRouter();
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
-  const logos = useMediaQuery("(min-width:410px)");
+  return (
+    <div className="flex min-h-full relative">
+      <div className="absolute left-0 w-1/2 bg-[#0082C2] min-h-full -z-10"></div>
+      <div className="absolute right-0 w-1/2 bg-[#E6342D] min-h-full -z-10"></div>
 
-  const commonStyles = {
-    textOverflow: "ellipsis",
-    whiteSpace: "pre-line",
-    overflow: "hidden",
-    fontWeight: 400,
-    textAlign: "center",
-  };
+      <div className="flex flex-col items-center w-full min-h-full p-8">
+        <div className="flex flex-row items-center space-x-2">
+          <img
+            src="/year2025/min_sport.svg"
+            alt="Минспорт России"
+            className="max-w-[42px] object-contain"
+          />
+          <img
+            src="/year2025/dep_sport.svg"
+            alt="Департамент спорта"
+            className="max-w-[60px] object-contain"
+          />
+          <img
+            src="/year2025/ski_rus.svg"
+            alt="Лыжня России"
+            className="max-w-[110px] object-contain"
+          />
+          <img
+            src="/year2025/grom.png"
+            alt="Гром"
+            className="max-w-[120px] object-contain"
+          />
+          <img
+            src="/year2025/fed.png"
+            alt="Фед"
+            className="max-w-[80px] object-contain"
+          />
+          <img
+            src="/year2025/rus_loppet.svg"
+            alt="Russia Loppet"
+            className="max-w-[110px] object-contain"
+          />
+        </div>
 
-  const buttonStyles = {
-    height: "60px",
-    width: "364px",
-    lineHeight: "30px",
-    fontSize: "32px",
-  };
+        <img
+          src="/year2025/bg.svg"
+          alt="Лыжня России 2025"
+          className="max-w-[880px] object-contain pl-[5px] mt-7"
+        />
 
-  const logoStyles = {
-    width: "110px",
-  };
+        <div className="flex flex-col items-center space-y-4 mt-9">
+          <div className="font-[Mossport] text-[64px] leading-[64px] text-white uppercase">
+            НЕДЕЛЯ ЛЫЖНИ РОССИИ
+          </div>
 
-  return matches ? (
-    <Box
-      minHeight="100vh"
-      sx={{
-        background: "linear-gradient(90deg, #0082C2 50%, #E6342D 50%)",
-        pb: "93px",
-      }}
-    >
-      <Container disableGutters maxWidth="xl">
-        <Stack
-          sx={{
-            width: "100%",
-            pt: "32px",
-            pr: "20px",
-          }}
-          direction="row"
-          alignItems="center"
-          justifyContent="center"
-          spacing="9px"
-        >
-          <Box
-            component="img"
-            alt="minsport"
-            src="/images/mobile/icon/minsport.svg"
-            sx={{
-              width: "52px",
-              height: "76px",
-            }}
-          />
-          <Box
-            component="img"
-            src="/images/mobile/icon/department.svg"
-            alt="departmentIcon"
-            sx={{
-              width: "60px",
-            }}
-          />
-          <Box
-            component="img"
-            src="/images/mobile/icon/newski.svg"
-            alt="newski"
-            sx={{
-              width: "110px",
-            }}
-          />
-          <Box
-            component="img"
-            src="/images/mobile/icon/grom.svg"
-            alt="gromIcon"
-            sx={logoStyles}
-          />
-          <Box
-            component="img"
-            src="/images/mobile/icon/mlogo.svg"
-            alt="mLogo"
-            sx={{
-              width: "80px",
-            }}
-          />
-          <Box
-            component="img"
-            src="/images/mobile/icon/russialoppet.svg"
-            alt="russiaLoppetIcon"
-            sx={{
-              width: "111px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="ozonIcon"
-            src="/images/mobile/icon/ozon-logo.svg"
-            sx={logoStyles}
-          />
-        </Stack>
-        <Stack sx={{ width: "100%", justifyContent: "center", position: "relative" }}>
-          <Box
-            component="img"
-            alt="mainPageImg"
-            src="/images/desktop/main-page/main-page.png"
-            sx={{
-              maxWidth: "100%",
-              mx: "auto",
-            }}
-          />
-          <Typography
-            variant="heading"
-            color="white"
-            sx={{
-              position: "absolute",
-              bottom: "8%",
-              fontSize: "36px",
-              lineHeight: "36px",
-              left: "2%",
-            }}
-          >
-            9 - 10 ФЕВРАЛЯ 2024
-          </Typography>
-          <Typography
-            variant="heading"
-            color="white"
-            sx={{
-              position: "absolute",
-              bottom: "8%",
-              fontSize: "36px",
-              lineHeight: "36px",
-              right: "2%",
-            }}
-          >
-            11 ФЕВРАЛЯ 2024
-          </Typography>
-        </Stack>
-        <Stack
-          direction="row"
-          sx={{
-            justifyContent: "space-around",
-            width: "100%",
-          }}
-        >
-          <Stack direction="column" spacing="24px" alignItems="center">
-            <Typography variant="heading" color="white">
-              ЛЫЖНЯ РОССИИ 2024
-            </Typography>
-            <CustomBtn
-              bg="linear-gradient(90deg, #015B88 0%, #009DEC 100%)"
-              text="ПОСЕТИТЬ"
-              {...buttonStyles}
-              onClick={() => route.push("/ski")}
-            />
-          </Stack>
-          <Stack direction="column" spacing="24px" alignItems="center">
-            <Typography variant="heading" color="white">
-              МОСКОВСКИЙ ЛЫЖНЫЙ МАРАФОН
-            </Typography>
-            <CustomBtn
-              bg="linear-gradient(90deg, #880101 0%, #EC0000 100%)"
-              text="ПОСЕТИТЬ"
-              {...buttonStyles}
-              onClick={() => route.push("/marathon")}
-            />
-          </Stack>
-        </Stack>
-      </Container>
-    </Box>
-  ) : (
-    <>
-      <Head>
-        <meta name="yandex-verification" content="5257f1e845f3792f" />
-      </Head>
-      <Box height="100%" position="relative">
-        <Stack
-          direction="column"
-          sx={{
-            position: "absolute",
-            mt: 1,
-            ml: 1,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          spacing="19px"
-        >
-          <Box
-            component="img"
-            alt="minSportIcon"
-            src="/images/mobile/icon/minsport.svg"
-            sx={{
-              width: "42px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="departmentIcon"
-            src="/images/mobile/icon/department.svg"
-            sx={{
-              width: "48px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="newSkiIcon"
-            src="/images/mobile/icon/newski.svg"
-            sx={{
-              width: "60px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="gromIcon"
-            src="/images/mobile/icon/grom.svg"
-            sx={{
-              maxWidth: "60px",
-            }}
-          />
-        </Stack>
-        <Stack
-          sx={{
-            height: "45%",
-            width: "100%",
-            alignItems: "center",
-            background: "#0082C2",
-            pt: "64px",
-          }}
-          spacing="15px"
-        >
-          <Typography
-            variant="heading"
-            color="white"
-            sx={{
-              ...commonStyles,
-              fontSize: "46px",
-            }}
-          >
-            ЛЫЖНЯ РОССИИ 2024
-          </Typography>
-          <Typography
-            variant="heading"
-            color="white"
-            sx={{
-              ...commonStyles,
-              fontSize: "36px",
-            }}
-          >
-            9 - 10 ФЕВРАЛЯ 2024
-          </Typography>
-          <Box
-            component="img"
-            alt="blueTop"
-            src="/images/mobile/main-page/blue-top-1.png"
-            sx={{
-              width: "100%",
-            }}
-          />
-          <CustomBtn
-            bg="linear-gradient(90deg, #015B88 0%, #009DEC 100%)"
-            text="ПОСЕТИТЬ"
-            height="48px"
-            width="284px"
-            lineHeight="30px"
-            fontSize="24px"
-            onClick={() => route.push("/ski")}
-          />
-        </Stack>
-        <Stack
-          sx={{
-            width: "100%",
-            background: "linear-gradient(180deg, #0082C2 50%, #E6342D 50%)",
-            py: "35px",
-            alignItems: "center",
-          }}
-          direction="row"
-          justifyContent="center"
-          spacing={1}
-        >
-          <Box
-            component="img"
-            alt="departmentIcon"
-            src="/images/mobile/icon/department.svg"
-            sx={{
-              maxWidth: logos ? "39px" : "37px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="mLogo"
-            src="/images/mobile/icon/mlogo.svg"
-            sx={{
-              maxWidth: logos ? "65px" : "55px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="russiaLoppetIcon"
-            src="/images/mobile/icon/russialoppet.svg"
-            sx={{
-              maxWidth: logos ? "86px" : "75px",
-            }}
-          />
-          <Box
-            component="img"
-            alt="ozonIcon"
-            src="/images/mobile/icon/ozon-logo.svg"
-            sx={{
-              maxWidth: logos ? "88px" : "78px",
-              height: "20%",
-            }}
-          />
-        </Stack>
-        <Stack
-          sx={{
-            height: "45%",
-            width: "100%",
-            alignItems: "center",
-            background: "#E6342D",
-            pb: "64px",
-          }}
-        >
-          <Stack>
-            <Typography
-              variant="heading"
-              color="white"
-              sx={{
-                ...commonStyles,
-                fontSize: "46px",
-              }}
-            >
-              МОСКОВСКИЙ ЛЫЖНЫЙ МАРАФОН
-            </Typography>
-            <Typography
-              variant="heading"
-              color="white"
-              sx={{
-                ...commonStyles,
-                fontSize: "36px",
-              }}
-            >
-              11 ФЕВРАЛЯ 2024
-            </Typography>
-          </Stack>
-          <Box
-            component="img"
-            src="/images/mobile/main-page/red-bottom-1.png"
-            alt="redBottom"
-            sx={{
-              width: "100%",
-              mb: "77px",
-            }}
-          />
-          <CustomBtn
-            bg="linear-gradient(90deg, #880101 0%, #EC0000 100%)"
-            text="ПОСЕТИТЬ"
-            height="48px"
-            width="284px"
-            lineHeight="30px"
-            fontSize="24px"
-            onClick={() => route.push("/marathon")}
-          />
-        </Stack>
-      </Box>
-    </>
+          <div className="flex flex-row pt-14">
+            <div className="flex flex-col items-end w-1/2">
+              <div className="max-w-[400px] pr-10">
+                <div className="font-[Mossport] text-[36px] leading-[36px] text-white uppercase">
+                  Лыжно-биатлонная трасса в ОК «Лужники»
+                </div>
+
+                <div className="font-[GothamProMedium] text-[20px] leading-[30px] text-white pt-6">
+                  <p>5 февраля — Ночная лыжная гонка</p>
+                  <p>6 февраля — Ретро-гонка</p>
+                  <p>7 февраля — день школьных соревнований</p>
+                </div>
+              </div>
+              <div className="max-w-[360px]">
+                <div className="font-[GothamProLight] text-[20px] leading-[30px] text-white py-7">
+                  <p>
+                    *На все соревнования необходима предварительная регистрация.
+                    **Подробная информация станет доступна 15 декабря.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 pl-10">
+              <div className="max-w-[400px]">
+                <div className="font-[Mossport] text-[36px] leading-[36px] text-white uppercase">
+                  Бутовский лесопарк, лыжная трасса «Альфа-Битца»
+                </div>
+                <div className="font-[GothamProMedium] text-[20px] leading-[30px] text-white pt-6">
+                  <p>8 февраля — Лыжня России</p>
+                  <p>9 февраля — 3-й Московский лыжный марафон</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

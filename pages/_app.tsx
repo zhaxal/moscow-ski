@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="android-chrome" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="android-chrome" sizes="512x512" href="/android-chrome-512x512.png" />
-
+        <meta name="yandex-verification" content="5257f1e845f3792f" />
         <title>{metaTitle}</title>
       </Head>
       <Script
