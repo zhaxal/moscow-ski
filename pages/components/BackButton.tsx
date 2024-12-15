@@ -5,7 +5,7 @@ function BackButton() {
 
   return (
     <div
-      className="absolute top-5 left-5 cursor-pointer"
+      className="cursor-pointer"
       onClick={() => router.back()}
     >
       <svg
