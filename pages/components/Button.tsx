@@ -2,34 +2,48 @@ import { HtmlHTMLAttributes } from "react";
 
 interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   variant: "blue" | "red";
+  size?: "small" | "large";
   children?: React.ReactNode;
 }
 
-function Button({ variant, children, ...otherProps }: ButtonProps) {
-  let gradient1 = "#015B88";
-  let gradient2 = "#009DEC";
-
-  if (variant === "red") {
-    gradient1 = "#880101";
-    gradient2 = "#EC0000";
-  }
+function Button({
+  variant,
+  children,
+  size = "small",
+  ...otherProps
+}: ButtonProps) {
+  const gradientClasses = {
+    blue: "from-[#015B88] to-[#009DEC]",
+    red: "from-[#880101] to-[#EC0000]",
+  };
+  const sizeClasses = {
+    small: "text-[20px] sm:text-[24px] leading-[1]", // Increased mobile text size
+    large: "text-[28px] sm:text-[32px] leading-[1]", // Increased mobile text size
+  };
 
   return (
     <button
       {...otherProps}
-      className={`relative flex items-center justify-between bg-gradient-to-r from-[${gradient1}] to-[${gradient2}] rounded-sm shadow-lg hover:opacity-80 active:scale-95 transform transition-transform duration-100 pl-4 pr-1 space-x-24 overflow-hidden`}
+      className={`relative flex items-center justify-between bg-gradient-to-r ${
+        gradientClasses[variant]
+      } rounded-sm shadow-lg hover:opacity-80 active:scale-95 transform transition-transform duration-100 pl-4 sm:pl-4 pr-3 sm:pr-3 space-x-6 sm:space-x-24 overflow-hidden min-h-[48px] sm:min-h-[56px] ${
+        otherProps.className || ""
+      }`}
     >
-      <span className="font-[GothamProMedium] text-white font-bold text-[32px] py-[6px]">
+      <span
+        className={`font-[GothamProMedium] text-white font-bold ${sizeClasses[size]} py-3 sm:py-4 max-w-[200px] sm:max-w-none text-left`}
+      >
         {children}
       </span>
 
-      <div className="w-8 h-8 flex items-center justify-center rounded-full">
+      <div className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full">
         <svg
-          width="25"
-          height="28"
+          width="22"
+          height="24"
           viewBox="0 0 25 28"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="sm:w-[25px] sm:h-[28px]"
         >
           <g filter="url(#filter0_d_3263_42)">
             <path
@@ -77,27 +91,15 @@ function Button({ variant, children, ...otherProps }: ButtonProps) {
         </svg>
       </div>
 
-      <div className="absolute right-0 top-0 h-full">
-        <svg
-          width="122"
-          height="60"
-          viewBox="0 0 122 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-full"
-        >
-          <path
-            d="M144 74.3478V-2.60869H55.7085L0 74.3478H144Z"
-            fill="#D9D9D9"
-            fill-opacity="0.3"
-          />
-          <path
-            d="M144 74.3478V35.8696V-2.60869H87.8514L32.1429 74.3478H144Z"
-            fill="#D9D9D9"
-            fill-opacity="0.3"
-          />
-        </svg>
-      </div>
+      <div
+        className="absolute top-0 right-[-5%] w-1/4 h-full bg-white opacity-20 
+              transform skew-x-[-30deg]"
+      ></div>
+
+      <div
+        className="absolute top-0 right-[-10%] w-1/4 h-full bg-white opacity-30 
+              transform skew-x-[-30deg]"
+      ></div>
     </button>
   );
 }
