@@ -1,3 +1,6 @@
+import Button from "./components/Button";
+import { useRouter } from "next/router";
+
 function LogoBar() {
   return (
     <div className="flex flex-row justify-center md:justify-start items-center space-x-2 md:mt-0 mt-4">
@@ -54,6 +57,7 @@ function ParkOne() {
         <p>5 февраля — Ночная лыжная гонка</p>
         <p>6 февраля — Ретро-гонка</p>
         <p>7 февраля — день школьных соревнований</p>
+        <p>8 февраля — Лыжня России</p>
       </div>
     </>
   );
@@ -66,25 +70,18 @@ function ParkTwo() {
         Бутовский лесопарк, лыжная трасса «Альфа-Битца»
       </div>
       <div className="font-[GothamProMedium] text-[20px] leading-[30px] text-white pt-6">
-        <p>8 февраля — Лыжня России</p>
         <p>9 февраля — 3-й Московский лыжный марафон</p>
       </div>
     </>
   );
 }
 
-function Disclaimer() {
-  const disclaimerText =
-    "*На все соревнования необходима предварительная регистрация. **Подробная информация станет доступна 15 декабря.";
-
-  return (
-    <div className="font-[GothamProLight] text-[20px] leading-[30px] text-white py-7 md:pt-4 md:max-w-[355px]">
-      <p>{disclaimerText}</p>
-    </div>
-  );
-}
+const linkSki = "/ski";
+const linkMarathon = "/marathon";
 
 function RegularView() {
+  const router = useRouter();
+
   return (
     <div className="hidden md:block w-full">
       <div className="absolute left-0 w-1/2 bg-[#0082C2] min-h-full -z-10"></div>
@@ -101,18 +98,33 @@ function RegularView() {
         <div className="flex flex-col items-center space-y-4 mt-9">
           <MainTitle />
 
-          <div className="flex flex-row pt-14">
-            <div className="flex flex-col items-end w-1/2">
-              <div className="max-w-[400px] pr-10">
+          <div className="flex flex-row py-14">
+            <div className="flex flex-col items-end w-1/2 h-full">
+              <div className="flex flex-col max-w-[400px] pr-10">
                 <ParkOne />
-              </div>
-              <div className="max-w-[360px]">
-                <Disclaimer />
+                <div className="mt-16" />
+                <Button
+                  onClick={() => {
+                    router.push(linkSki);
+                  }}
+                  variant="blue"
+                >
+                  ПОСЕТИТЬ
+                </Button>
               </div>
             </div>
             <div className="w-1/2 pl-10">
-              <div className="max-w-[400px]">
+              <div className="flex flex-col max-w-[400px] h-full">
                 <ParkTwo />
+                <div className="flex-grow" />
+                <Button
+                  onClick={() => {
+                    router.push(linkMarathon);
+                  }}
+                  variant="red"
+                >
+                  ПОСЕТИТЬ
+                </Button>
               </div>
             </div>
           </div>
@@ -150,10 +162,6 @@ function MobileView() {
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">
             <ParkTwo />
           </div>
-        </div>
-
-        <div className="flex flex-col items-center mt-4">
-          <Disclaimer />
         </div>
 
         <img
