@@ -28,7 +28,7 @@ function Button({
         gradientClasses[variant]
       } rounded-sm shadow-lg hover:opacity-80 active:scale-95 transform transition-transform duration-100 pl-4 sm:pl-4 pr-3 sm:pr-3 space-x-6 sm:space-x-24 overflow-hidden min-h-[48px] sm:min-h-[56px] ${
         otherProps.className || ""
-      }`}
+      } cursor-pointer`}
     >
       <span
         className={`font-[GothamProMedium] text-white font-bold ${sizeClasses[size]} py-3 sm:py-4 max-w-[200px] sm:max-w-none text-left`}
@@ -49,7 +49,7 @@ function Button({
             <path
               d="M1.30529 3.01197C1.30529 1.85727 2.55529 1.13558 3.55529 1.71293L23.1988 13.0541C24.1988 13.6315 24.1988 15.0748 23.1988 15.6522L3.55528 26.9934C2.55528 27.5707 1.30529 26.849 1.30529 25.6943L1.30529 3.01197Z"
               stroke="white"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
           </g>
           <defs>
@@ -60,7 +60,7 @@ function Button({
               width="24.1436"
               height="27.1884"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
               <feFlood flood-opacity="0" result="BackgroundImageFix" />
               <feColorMatrix

@@ -135,6 +135,7 @@ function RegularView() {
 }
 
 function MobileView() {
+  const router = useRouter();
   return (
     <div className="block md:hidden w-full flex-col">
       <div className="flex flex-col bg-[#0082C2]">
@@ -153,6 +154,15 @@ function MobileView() {
         <div className="flex flex-col items-center mt-4">
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">
             <ParkOne />
+            <Button
+              onClick={() => {
+                router.push(linkSki);
+              }}
+              variant="blue"
+            >
+              ПОСЕТИТЬ
+            </Button>
+            <div className="mb-4" />
           </div>
         </div>
       </div>
@@ -161,6 +171,14 @@ function MobileView() {
         <div className="flex flex-col items-center mt-4">
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">
             <ParkTwo />
+            <Button
+              onClick={() => {
+                router.push(linkMarathon);
+              }}
+              variant="red"
+            >
+              ПОСЕТИТЬ
+            </Button>
           </div>
         </div>
 
