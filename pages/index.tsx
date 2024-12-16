@@ -38,19 +38,11 @@ function LogoBar() {
   );
 }
 
-function MainTitle() {
-  return (
-    <div className="font-[Mossport] text-[48px] md:text-[64px] leading-[48px] md:leading-[64px] text-white uppercase">
-      НЕДЕЛЯ ЛЫЖНИ РОССИИ
-    </div>
-  );
-}
-
 function ParkOne() {
   return (
     <>
       <div className="font-[Mossport] text-[36px] leading-[36px] text-white uppercase">
-        Лыжно-биатлонная трасса в ОК «Лужники»
+        НЕДЕЛЯ ЛЫЖНИ РОССИИ
       </div>
 
       <div className="font-[GothamProMedium] text-[20px] leading-[30px] text-white pt-6">
@@ -67,7 +59,7 @@ function ParkTwo() {
   return (
     <>
       <div className="font-[Mossport] text-[36px] leading-[36px] text-white uppercase">
-        Бутовский лесопарк, лыжная трасса «Альфа-Битца»
+        Московский лыжный марафон
       </div>
       <div className="font-[GothamProMedium] text-[20px] leading-[30px] text-white pt-6">
         <p>9 февраля — 3-й Московский лыжный марафон</p>
@@ -96,8 +88,6 @@ function RegularView() {
         />
 
         <div className="flex flex-col items-center space-y-4 mt-9">
-          <MainTitle />
-
           <div className="flex flex-row py-14">
             <div className="flex flex-col items-end w-1/2 h-full">
               <div className="flex flex-col max-w-[400px] pr-10">
@@ -146,10 +136,6 @@ function MobileView() {
           alt="Лыжня России 2025 1"
           className="object-contain mt-4"
         />
-
-        <div className="flex flex-col items-center mt-4">
-          <MainTitle />
-        </div>
 
         <div className="flex flex-col items-center mt-4">
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">

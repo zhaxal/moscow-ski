@@ -70,7 +70,7 @@ function SkiPage() {
 
         <div className="flex flex-col mt-4 sm:mt-0">
           <p className="font-[Mossport] text-[24px] sm:text-[36px] uppercase text-white leading-[28px] sm:leading-[36px] text-center pb-4">
-            05 – 08 ФЕВРАЛЯ 2024
+            05 – 08 ФЕВРАЛЯ 2025
           </p>
 
           <div
@@ -151,7 +151,7 @@ function SkiPage() {
           date="8 февраля, Альфа-битца "
           title="лыжня россии"
           description="Самая массовая классическая лыжная гонка на 10 км для всех желающих старше 18 лет"
-          linkTitle="РЕГИСТРАЦИЯ С 16.12.24"
+          linkTitle="РЕГИСТРАЦИЯ"
           link={link}
         />
       </div>
