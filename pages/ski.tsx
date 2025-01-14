@@ -159,6 +159,14 @@ function SkiPage() {
       </div>
 
       <div className="flex flex-col mb-5">
+        <Title title="СХЕМА ТРАССЫ" variant="blue" />
+      </div>
+
+      <div className="flex flex-col mb-10 px-8 items-center">
+        <img className="w-full sm:w-1/2" src="/year2025/scheme_ski.png" alt="map" />
+      </div>
+
+      <div className="flex flex-col mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="blue" />
       </div>
 

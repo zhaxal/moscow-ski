@@ -12,7 +12,7 @@ const MarathonPage: NextPage = () => {
 
       <div className="flex flex-col items-center sm:items-start px-2 sm:px-16">
         <img
-          src="/year2025/marathon/logo.svg"
+          src="/images/desktop/logo/mosssport-logo.svg"
           alt="logo"
           className="h-[35px] sm:h-[45px] md:h-[90px]"
         />
@@ -84,6 +84,14 @@ const MarathonPage: NextPage = () => {
           РЕГИСТРАЦИЯ
         </Button>
       </div>
+
+      <div className="flex flex-col mb-5">
+        <Title title="СХЕМА ТРАССЫ" variant="red" />
+      </div>
+
+      <div className="flex flex-col mb-10 px-8 items-center">
+        <img className="w-full sm:w-1/2" src="/year2025/scheme_marathon.png" alt="map" />
+      </div>      
 
       <div className="flex flex-col mb-4 sm:mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="red" />
