@@ -4,7 +4,7 @@ interface SnackbarProps {
   message: string;
   isOpen: boolean;
   onClose: () => void;
-  type?: 'success' | 'error' | 'info' | 'warning';
+  type?: 'success' | 'error' | 'info' | 'warning' | 'purple';  // Added purple
   duration?: number | null;
 }
 
@@ -30,6 +30,7 @@ const Snackbar: React.FC<SnackbarProps> = ({
     error: 'bg-red-500',
     info: 'bg-blue-500',
     warning: 'bg-yellow-500',
+    purple: 'bg-purple-500',  // Added purple background
   }[type];
 
   if (!isOpen) return null;

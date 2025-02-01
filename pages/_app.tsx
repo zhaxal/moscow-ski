@@ -120,7 +120,7 @@ export default function App({ Component, pageProps }: AppProps) {
         onClose={() => {
           setIsSnackbarOpen(false);
         }}
-        type="warning"
+        type="purple"
       />
       <Component {...pageProps} />
     </>
