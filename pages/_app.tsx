@@ -3,10 +3,14 @@ import type { AppProps } from "next/app";
 
 import Head from "next/head";
 import Script from "next/script";
+import Snackbar from "./components/Snackbar";
+import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
+
   const metaDescription =
-    "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 февраля 2025 г.";
+    "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 марта 2025 г.";
   const metaTitle = "Неделя Лыжни России в Москве";
   const metaUrl = "https://ski.moscow.sport/";
   const metaImage = "/images/metaIcon.jpg";
@@ -109,6 +113,15 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         </div>
       </div>
+
+      <Snackbar
+        message="Внимание! В связи с погодными условиями изменились даты проведения стартов!"
+        isOpen={isSnackbarOpen}
+        onClose={() => {
+          setIsSnackbarOpen(false);
+        }}
+        type="warning"
+      />
       <Component {...pageProps} />
     </>
   );

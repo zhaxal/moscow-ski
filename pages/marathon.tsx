@@ -27,7 +27,7 @@ const MarathonPage: NextPage = () => {
 
         <div className="flex flex-col mt-3 sm:mt-0 order-last sm:order-first">
           <p className="font-[Mossport] text-[20px] sm:text-[24px] md:text-[36px] uppercase text-white leading-[24px] sm:leading-[28px] md:leading-[36px] text-center pb-3 sm:pb-4">
-            09 ФЕВРАЛЯ 2025
+            09 МАРТА 2025
           </p>
 
           <div
@@ -60,7 +60,7 @@ const MarathonPage: NextPage = () => {
             дополнительные дистанции на 17 км и 25 км
           </span>
           <span>
-            9 февраля 2025 года гонка примет большое количество фанатов лыжного
+            9 марта 2025 года гонка примет большое количество фанатов лыжного
             спорта России и станет ярким событием Московского региона.
           </span>
           <span>

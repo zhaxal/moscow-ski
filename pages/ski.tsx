@@ -72,7 +72,7 @@ function SkiPage() {
 
         <div className="flex flex-col mt-4 sm:mt-0">
           <p className="font-[Mossport] text-[24px] sm:text-[36px] uppercase text-white leading-[28px] sm:leading-[36px] text-center pb-4">
-            05 – 08 ФЕВРАЛЯ 2025
+            05 – 08 МАРТА 2025
           </p>
 
           <div
@@ -129,28 +129,28 @@ function SkiPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <ProgramItem
-          date="5 февраля, Лужники"
+          date="5 марта, Лужники"
           title="ночная гонка"
           description="Ночная гонка пройдет в формате спринта. Участникам предстоит преодолеть круг на 800 метров. Победители будут выявлены по сумме результатов трех стартов. Принять участие может любой желающий от 18 лет."
           linkTitle="РЕГИСТРАЦИЯ"
           link={"https://reg.place/events/sprint-pervenstvo-2025"}
         />
         <ProgramItem
-          date="6 февраля, Лужники"
+          date="6 марта, Лужники"
           title="ретро гонка"
           description="Оформление ретро-гонки будет выдержано в советской праздничной стилистике, что освежит приятные воспоминания. В программе гонки в разных категориях: семейные эстафеты, детские гонки, одиночные заезды, выставка лыжной атрибутики, тематические фотозоны, концертная программа и многое другое."
           linkTitle="РЕГИСТРАЦИЯ"
           link={"https://reg.place/events/retrogoka-lr-2025"}
         />
         <ProgramItem
-          date="7 февраля, Лужники"
+          date="7 марта, Лужники"
           title="детская гонка"
           description="Детская гонка – это соревнования для московских школьников, а также команд директоров и учителей образовательных организаций"
           linkTitle="РЕГИСТРАЦИЯ"
           link={"https://reg.place/events/lyzhnya-rossii-2025-deti"}
         />
         <ProgramItem
-          date="8 февраля, Альфа-битца "
+          date="8 марта, Альфа-битца "
           title="лыжня россии"
           description="Самая массовая классическая лыжная гонка на 10 км для всех желающих старше 18 лет"
           linkTitle="РЕГИСТРАЦИЯ"
