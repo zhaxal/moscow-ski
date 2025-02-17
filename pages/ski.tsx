@@ -130,17 +130,17 @@ function SkiPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <ProgramItem
           date="5 марта, Лужники"
-          title="ночная гонка"
-          description="Ночная гонка пройдет в формате спринта. Участникам предстоит преодолеть круг на 800 метров. Победители будут выявлены по сумме результатов трех стартов. Принять участие может любой желающий от 18 лет."
-          linkTitle="РЕГИСТРАЦИЯ"
-          link={"https://reg.place/events/sprint-pervenstvo-2025"}
-        />
-        <ProgramItem
-          date="6 марта, Лужники"
           title="ретро гонка"
           description="Оформление ретро-гонки будет выдержано в советской праздничной стилистике, что освежит приятные воспоминания. В программе гонки в разных категориях: семейные эстафеты, детские гонки, одиночные заезды, выставка лыжной атрибутики, тематические фотозоны, концертная программа и многое другое."
           linkTitle="РЕГИСТРАЦИЯ"
           link={"https://reg.place/events/retrogoka-lr-2025"}
+        />
+        <ProgramItem
+          date="6 марта, Лужники"
+          title="ночная гонка"
+          description="Ночная гонка пройдет в формате спринта. Участникам предстоит преодолеть круг на 800 метров. Победители будут выявлены по сумме результатов трех стартов. Принять участие может любой желающий от 18 лет."
+          linkTitle="РЕГИСТРАЦИЯ"
+          link={"https://reg.place/events/sprint-pervenstvo-2025"}
         />
         <ProgramItem
           date="7 марта, Лужники"
@@ -163,7 +163,11 @@ function SkiPage() {
       </div>
 
       <div className="flex flex-col mb-10 px-8 items-center">
-        <img className="w-full sm:w-1/2" src="/year2025/scheme_ski.png" alt="map" />
+        <img
+          className="w-full sm:w-1/2"
+          src="/year2025/scheme_ski.png"
+          alt="map"
+        />
       </div>
 
       <div className="flex flex-col mb-5">
