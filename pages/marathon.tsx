@@ -2,12 +2,45 @@ import { NextPage } from "next";
 import BackButton from "./components/BackButton";
 import Title from "./components/Title";
 import Button from "./components/Button";
+import { useState } from "react";
+import Snackbar from "./components/Snackbar";
 
 const link = "https://russialoppet.ru/events/moscow-2025.html";
 
 const MarathonPage: NextPage = () => {
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
+
+  const snackbarMessage = `Дорогие друзья!
+
+  В связи с погодными условиями мы вынуждены отменить Московский лыжный марафон. 
+  Стартовый взнос можно перенести на следующий год, либо оформить возврат. 
+
+  Если вы выберете возврат, пожалуйста, отмените регистрацию в своем личном кабинете на сайте Russialoppet. 
+  Средства поступят на ваш личный счет на сайте, и вы сможете использовать их для участия в других соревнованиях или для любого заказа на сайте Russialoppet. 
+  Все участники, которые не оформят возврат, будут автоматически перенесены на 2026 год.
+
+  «Лыжня России» стоится в режиме гонки со свободным стартом.
+
+  Место: ОК «Лужники», лыжно-биатлонная трасса
+  Время: Каждый день с 26 февраля по 4 марта с 17:00 до 21:00
+  Дистанции: 
+  - Лыжня России — 5 км (2 круга по 2,5 км)
+  - Детский забег — 2,5 км (1 круг)
+
+  На трассе будут работать регистрация, раздевалки, камера хранения и туалеты.
+  Все участники получат стартовый набор, результат и медаль финишера.`;
+
   return (
     <div className="flex flex-col min-h-full relative bg-[#E6342D] px-2 sm:px-11 py-3 sm:py-5">
+      <Snackbar
+        message={snackbarMessage}
+        isOpen={isSnackbarOpen}
+        onClose={() => {
+          setIsSnackbarOpen(false);
+        }}
+        type="purple"
+      />
+
       <BackButton />
 
       <div className="flex flex-col items-center sm:items-start px-2 sm:px-16">
@@ -45,7 +78,11 @@ const MarathonPage: NextPage = () => {
       </div>
 
       <div className="flex flex-col mb-6 sm:mb-10">
-        <img src="/year2025/marathon/bg.svg" alt="background" className="w-full" />
+        <img
+          src="/year2025/marathon/bg.svg"
+          alt="background"
+          className="w-full"
+        />
       </div>
 
       <div className="flex flex-col mb-2">
@@ -79,9 +116,8 @@ const MarathonPage: NextPage = () => {
           }}
           variant="red"
           size="small"
-          
         >
-          РЕГИСТРАЦИЯ
+          ПЕРЕЙТИ
         </Button>
       </div>
 
@@ -90,8 +126,12 @@ const MarathonPage: NextPage = () => {
       </div>
 
       <div className="flex flex-col mb-10 px-8 items-center">
-        <img className="w-full sm:w-1/2" src="/year2025/scheme_marathon.png" alt="map" />
-      </div>      
+        <img
+          className="w-full sm:w-1/2"
+          src="/year2025/scheme_marathon.png"
+          alt="map"
+        />
+      </div>
 
       <div className="flex flex-col mb-4 sm:mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="red" />

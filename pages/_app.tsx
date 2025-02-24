@@ -4,10 +4,20 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import Snackbar from "./components/Snackbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
+  const snackbarMessage = `Внимание! В связи с погодными условиями изменились даты проведения стартов!`;
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.pathname === "/ski" || router.pathname === "/marathon") {
+      setIsSnackbarOpen(false);
+    }
+  }, [router.pathname]);
 
   const metaDescription =
     "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 марта 2025 г.";
@@ -115,7 +125,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
 
       <Snackbar
-        message="Внимание! В связи с погодными условиями изменились даты проведения стартов!"
+        message={snackbarMessage}
         isOpen={isSnackbarOpen}
         onClose={() => {
           setIsSnackbarOpen(false);

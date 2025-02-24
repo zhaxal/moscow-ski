@@ -4,7 +4,7 @@ interface SnackbarProps {
   message: string;
   isOpen: boolean;
   onClose: () => void;
-  type?: 'success' | 'error' | 'info' | 'warning' | 'purple';  // Added purple
+  type?: 'success' | 'error' | 'info' | 'warning' | 'purple';
   duration?: number | null;
 }
 
@@ -30,7 +30,7 @@ const Snackbar: React.FC<SnackbarProps> = ({
     error: 'bg-red-500',
     info: 'bg-blue-500',
     warning: 'bg-yellow-500',
-    purple: 'bg-purple-500',  // Added purple background
+    purple: 'bg-purple-500',
   }[type];
 
   if (!isOpen) return null;
@@ -41,7 +41,7 @@ const Snackbar: React.FC<SnackbarProps> = ({
         className={`${bgColor} text-white px-6 py-4 rounded-lg shadow-lg 
         flex items-center justify-between min-w-[300px]`}
       >
-        <p className="text-[16px] sm:text-[20px] leading-[20px]">
+        <p className="text-[16px] sm:text-[20px] leading-[20px] whitespace-pre-line">
           {message}
         </p>
         <button

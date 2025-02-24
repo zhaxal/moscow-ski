@@ -1,6 +1,8 @@
+import { useState } from "react";
 import BackButton from "./components/BackButton";
 import Button from "./components/Button";
 import Title from "./components/Title";
+import Snackbar from "./components/Snackbar";
 
 const link = "https://reg.place/events/lyzhnya-rossii-2025";
 
@@ -52,8 +54,38 @@ function ProgramItem({
 }
 
 function SkiPage() {
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
+
+  const snackbarMessage = `Дорогие друзья!
+
+  В связи с погодными условиями мы вынуждены отменить Московский лыжный марафон. 
+  Стартовый взнос можно перенести на следующий год, либо оформить возврат. 
+
+  Если вы выберете возврат, пожалуйста, отмените регистрацию в своем личном кабинете на сайте Russialoppet. 
+  Средства поступят на ваш личный счет на сайте, и вы сможете использовать их для участия в других соревнованиях или для любого заказа на сайте Russialoppet. 
+  Все участники, которые не оформят возврат, будут автоматически перенесены на 2026 год.
+
+  «Лыжня России» стоится в режиме гонки со свободным стартом.
+
+  Место: ОК «Лужники», лыжно-биатлонная трасса
+  Время: Каждый день с 26 февраля по 4 марта с 17:00 до 21:00
+  Дистанции: 
+  - Лыжня России — 5 км (2 круга по 2,5 км)
+  - Детский забег — 2,5 км (1 круг)
+
+  На трассе будут работать регистрация, раздевалки, камера хранения и туалеты.
+  Все участники получат стартовый набор, результат и медаль финишера.`;
+
   return (
     <div className="flex flex-col min-h-full relative bg-[#0082C2] px-4 sm:px-11 py-5">
+      <Snackbar
+        message={snackbarMessage}
+        isOpen={isSnackbarOpen}
+        onClose={() => {
+          setIsSnackbarOpen(false);
+        }}
+        type="purple"
+      />
       <BackButton />
       <div className="flex flex-col items-center sm:items-end px-4 sm:px-16">
         <img
@@ -132,28 +164,28 @@ function SkiPage() {
           date="5 марта, Лужники"
           title="ретро гонка"
           description="Оформление ретро-гонки будет выдержано в советской праздничной стилистике, что освежит приятные воспоминания. В программе гонки в разных категориях: семейные эстафеты, детские гонки, одиночные заезды, выставка лыжной атрибутики, тематические фотозоны, концертная программа и многое другое."
-          linkTitle="РЕГИСТРАЦИЯ"
-          link={"https://reg.place/events/retrogoka-lr-2025"}
+          linkTitle="ОТМЕНЕНА"
+          link={""}
         />
         <ProgramItem
           date="6 марта, Лужники"
           title="ночная гонка"
           description="Ночная гонка пройдет в формате спринта. Участникам предстоит преодолеть круг на 800 метров. Победители будут выявлены по сумме результатов трех стартов. Принять участие может любой желающий от 18 лет."
-          linkTitle="РЕГИСТРАЦИЯ"
-          link={"https://reg.place/events/sprint-pervenstvo-2025"}
+          linkTitle="ОТМЕНЕНА"
+          link={""}
         />
         <ProgramItem
-          date="7 марта, Лужники"
+          date="26.02 — 04.03, ЛУЖНИКИ"
           title="детская гонка"
           description="Детская гонка – это соревнования для московских школьников, а также команд директоров и учителей образовательных организаций"
-          linkTitle="РЕГИСТРАЦИЯ"
+          linkTitle="РЕГИСТРАЦИЯ ЗАВЕРШЕНА"
           link={"https://reg.place/events/lyzhnya-rossii-2025-deti"}
         />
         <ProgramItem
-          date="8 марта, Альфа-битца "
+          date="26.02 — 04.03, ЛУЖНИКИ"
           title="лыжня россии"
           description="Самая массовая классическая лыжная гонка на 10 км для всех желающих старше 18 лет"
-          linkTitle="РЕГИСТРАЦИЯ"
+          linkTitle="РЕГИСТРАЦИЯ ЗАВЕРШЕНА"
           link={link}
         />
       </div>
