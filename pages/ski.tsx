@@ -187,7 +187,7 @@ function SkiPage() {
         />
       </div>
 
-      <div className="flex flex-col mb-5">
+      {/* <div className="flex flex-col mb-5">
         <Title title="СХЕМА ТРАССЫ" variant="blue" />
       </div>
 
@@ -197,7 +197,7 @@ function SkiPage() {
           src="/year2025/scheme_ski.png"
           alt="map"
         />
-      </div>
+      </div> */}
 
       <div className="flex flex-col mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="blue" />
@@ -212,32 +212,12 @@ function SkiPage() {
 
         <div className="flex flex-col text-white text-[16px] sm:text-[20px] leading-[18px] sm:leading-[20px] gap-4 lg:w-1/3 lg:ml-8 order-1 lg:order-2 mb-6 lg:mb-0">
           <span className="font-[GothamProLight]">
-            Москва, ЮЗАО, 36й км МКАД, зона отдыха «Альфа-Битца»
-          </span>
-          <span className="font-[GothamProMedium]">Как добраться?</span>
-          <span className="font-[GothamProLight] flex flex-col">
-            <span className="underline">На машине</span>
-            <span>Адрес парковки:</span>
-          </span>
-          <span className="font-[GothamProLight] flex flex-col">
-            <span>проезд Карамзина, 17А Координаты:</span>
-            <span>55.588664, 37.545536</span>
-          </span>
-          <span className="font-[GothamProLight] flex flex-col">
-            <span className="underline">Пешком</span>
-            <span>
-              От ст.м. Ясенево, первый вагон из центра, выход номер 3, из
-              стеклянных дверей налево, и сразу налево. Автобус 165 до ост.
-              «Зона отдыха Битца» (10 минут). Далее пешком 200 м до старта.
-            </span>
-          </span>
-          <span className="font-[GothamProLight]">
-            От ст. м. Бульвар Дмитрия Донского выход N6, авт 967 до ост. «Зона
-            отдыха Битца» (10 минут). Далее пешком 200 м до старта.
+            ОК «Лужники»
+            г.Москва ул. Лужники, дом 24, строение 11
           </span>
           <span className="font-[GothamProLight] flex flex-col">
             <span className="underline">Координаты</span>
-            <span>Долгота, широта: 55.585360, 37.545857</span>
+            <span>55.716278, 37.560166</span>
           </span>
         </div>
       </div>
