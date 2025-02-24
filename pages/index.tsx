@@ -92,7 +92,7 @@ function RegularView() {
           <div className="flex flex-row py-14">
             <div className="flex flex-col items-end w-1/2 h-full">
               <div className="flex flex-col max-w-[400px] pr-10">
-                <ParkOne />
+                {/* <ParkOne />
                 <div className="mt-16" />
                 <Button
                   onClick={() => {
@@ -101,12 +101,12 @@ function RegularView() {
                   variant="blue"
                 >
                   ПОСЕТИТЬ
-                </Button>
+                </Button> */}
               </div>
             </div>
             <div className="w-1/2 pl-10">
               <div className="flex flex-col max-w-[400px] h-full">
-                <ParkTwo />
+                {/* <ParkTwo />
                 <div className="flex-grow" />
                 <Button
                   onClick={() => {
@@ -115,7 +115,7 @@ function RegularView() {
                   variant="red"
                 >
                   ПОСЕТИТЬ
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ function MobileView() {
 
         <div className="flex flex-col items-center mt-4">
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">
-            <ParkOne />
+            {/* <ParkOne />
             <Button
               onClick={() => {
                 router.push(linkSki);
@@ -148,7 +148,7 @@ function MobileView() {
               variant="blue"
             >
               ПОСЕТИТЬ
-            </Button>
+            </Button> */}
             <div className="mb-4" />
           </div>
         </div>
@@ -157,7 +157,7 @@ function MobileView() {
       <div className="flex flex-col bg-[#E6342D]">
         <div className="flex flex-col items-center mt-4">
           <div className="flex flex-col items-center space-y-4 max-w-[355px]">
-            <ParkTwo />
+            {/* <ParkTwo />
             <Button
               onClick={() => {
                 router.push(linkMarathon);
@@ -165,7 +165,7 @@ function MobileView() {
               variant="red"
             >
               ПОСЕТИТЬ
-            </Button>
+            </Button> */}
           </div>
         </div>
 
