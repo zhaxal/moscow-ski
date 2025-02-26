@@ -5,6 +5,8 @@ import Head from "next/head";
 import Script from "next/script";
 import Snackbar from "./components/Snackbar";
 import { useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
@@ -24,6 +26,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   На трассе будут работать регистрация, раздевалки, камера хранения и туалеты.
   Все участники получат стартовый набор, результат и медаль финишера.`;
+
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsSnackbarOpen(true);
+  }, [router.pathname]);
 
   const metaDescription =
     "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 марта 2025 г.";
