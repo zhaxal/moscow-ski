@@ -1,8 +1,6 @@
-import { useState } from "react";
 import BackButton from "./components/BackButton";
 import Button from "./components/Button";
 import Title from "./components/Title";
-import Snackbar from "./components/Snackbar";
 
 const link = "https://reg.place/events/lyzhnya-rossii-2025";
 
@@ -54,35 +52,8 @@ function ProgramItem({
 }
 
 function SkiPage() {
-  const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
-
-  const snackbarMessage = `Дорогие друзья!
-
-  В связи с погодными условиями мы вынуждены отменить Московский лыжный марафон. 
-  Стартовый взнос можно перенести на следующий год, либо оформить возврат. 
-
-  Если вы выберете возврат, пожалуйста, отмените регистрацию в своем личном кабинете на сайте Russialoppet. 
-  Средства поступят на ваш личный счет на сайте, и вы сможете использовать их для участия в других соревнованиях или для любого заказа на сайте Russialoppet. 
-  Все участники, которые не оформят возврат, будут автоматически перенесены на 2026 год.
-
-  «Лыжня России» стоится в режиме гонки со свободным стартом.
-
-  Место: ОК «Лужники», лыжно-биатлонная трасса
-  Время: Каждый день с 26 февраля по 4 марта с 17:00 до 21:00
-
-  На трассе будут работать регистрация, раздевалки, камера хранения и туалеты.
-  Все участники получат стартовый набор, результат и медаль финишера.`;
-
   return (
     <div className="flex flex-col min-h-full relative bg-[#0082C2] px-4 sm:px-11 py-5">
-      <Snackbar
-        message={snackbarMessage}
-        isOpen={isSnackbarOpen}
-        onClose={() => {
-          setIsSnackbarOpen(false);
-        }}
-        type="purple"
-      />
       <BackButton />
       <div className="flex flex-col items-center sm:items-end px-4 sm:px-16">
         <img
@@ -152,6 +123,64 @@ function SkiPage() {
         </p>
       </div>
 
+      <div className="flex flex-col mb-2">
+        <Title title="ВНИМАНИЕ!" variant="blue" />
+      </div>
+      <div className="flex flex-col items-center mb-8 py-4">
+        <p
+          className="font-[GothamProRegular] text-[20px] leading-[20px] text-white max-w-[900px] flex flex-col gap-4"
+          style={{
+            backgroundColor: "purple",
+            padding: "20px",
+            borderRadius: "8px",
+          }}
+        >
+          <span>Дорогие друзья!</span>
+          <span>
+            В связи с отсутствием снега лыжная гонка Лыжня России меняет
+            локацию, дату проведения и формат гонки.
+          </span>
+          <span>
+            <strong>Место</strong>
+            <br />
+            Вместо СК «Альфа-Битца» Лыжня России будет проходить в ОК «Лужники»,
+            лыжно-биатлонная трасса.
+          </span>
+          <span>
+            <strong>Формат гонки — открытый старт</strong>
+            <br />
+            Участники будут стартовать по мере прихода в стартовый городок.
+          </span>
+          <span>
+            <strong>Время</strong>
+            <br />
+            Старт будет проводиться ежедневно с 26 февраля 2025 г. по 04 марта
+            2025 г. с 17:00 до 21:00
+          </span>
+          <span>
+            <strong>Дистанция</strong>
+            <br />
+            Лыжня России — 5 км (5 кругов по стадиону по 1 км)
+            <br />
+            Детский день — 1 км (1 круг) для всех. Все вопросы по ГТО можно
+            задать на месте в шатре Регистрации во время выдачи стартовых
+            номеров.
+          </span>
+          <span>
+            <strong>Стартовый комплект</strong>
+            <br />
+            Выдача стартового комплекта будет проводиться ежедневно с 26 февраля
+            2025 г. по 04 марта 2025 г. С 17:00 до 21:00.
+          </span>
+          <span>
+            В связи со сменой формата гонки, награждения не будет. На трассе
+            будут работать регистрация, раздевалки, камера хранения и туалеты.
+            Все участники получат стартовый набор, результат и медаль финишера.
+          </span>
+          <span>Ночная лыжная гонка (Спринт) и Ретро-гонка отменены!</span>
+        </p>
+      </div>
+
       <div className="flex flex-col mb-5">
         <Title title="ПРОГРАММА" variant="blue" />
       </div>
@@ -212,8 +241,7 @@ function SkiPage() {
 
         <div className="flex flex-col text-white text-[16px] sm:text-[20px] leading-[18px] sm:leading-[20px] gap-4 lg:w-1/3 lg:ml-8 order-1 lg:order-2 mb-6 lg:mb-0">
           <span className="font-[GothamProLight]">
-            ОК «Лужники»
-            г.Москва ул. Лужники, дом 24, строение 11
+            ОК «Лужники» г.Москва ул. Лужники, дом 24, строение 11
           </span>
           <span className="font-[GothamProLight] flex flex-col">
             <span className="underline">Координаты</span>

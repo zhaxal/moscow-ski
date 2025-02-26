@@ -39,14 +39,16 @@ const Snackbar: React.FC<SnackbarProps> = ({
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
       <div
         className={`${bgColor} text-white px-6 py-4 rounded-lg shadow-lg 
-        flex items-center justify-between min-w-[300px]`}
+        flex items-center justify-between min-w-[300px] max-w-[90vw] max-h-[80vh]`}
       >
-        <p className="text-[16px] sm:text-[20px] leading-[20px] whitespace-pre-line">
-          {message}
-        </p>
+        <div className="flex-1 max-h-[60vh] overflow-y-auto pr-4">
+          <p className="text-[16px] sm:text-[20px] leading-[20px] whitespace-pre-line">
+            {message}
+          </p>
+        </div>
         <button
           onClick={onClose}
-          className="ml-4 text-white hover:text-gray-200 focus:outline-none"
+          className="ml-4 text-white hover:text-gray-200 focus:outline-none flex-shrink-0"
         >
           ✕
         </button>

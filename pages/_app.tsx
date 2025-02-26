@@ -4,20 +4,26 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import Snackbar from "./components/Snackbar";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isSnackbarOpen, setIsSnackbarOpen] = useState(true);
-  const snackbarMessage = `Внимание! В связи с погодными условиями изменились даты проведения стартов!`;
+  const snackbarMessage = `Дорогие друзья!
 
-  const router = useRouter();
+  В связи с погодными условиями мы вынуждены отменить Московский лыжный марафон. 
+  Стартовый взнос можно перенести на следующий год, либо оформить возврат. 
 
-  useEffect(() => {
-    if (router.pathname === "/ski" || router.pathname === "/marathon") {
-      setIsSnackbarOpen(false);
-    }
-  }, [router.pathname]);
+  Если вы выберете возврат, пожалуйста, отмените регистрацию в своем личном кабинете на сайте Russialoppet. 
+  Средства поступят на ваш личный счет на сайте, и вы сможете использовать их для участия в других соревнованиях или для любого заказа на сайте Russialoppet. 
+  Все участники, которые не оформят возврат, будут автоматически перенесены на 2026 год.
+
+  «Лыжня России» стоится в режиме гонки со свободным стартом.
+
+  Место: ОК «Лужники», лыжно-биатлонная трасса
+  Время: Каждый день с 26 февраля по 4 марта с 17:00 до 21:00
+
+  На трассе будут работать регистрация, раздевалки, камера хранения и туалеты.
+  Все участники получат стартовый набор, результат и медаль финишера.`;
 
   const metaDescription =
     "Московский спорт представляет Неделю Лыжни России в Москве с 5 по 9 марта 2025 г.";
