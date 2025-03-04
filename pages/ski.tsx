@@ -181,7 +181,7 @@ function SkiPage() {
         </p>
       </div>
 
-      <div className="flex flex-col mb-5">
+      {/* <div className="flex flex-col mb-5">
         <Title title="ПРОГРАММА" variant="blue" />
       </div>
 
@@ -214,7 +214,7 @@ function SkiPage() {
           linkTitle="РЕГИСТРАЦИЯ ЗАВЕРШЕНА"
           link={link}
         />
-      </div>
+      </div> */}
 
       {/* <div className="flex flex-col mb-5">
         <Title title="СХЕМА ТРАССЫ" variant="blue" />
@@ -227,6 +227,52 @@ function SkiPage() {
           alt="map"
         />
       </div> */}
+
+      <div className="flex flex-col mb-5">
+        <Title title="ЛЫЖНЯ РОССИИ 2025" variant="blue" />
+      </div>
+      <div className="flex flex-col mb-16 px-4 sm:px-8 items-center">
+        <iframe
+          src="https://rutube.ru/play/embed/1473d9f3e65dbc200486ec9918694900/"
+          className="w-full sm:w-[800px] h-[300px] sm:h-[450px] rounded-lg shadow-lg"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+
+        <div className="mt-8 w-full max-w-[1200px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 sm:gap-6">
+            {[
+              "https://i.ibb.co/KjZddBqw/ART-8627.jpg",
+              "https://i.ibb.co/7NCTcBvh/ART-8615.jpg",
+              "https://i.ibb.co/0VXLs45g/ART-8617.jpg",
+              "https://i.ibb.co/FdWLV7y/ART-8477.jpg",
+              "https://i.ibb.co/ZzQSj4wh/ART-8466.jpg",
+              "https://i.ibb.co/67FsMvhh/ART-8450.jpg",
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <img
+                  src={src}
+                  alt={`Photo ${index + 1}`}
+                  className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <Button
+          className="mt-8"
+          onClick={() => {
+            window.open("https://disk.yandex.ru/d/i53N7HT2dX5rgg", "_blank");
+          }}
+          variant="blue"
+        >
+          ВСЕ ФОТО
+        </Button>
+      </div>
 
       <div className="flex flex-col mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="blue" />
