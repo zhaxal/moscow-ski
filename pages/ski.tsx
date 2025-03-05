@@ -72,7 +72,7 @@ function SkiPage() {
 
         <div className="flex flex-col mt-4 sm:mt-0">
           <p className="font-[Mossport] text-[24px] sm:text-[36px] uppercase text-white leading-[28px] sm:leading-[36px] text-center pb-4">
-            05 – 08 МАРТА 2025
+          26 ФЕВРАЛЯ – 04 МАРТА 2025
           </p>
 
           <div
@@ -123,7 +123,7 @@ function SkiPage() {
         </p>
       </div>
 
-      <div className="flex flex-col mb-2">
+      {/* <div className="flex flex-col mb-2">
         <Title title="ВНИМАНИЕ!" variant="blue" />
       </div>
       <div className="flex flex-col items-center mb-8 py-4">
@@ -179,7 +179,7 @@ function SkiPage() {
           </span>
           <span>Ночная лыжная гонка (Спринт) и Ретро-гонка отменены!</span>
         </p>
-      </div>
+      </div> */}
 
       {/* <div className="flex flex-col mb-5">
         <Title title="ПРОГРАММА" variant="blue" />
