@@ -25,28 +25,30 @@ function ProgramItem({
         {date}
       </p>
 
-      <p className="font-[GothamProMedium] text-[20px] leading-[20px] text-white mb-8 uppercase w-full text-center sm:text-left">
+      <p className="font-[GothamProMedium] text-[32px] leading-[32px] text-white mb-4 uppercase w-full text-center sm:text-left">
         {title}
       </p>
 
-      <p className="font-[GothamProLight] text-[20px] leading-[20px] text-white mb-4 w-full text-center sm:text-left">
+      <p className="font-[GothamProMedium] text-[20px] leading-[35px] text-white mb-4 w-full text-center sm:text-left uppercase whitespace-pre-line">
         {description}
       </p>
 
-      <div className="w-full flex justify-center sm:justify-start">
-        <Button
-          onClick={() => {
-            if (link !== "") {
-              window.open(link, "_blank");
-            }
-          }}
-          variant="blue"
-          size="small"
-          className="text-[24px] leading-[22px]"
-        >
-          {linkTitle}
-        </Button>
-      </div>
+      {linkTitle !== "" && (
+        <div className="w-full flex justify-center sm:justify-start">
+          <Button
+            onClick={() => {
+              if (link !== "") {
+                window.open(link, "_blank");
+              }
+            }}
+            variant="blue"
+            size="small"
+            className="text-[24px] leading-[22px]"
+          >
+            {linkTitle}
+          </Button>
+        </div>
+      )}
     </div>
   );
 }
@@ -57,7 +59,7 @@ function SkiPage() {
       <BackButton />
       <div className="flex flex-col items-center sm:items-end px-4 sm:px-16">
         <img
-          src="/year2025/ski/logo.svg"
+          src="/year2026/ski/logo.svg"
           alt="logo"
           className="h-[100px] sm:h-[150px]"
         />
@@ -72,7 +74,7 @@ function SkiPage() {
 
         <div className="flex flex-col mt-4 sm:mt-0">
           <p className="font-[Mossport] text-[24px] sm:text-[36px] uppercase text-white leading-[28px] sm:leading-[36px] text-center pb-4">
-          26 ФЕВРАЛЯ – 04 МАРТА 2025
+            4 - 7 ФЕВРАЛЯ 2026
           </p>
 
           <div
@@ -103,7 +105,7 @@ function SkiPage() {
         <img src="/year2025/ski/bg.svg" alt="background" />
       </div>
 
-      <div className="flex flex-col mb-2">
+      {/* <div className="flex flex-col mb-2">
         <Title title="ОБЩАЯ ИНФОРМАЦИЯ" variant="blue" />
       </div>
 
@@ -121,7 +123,7 @@ function SkiPage() {
           </span>
           <span>До встречи на старте!</span>
         </p>
-      </div>
+      </div> */}
 
       {/* <div className="flex flex-col mb-2">
         <Title title="ВНИМАНИЕ!" variant="blue" />
@@ -181,40 +183,33 @@ function SkiPage() {
         </p>
       </div> */}
 
-      {/* <div className="flex flex-col mb-5">
+      <div className="flex flex-col mb-5">
         <Title title="ПРОГРАММА" variant="blue" />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <ProgramItem
-          date="5 марта, Лужники"
-          title="ретро гонка"
-          description="Оформление ретро-гонки будет выдержано в советской праздничной стилистике, что освежит приятные воспоминания. В программе гонки в разных категориях: семейные эстафеты, детские гонки, одиночные заезды, выставка лыжной атрибутики, тематические фотозоны, концертная программа и многое другое."
-          linkTitle="ОТМЕНЕНА"
-          link={""}
-        />
-        <ProgramItem
-          date="6 марта, Лужники"
+          date="4 февраля ОК «Лужники»"
           title="ночная гонка"
-          description="Ночная гонка пройдет в формате спринта. Участникам предстоит преодолеть круг на 800 метров. Победители будут выявлены по сумме результатов трех стартов. Принять участие может любой желающий от 18 лет."
-          linkTitle="ОТМЕНЕНА"
+          description={`Дистанции: 3 км и 5 км.\nучастие: от 18 лет`}
+          linkTitle=""
           link={""}
         />
         <ProgramItem
-          date="26.02 — 04.03, ЛУЖНИКИ"
+          date="6 февраля ОК «Лужники»"
           title="детская гонка"
-          description="Детская гонка – это соревнования для московских школьников, а также команд директоров и учителей образовательных организаций"
-          linkTitle="РЕГИСТРАЦИЯ ЗАВЕРШЕНА"
-          link={"https://reg.place/events/lyzhnya-rossii-2025-deti"}
+          description="УЧАСТИЕ: ученики, учителя и деректора школ"
+          linkTitle=""
+          link={""}
         />
         <ProgramItem
-          date="26.02 — 04.03, ЛУЖНИКИ"
+          date="5 марта, Лужники"
           title="лыжня россии"
-          description="Самая массовая классическая лыжная гонка на 10 км для всех желающих старше 18 лет"
-          linkTitle="РЕГИСТРАЦИЯ ЗАВЕРШЕНА"
-          link={link}
+          description={`Дистанции: 5 км и 10 км.\nучастие: от 18 лет`}
+          linkTitle=""
+          link={""}
         />
-      </div> */}
+      </div>
 
       {/* <div className="flex flex-col mb-5">
         <Title title="СХЕМА ТРАССЫ" variant="blue" />
@@ -228,7 +223,7 @@ function SkiPage() {
         />
       </div> */}
 
-      <div className="flex flex-col mb-5">
+      {/* <div className="flex flex-col mb-5">
         <Title title="ЛЫЖНЯ РОССИИ 2025" variant="blue" />
       </div>
       <div className="flex flex-col mb-16 px-4 sm:px-8 items-center">
@@ -272,9 +267,9 @@ function SkiPage() {
         >
           ВСЕ ФОТО
         </Button>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col mb-5">
+      {/* <div className="flex flex-col mb-5">
         <Title title="МЕСТО ПРОВЕДЕНИЯ" variant="blue" />
       </div>
 
@@ -294,6 +289,58 @@ function SkiPage() {
             <span>55.716278, 37.560166</span>
           </span>
         </div>
+      </div> */}
+
+      <div className="flex flex-col mb-5">
+        <Title title="ТРЕБОВАНИЯ К УЧАСТНИКАМ" variant="blue" />
+      </div>
+
+      <div className="flex flex-col lg:flex-row mb-10">
+        <p className="font-[GothamProRegular] text-[20px] leading-[20px] text-white max-w-[600px] flex flex-col gap-2">
+          <span>
+            Соревнования проводятся в соответствии с правилами лыжных гонок.
+            Стиль свободный.
+          </span>
+          <span>
+            К соревнованиям допускаются все желающие от 9 лет, имеющие
+            медицинский допуск к участию в соревнованиях. Возраст участников
+            определяется по дате рождения (полных лет) по состоянию на день
+            проведения соревнований.
+          </span>
+          <span>
+            Участники, не прошедшие контрольные пункты по дистанции, будут
+            дисквалифицированы, их результаты аннулируются. Победители
+            определяются по наименьшему количеству времени, затраченному на
+            прохождение дистанции.
+          </span>
+        </p>
+        <p className="font-[GothamProRegular] text-[20px] leading-[20px] text-white max-w-[600px] flex flex-col gap-2">
+          <span>Всем участникам необходимо при себе иметь:</span>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              паспорт или документ, удостоверяющий личность. Для
+              несовершеннолетних детей - свидетельство о рождении.
+            </li>
+            <li>
+              индивидуальный (или коллективный) медицинский допуск,
+              подтверждающий состояние здоровья и возможность допуска к
+              соревнованию, согласно требованиям приказа Минздрава России от 23
+              октября 2020 г. № 1144н (ОБРАЗЕЦ)
+            </li>
+            <li>
+              согласие на обработку персональных данных спортсмена в
+              соответствии с Федеральным законом от 27 июля 2006 г. № 152-ФЗ
+              (ОБРАЗЕЦ)
+            </li>
+            <li>
+              оригинал полиса обязательного медицинского страхования (ОМС) или
+              полиса добровольного медицинского страхования (ДМС).
+            </li>
+          </ul>
+          <span>
+            Иные документы не установленной формы к рассмотрению не принимаются.
+          </span>
+        </p>
       </div>
     </div>
   );

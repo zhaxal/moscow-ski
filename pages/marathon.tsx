@@ -27,7 +27,7 @@ const MarathonPage: NextPage = () => {
 
         <div className="flex flex-col mt-3 sm:mt-0 order-last sm:order-first">
           <p className="font-[Mossport] text-[20px] sm:text-[24px] md:text-[36px] uppercase text-white leading-[24px] sm:leading-[28px] md:leading-[36px] text-center pb-3 sm:pb-4">
-            09 МАРТА 2025
+            08 ФЕВРАЛЯ 2026
           </p>
 
           <div
@@ -38,7 +38,7 @@ const MarathonPage: NextPage = () => {
             }}
           >
             <p className="font-[GothamProRegular] text-[14px] sm:text-[16px] md:text-[40px] leading-[18px] sm:leading-[20px] md:leading-[40px] text-[#870000] py-4 sm:py-8 md:py-20 px-4 sm:px-6 md:pl-20 md:pr-16 uppercase">
-              Третий московский лыжный марафон
+              московский лыжный марафон
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const MarathonPage: NextPage = () => {
             дополнительные дистанции на 17 км и 25 км
           </span>
           <span>
-            9 марта 2025 года гонка примет большое количество фанатов лыжного
+            8 февраля 2026 года гонка примет большое количество фанатов лыжного
             спорта России и станет ярким событием Московского региона.
           </span>
           <span>
