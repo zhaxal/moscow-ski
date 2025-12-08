@@ -7,7 +7,7 @@ import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   const metaDescription =
-    "Московский спорт представляет Неделю Лыжни России в Москве с 26 февраля по 4 марта 2025 г.";
+    "Московский спорт представляет Неделю Лыжни России в Москве с 4 по 8 февраля 2026 г.";
   const metaTitle = "Неделя Лыжни России в Москве";
   const metaUrl = "https://ski.moscow.sport/";
   const metaImage = "/images/metaIcon.jpg";
