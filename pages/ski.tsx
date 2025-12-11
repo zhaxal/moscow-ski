@@ -203,11 +203,11 @@ function SkiPage() {
           link={""}
         />
         <ProgramItem
-          date="5 марта, Лужники"
+          date="7 февраля, Лужники"
           title="лыжня россии"
           description={`Дистанции: 5 км и 10 км.\nучастие: от 18 лет`}
-          linkTitle=""
-          link={""}
+          linkTitle="РЕГИСТРАЦИЯ"
+          link={"https://grom.place/competitions/lyzhnya-rossii--2026"}
         />
       </div>
 
