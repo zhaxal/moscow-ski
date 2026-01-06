@@ -198,7 +198,7 @@ function SkiPage() {
         <ProgramItem
           date="6 февраля ОК «Лужники»"
           title="детская гонка"
-          description="УЧАСТИЕ: ученики, учителя и деректора школ"
+          description="УЧАСТИЕ: ученики, учителя и директора школ"
           linkTitle=""
           link={""}
         />
