@@ -3,7 +3,7 @@ import BackButton from "./components/BackButton";
 import Title from "./components/Title";
 import Button from "./components/Button";
 
-const link = "https://russialoppet.ru/events/moscow-2025.html";
+const link = "https://t.me/loppetru/2945";
 
 const MarathonPage: NextPage = () => {
   return (
@@ -84,7 +84,7 @@ const MarathonPage: NextPage = () => {
           variant="red"
           size="small"
         >
-          ПЕРЕЙТИ
+          РЕГИСТРАЦИЯ
         </Button>
       </div>
 
