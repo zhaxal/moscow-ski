@@ -200,7 +200,7 @@ function SkiPage() {
           title="детская гонка"
           description="УЧАСТИЕ: ученики, учителя и директора школ"
           linkTitle=""
-          link={""}
+          link={"https://sportident.online/entry/?id=6912"}
         />
         <ProgramItem
           date="7 февраля, Лужники"
