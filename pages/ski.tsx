@@ -203,7 +203,7 @@ function SkiPage() {
           link={"https://sportident.online/entry/?id=6912"}
         />
         <ProgramItem
-          date="7 февраля, Лужники"
+          date="7 ФЕВРАЛЯ, «АЛЬФА-БИТЦА»"
           title="лыжня россии"
           description={`Дистанции: 5 км и 10 км.\nучастие: от 18 лет`}
           linkTitle="РЕГИСТРАЦИЯ"

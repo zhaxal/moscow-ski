@@ -95,7 +95,7 @@ const MarathonPage: NextPage = () => {
       <div className="flex flex-col mb-10 px-8 items-center">
         <img
           className="w-full sm:w-1/2"
-          src="/year2025/scheme_marathon.png"
+          src="/year2026/scheme_marathon.png"
           alt="map"
         />
       </div>
