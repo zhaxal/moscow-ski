@@ -205,7 +205,7 @@ function SkiPage() {
         <ProgramItem
           date="7 ФЕВРАЛЯ, «АЛЬФА-БИТЦА»"
           title="лыжня россии"
-          description={`Дистанции: 5 км и 10 км.\nучастие: от 18 лет`}
+          description={`Дистанция: 10 км.\nучастие: от 18 лет`}
           linkTitle="РЕГИСТРАЦИЯ"
           link={"https://grom.place/competitions/lyzhnya-rossii--2026"}
         />
@@ -340,6 +340,9 @@ function SkiPage() {
           </ul>
           <span>
             Иные документы не установленной формы к рассмотрению не принимаются.
+          </span>
+          <span>
+            Выдача стартовых пакетов производится в день старта.
           </span>
         </p>
       </div>
