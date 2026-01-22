@@ -192,8 +192,8 @@ function SkiPage() {
           date="4 февраля ОК «Лужники»"
           title="ночная гонка"
           description={`Дистанции: 3 км и 5 км.\nучастие: от 18 лет`}
-          linkTitle=""
-          link={""}
+          linkTitle="РЕГИСТРАЦИЯ"
+          link={"https://grom.place/competitions/nochnaya-gonka-sprint-2026"}
         />
         <ProgramItem
           date="6 февраля ОК «Лужники»"
